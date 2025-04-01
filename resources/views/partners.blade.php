@@ -278,7 +278,7 @@
 </section>
 <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out" data-easing2="ease-in-out" role="banner" class="navbar w-nav">
     <div class="nav-container">
-        <a href="{{ route('home') }}" class="nav-logo w-nav-brand"><img src="{{ asset('images/logo-time-caps.svg') }}" loading="lazy" alt="" class="logo"></a>
+        <a href="{{ route('welcome') }}" class="nav-logo w-nav-brand"><img src="{{ asset('images/logo-time-caps.svg') }}" loading="lazy" alt="" class="logo"></a>
         <div class="nav-container-col">
             <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-menu-block">

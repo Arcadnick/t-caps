@@ -9,7 +9,7 @@ class PageController extends Controller
     // Главная страница
     public function index()
     {
-        return view('index');
+        return view('welcome');
     }
 
     // Все капсулы

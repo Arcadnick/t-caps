@@ -8,7 +8,7 @@ use App\Http\Controllers\PageController;
 //});
 
 // Главная страница
-Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index'])->name('welcome');
 
 // Все капсулы
 Route::get('/capsules-page', [PageController::class, 'capsules'])->name('capsules');
