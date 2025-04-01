@@ -88,8 +88,14 @@
             <div class="form-login-wrapper w-form">
                 <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-block" data-wf-page-id="67e50b5295fa03bbbc021d82" data-wf-element-id="a2ab6eb9-5264-82c6-6692-e8862d162daa">
                     <div class="rows-form-block">
-                        <div class="flex-vertical gap-6"><label for="Email-login" class="input-text">Почта</label><input class="text-field w-input" maxlength="256" name="Email-login" data-name="Email-login" placeholder="Введите почту" type="email" id="Email-login" required=""></div>
-                        <div class="flex-vertical gap-6"><label for="password" class="input-text">Email Address</label><input class="text-field w-input" maxlength="256" name="password" data-name="password" placeholder="••••••••" type="password" id="password" required=""></div>
+                        <div class="flex-vertical gap-6">
+                            <label for="Email-login" class="input-text">Почта</label>
+                            <input class="text-field w-input" maxlength="256" name="Email-login" data-name="Email-login" placeholder="Введите почту" type="email" id="Email-login" required="">
+                        </div>
+                        <div class="flex-vertical gap-6">
+                            <label for="password" class="input-text">Email Address</label>
+                            <input class="text-field w-input" maxlength="256" name="password" data-name="password" placeholder="••••••••" type="password" id="password" required="">
+                        </div>
                         <div class="small-text gray-color center-aling">
                             <a href="#" class="forget-password-link">Забыли пароль?</a>
                         </div>
