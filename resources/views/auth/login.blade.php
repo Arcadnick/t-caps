@@ -86,25 +86,49 @@
                 </div>
             </div>
             <div class="form-login-wrapper w-form">
-                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-block" data-wf-page-id="67e50b5295fa03bbbc021d82" data-wf-element-id="a2ab6eb9-5264-82c6-6692-e8862d162daa">
+                <form method="POST" action="{{ route('login') }}" class="form-block">
+                    @csrf
+
                     <div class="rows-form-block">
-                        <div class="flex-vertical gap-6"><label for="Email-login" class="input-text">Почта</label><input class="text-field w-input" maxlength="256" name="Email-login" data-name="Email-login" placeholder="Введите почту" type="email" id="Email-login" required=""></div>
-                        <div class="flex-vertical gap-6"><label for="password" class="input-text">Email Address</label><input class="text-field w-input" maxlength="256" name="password" data-name="password" placeholder="••••••••" type="password" id="password" required=""></div>
+                        <!-- Email Address -->
+                        <div class="flex-vertical gap-6">
+                            <label for="email" class="input-text">Почта</label>
+                            <input class="text-field w-input" id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="username" placeholder="Введите почту">
+                            @error('email')
+                            <div class="small-text error-text">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- Password -->
+                        <div class="flex-vertical gap-6">
+                            <label for="password" class="input-text">Пароль</label>
+                            <input class="text-field w-input" id="password" type="password" name="password" required autocomplete="current-password" placeholder="••••••••">
+                            @error('password')
+                            <div class="small-text error-text">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- Remember Me -->
                         <div class="small-text gray-color center-aling">
-                            <a href="#" class="forget-password-link">Забыли пароль?</a>
+                            <label>
+                                <input type="checkbox" name="remember">
+                                Запомнить меня
+                            </label>
+                        </div>
+
+                        <!-- Forgot Password -->
+                        <div class="small-text gray-color center-aling">
+                            <a href="{{ route('password.request') }}" class="forget-password-link">Забыли пароль?</a>
                         </div>
                     </div>
-                    <div class="action-block"><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Войти">
-                        <div class="small-text gray-color center-aling">Ознакомтесь с <a href="#" class="small-link">Политикой конфиденциальности</a> и <a href="#" class="small-link">пользовательское соглашение</a>
+
+                    <div class="action-block">
+                        <button type="submit" class="form-button w-button">Войти</button>
+                        <div class="small-text gray-color center-aling">
+                            Ознакомьтесь с <a href="#" class="small-link">Политикой конфиденциальности</a> и <a href="#" class="small-link">пользовательским соглашением</a>
                         </div>
                     </div>
                 </form>
-                <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
             </div>
         </div>
     </div>
