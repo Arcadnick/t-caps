@@ -9,4 +9,9 @@ class GeneratedCapsule extends Model
     protected $fillable = [
         'title', 'category_id', 'user_input', 'gpt_response_json', 'is_blocked', 'used_count'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
