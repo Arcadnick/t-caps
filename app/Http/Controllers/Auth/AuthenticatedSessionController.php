@@ -24,6 +24,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
+        //на случай если нужно будет отключить вход в аккаунты
+//        if (!config('app.login_enabled', false)) {
+//            abort(403, 'Вход сейчас отключен');
+//        }
+
         $request->authenticate();
 
         $request->session()->regenerate();
