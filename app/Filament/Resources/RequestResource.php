@@ -145,7 +145,7 @@ class RequestResource extends Resource
                         DatePicker::make('created_at')->label('Дата')
                     ])
                     ->query(function ($query, array $data) {
-                        if (!empty($data['created_at'])) { // Применять только если дата выбрана
+                        if (!empty($data['created_at'])) {
                             $query->whereDate('created_at', $data['created_at']);
                         }
                     }),

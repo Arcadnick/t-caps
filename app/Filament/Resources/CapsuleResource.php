@@ -121,7 +121,7 @@ class CapsuleResource extends Resource
                 TextColumn::make('title')->label('Название')->sortable(),
                 TextColumn::make('category.name')->label('Категория'),
                 TextColumn::make('type')->label('Тип'),
-                IconColumn::make('is_blocked')->label('Запрещена')->boolean(),
+                IconColumn::make('is_blocked')->label('Запрещена к показу')->boolean(),
             ])
             ->filters([
                 // Фильтры добавим позже
