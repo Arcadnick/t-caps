@@ -65,7 +65,7 @@ class CapsuleResource extends Resource
                 Select::make('type')
                     ->options([
                         'готовая' => 'Готовая',
-                        'в плане' => 'В планах',
+                        'в планах' => 'В планах',
                         'сгенерированная' => 'Сгенерированная',
                     ])
                     ->required()
