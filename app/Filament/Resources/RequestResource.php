@@ -127,17 +127,28 @@ class RequestResource extends Resource
                 TextColumn::make('created_at')->label('Дата')->dateTime(),
             ])
             ->filters([
-//                SelectFilter::make('capsule_id')->relationship('capsule', 'title')->label('Капсула'),
-//                SelectFilter::make('status')
-//                    ->options([
-//                        'новая' => 'Новая',
-//                        'в работе' => 'В работе',
-//                        'закрыта' => 'Закрыта',
-//                    ])
-//                    ->label('Статус'),
-//                Filter::make('created_at')
-//                    ->form([DatePicker::make('created_at')->label('Дата')])
-//                    ->query(fn ($query, $data) => $query->whereDate('created_at', $data['created_at'])),
+                SelectFilter::make('capsule_id')
+                    ->relationship('capsule', 'title')
+                    ->label('Капсула')
+                    ->preload()
+                    ->default(null),
+                SelectFilter::make('status')
+                    ->options([
+                        'новая' => 'Новая',
+                        'в работе' => 'В работе',
+                        'закрыта' => 'Закрыта',
+                    ])
+                    ->label('Статус')
+                    ->default(null),
+                Filter::make('created_at')
+                    ->form([
+                        DatePicker::make('created_at')->label('Дата')
+                    ])
+                    ->query(function ($query, array $data) {
+                        if (!empty($data['created_at'])) { // Применять только если дата выбрана
+                            $query->whereDate('created_at', $data['created_at']);
+                        }
+                    }),
             ])
             ->actions([
                 EditAction::make(),
