@@ -303,3 +303,19 @@
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
 </body>
 </html>
+
+
+@if(session('success'))
+    <div class="success-message">{{ session('success') }}</div>
+@endif
+
+<form action="{{ route('request.store') }}" method="POST">
+    @csrf
+    <input type="hidden" name="request_type" value="консультация">
+
+    <input type="text" name="user_name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Вопрос или комментарий"></textarea>
+
+    <button type="submit">Получить консультацию</button>
+</form>

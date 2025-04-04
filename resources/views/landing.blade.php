@@ -602,13 +602,16 @@
                     <form id="wf-form-Email-form" name="wf-form-Email-form" data-name="Email form" method="get" class="form-block" data-wf-page-id="67e2af4f26c4fb1a63bedddf" data-wf-element-id="4ee6f207-47d2-888e-2b36-068482ba3c23">
                         <div class="form-row-grid">
                             <div class="field-block">
-                                <div class="input-text">Имя</div><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Введите Ваше имя" type="text" id="Name" required="">
+                                <div class="input-text">Имя</div>
+                                <input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Введите Ваше имя" type="text" id="Name" required="">
                             </div>
                             <div class="field-block">
-                                <div class="input-text">Почта</div><input class="text-field w-node-_4ee6f207-47d2-888e-2b36-068482ba3c27-82ba3c18 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Введите Вашу почту" type="tel" id="Phone" required="">
+                                <div class="input-text">Почта</div>
+                                <input class="text-field w-node-_4ee6f207-47d2-888e-2b36-068482ba3c27-82ba3c18 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Введите Вашу почту" type="tel" id="Phone" required="">
                             </div>
                             <div class="field-block">
-                                <div class="input-text">Опишите Вашу идею</div><textarea placeholder="Описание" maxlength="5000" id="Message" name="Message" data-name="Message" class="text-field message-field w-input"></textarea>
+                                <div class="input-text">Опишите Вашу идею</div>
+                                <textarea placeholder="Описание" maxlength="5000" id="Message" name="Message" data-name="Message" class="text-field message-field w-input"></textarea>
                             </div>
                         </div><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Отправить">
                     </form>
@@ -634,3 +637,22 @@
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
 </body>
 </html>
+
+
+@if(session('success'))
+    <div class="success-message">{{ session('success') }}</div>
+@endif
+
+<form action="{{ route('request.store') }}" method="POST">
+    @csrf
+    <input type="hidden" name="request_type" value="разработка">
+    <input type="hidden" name="capsule_id" value="{{ $generated->id ?? $capsule->id ?? '' }}">
+
+{{--    <input type="hidden" name="capsule_id" value="{{ $generated->id }}">--}}
+
+    <input type="text" name="user_name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Комментарий"></textarea>
+
+    <button type="submit">Оставить заявку</button>
+</form>

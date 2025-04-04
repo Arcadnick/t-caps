@@ -111,62 +111,100 @@
                                             </svg></div>
                                     </div>
                                     <nav class="dropdown-list categories w-dropdown-list">
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Маркетинг">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Маркетинг</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Продажи">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Продажи</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="HR">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>HR</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Финансы">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Финансы</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="IT">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>IT</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/other-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Другое">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/other-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Другое</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
+                                        </button>
+
+                                        {{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>Маркетинг</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>Продажи</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>HR</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>Финансы</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>IT</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="dropdown-link w-inline-block">--}}
+{{--                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/other-img.png') }}" loading="lazy" alt="" class="image-dropdown">--}}
+{{--                                                <div>Другое</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </a>--}}
                                     </nav>
                                 </div>
                             </div>
                             <div class="wrapper-btn left-aling width-auto">
-                                <a href="{{ route('capsules') }}" class="blue-button w-inline-block">
+                                <button type="button" id="submit-capsule-search" class="blue-button w-inline-block">
                                     <div>Подобрать AI капсулу</div>
-                                </a>
+                                </button>
                             </div>
+
                         </form>
                         <div class="w-form-done">
                             <div>Thank you! Your submission has been received!</div>
@@ -176,26 +214,57 @@
                         </div>
                     </div>
                     <div class="w-layout-grid favors-grid">
-                        <a href="#" class="favors-item first w-inline-block">
-                            <div class="wrap-img-favors"><img src="{{ asset('images/small-1.jpg') }}" loading="lazy" alt="" class="image-favors"></div>
+{{--                        <a href="#" class="favors-item first w-inline-block">--}}
+{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-1.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
+{{--                            <div class="heading min-h">Продажи</div>--}}
+{{--                        </a>--}}
+{{--                        <a href="#" class="favors-item w-inline-block">--}}
+{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-5.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
+{{--                            <div class="heading min-h">Контент</div>--}}
+{{--                        </a>--}}
+{{--                        <a href="#" class="favors-item w-inline-block">--}}
+{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-2.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
+{{--                            <div class="heading min-h">Рекрутинг</div>--}}
+{{--                        </a>--}}
+{{--                        <a href="#" class="favors-item w-inline-block">--}}
+{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-3.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
+{{--                            <div class="heading min-h">Бизнес</div>--}}
+{{--                        </a>--}}
+{{--                        <a href="#" class="favors-item w-inline-block">--}}
+{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-4.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
+{{--                            <div class="heading min-h">IT</div>--}}
+{{--                        </a>--}}
+                        <button type="button" class="favors-item w-inline-block" data-category="Продажи">
+                            <div class="wrap-img-favors">
+                                <img src="{{ asset('images/small-1.jpg') }}" loading="lazy" alt="" class="image-favors">
+                            </div>
                             <div class="heading min-h">Продажи</div>
-                        </a>
-                        <a href="#" class="favors-item w-inline-block">
-                            <div class="wrap-img-favors"><img src="{{ asset('images/small-5.jpg') }}" loading="lazy" alt="" class="image-favors"></div>
+                        </button>
+                        <button type="button" class="favors-item w-inline-block" data-category="Контент">
+                            <div class="wrap-img-favors">
+                                <img src="{{ asset('images/small-5.jpg') }}" loading="lazy" alt="" class="image-favors">
+                            </div>
                             <div class="heading min-h">Контент</div>
-                        </a>
-                        <a href="#" class="favors-item w-inline-block">
-                            <div class="wrap-img-favors"><img src="{{ asset('images/small-2.jpg') }}" loading="lazy" alt="" class="image-favors"></div>
+                        </button>
+                        <button type="button" class="favors-item w-inline-block" data-category="Рекрутинг">
+                            <div class="wrap-img-favors">
+                                <img src="{{ asset('images/small-2.jpg') }}" loading="lazy" alt="" class="image-favors">
+                            </div>
                             <div class="heading min-h">Рекрутинг</div>
-                        </a>
-                        <a href="#" class="favors-item w-inline-block">
-                            <div class="wrap-img-favors"><img src="{{ asset('images/small-3.jpg') }}" loading="lazy" alt="" class="image-favors"></div>
+                        </button>
+                        <button type="button" class="favors-item w-inline-block" data-category="Бизнес">
+                            <div class="wrap-img-favors">
+                                <img src="{{ asset('images/small-3.jpg') }}" loading="lazy" alt="" class="image-favors">
+                            </div>
                             <div class="heading min-h">Бизнес</div>
-                        </a>
-                        <a href="#" class="favors-item w-inline-block">
-                            <div class="wrap-img-favors"><img src="{{ asset('images/small-4.jpg') }}" loading="lazy" alt="" class="image-favors"></div>
+                        </button>
+                        <button type="button" class="favors-item w-inline-block" data-category="IT">
+                            <div class="wrap-img-favors">
+                                <img src="{{ asset('images/small-4.jpg') }}" loading="lazy" alt="" class="image-favors">
+                            </div>
                             <div class="heading min-h">IT</div>
-                        </a>
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -547,5 +616,43 @@
 </div>
 <script src="{{ asset('https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae') }}" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const inputField = document.getElementById('name');
+        const clickableButtons = document.querySelectorAll('.dropdown-link, .favors-item');
+        const submitButton = document.getElementById('submit-capsule-search');
+
+        let selectedCategory = null;
+
+        clickableButtons.forEach((btn) => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                clickableButtons.forEach((b) => b.classList.remove('first'));
+
+                this.classList.add('first');
+
+                selectedCategory = this.getAttribute('data-category');
+            });
+        });
+
+        submitButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            const industry = inputField.value.trim();
+
+            if (!industry || !selectedCategory) {
+                alert('Пожалуйста, введите сферу и выберите категорию.');
+                return;
+            }
+
+            const params = new URLSearchParams({
+                category: selectedCategory,
+                industry: industry
+            });
+
+            window.location.href = `/capsules-page?${params.toString()}`;
+        });
+    });
+</script>
 </body>
 </html>
