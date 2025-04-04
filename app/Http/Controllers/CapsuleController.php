@@ -16,13 +16,13 @@ class CapsuleController extends Controller
         $industry = $request->get('industry');
 
         if (!$categoryName || !$industry) {
-            return redirect()->route('home')->with('error', 'Пожалуйста, выберите категорию и введите сферу.');
+            return redirect()->route('welcome')->with('error', 'Пожалуйста, выберите категорию и введите сферу.');
         }
 
         $category = Category::where('name', $categoryName)->first();
 
         if (!$category) {
-            return redirect()->route('home')->with('error', 'Категория не найдена.');
+            return redirect()->route('welcome')->with('error', 'Категория не найдена.');
         }
 
         $capsules = Capsule::where('category_id', $category->id)
