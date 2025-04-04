@@ -47,6 +47,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsules');
 
-Route::post('/request', [RequestController::class, 'store'])->name('request.store');
+Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
+
 
 require __DIR__.'/auth.php';

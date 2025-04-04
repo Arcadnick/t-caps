@@ -2,23 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request as HttpRequest;
-use App\Models\Request as Lead;
+use Illuminate\Http\Request;
 
 class RequestController extends Controller
 {
-    public function store(HttpRequest $request)
+    public function store(Request $request)
     {
-        $data = $request->validate([
-            'user_name' => 'required|string|max:255',
-            'email' => 'required|email',
-            'message' => 'nullable|string',
-            'request_type' => 'required|in:подключение,разработка,консультация',
-            'capsule_id' => 'nullable|exists:capsules,id',
+        \App\Models\Request::create([
+            'user_name' => $request->user_name,
+            'email' => $request->email,
+            'message' => $request->message,
+            'request_type' => 'разработка',
+            'status' => 'новая',
         ]);
 
-        Lead::create($data);
-
-        return back()->with('success', 'Ваша заявка отправлена!');
+        return back()->with('success', 'Заявка успешно отправлена!');
     }
 }
