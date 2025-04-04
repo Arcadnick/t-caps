@@ -19,42 +19,48 @@ class CapsuleController extends Controller
             return redirect()->route('home')->with('error', 'Пожалуйста, выберите категорию и введите сферу.');
         }
 
-        // Получаем категорию
         $category = Category::where('name', $categoryName)->first();
 
         if (!$category) {
             return redirect()->route('home')->with('error', 'Категория не найдена.');
         }
 
-        // Получаем готовые капсулы
         $capsules = Capsule::where('category_id', $category->id)
-//            ->where('type', 'готовая')
             ->where('is_blocked', false)
             ->get();
 
-        // Ищем уже сгенерированные
+        $regenerate = $request->get('regenerate');
+
         $existingGeneration = GeneratedCapsule::where('category_id', $category->id)
             ->where('user_input', $industry)
             ->first();
 
-        // Если нет — генерируем
-        if (!$existingGeneration) {
+        if ($regenerate || !$existingGeneration) {
             $gptService = app(GptCapsuleService::class);
             $response = $gptService->generateCapsule($category->name, $industry);
 
-            $existingGeneration = GeneratedCapsule::create([
-                'title' => $response['title'],
+            GeneratedCapsule::create([
+                'title' => $response['selected_capsules'][0]['title'] ?? 'AI-капсулы',
                 'category_id' => $category->id,
                 'user_input' => $industry,
                 'gpt_response_json' => json_encode($response),
             ]);
+
+            $existingGeneration = GeneratedCapsule::where('category_id', $category->id)
+                ->where('user_input', $industry)
+                ->orderByDesc('created_at')
+                ->first();
         } else {
             $existingGeneration->increment('used_count');
         }
 
+        $decoded = json_decode($existingGeneration->gpt_response_json, true);
+        $sortedCapsules = $decoded['selected_capsules'] ?? [];
+
         return view('capsules-page', [
-            'capsules' => $capsules,
+            'capsules' => $capsules, // необязательные, если используешь только gpt
             'generated' => $existingGeneration,
+            'sortedCapsules' => $sortedCapsules,
             'industry' => $industry,
             'category' => $category,
         ]);

@@ -4,71 +4,120 @@ namespace App\Services;
 
 use App\Models\Capsule;
 use Illuminate\Support\Facades\Http;
+use App\Models\Category;
+use App\Models\GeneratedCapsule;
 
 class GptCapsuleService
 {
     public function generateCapsule(string $categoryName, string $industry): array
     {
-        $examples = Capsule::whereHas('category', fn($q) => $q->where('name', $categoryName))
-            ->where('is_blocked', false)
-            ->take(3)
-            ->get(['title', 'content']);
+        $category = Category::where('name', $categoryName)->first();
 
-        $examplesText = $examples->map(function ($capsule, $i) {
-            return ($i + 1) . ". {$capsule->title}: {$capsule->content}";
+        $ready = Capsule::where('category_id', $category->id)
+            ->where('type', 'готовая')
+            ->where('is_blocked', false)
+            ->get(['title', 'content', 'type']);
+
+        $planned = Capsule::where('category_id', $category->id)
+            ->where('type', 'в планах')
+            ->where('is_blocked', false)
+            ->get(['title', 'content', 'type']);
+
+        $generated = GeneratedCapsule::where('category_id', $category->id)
+            ->where('user_input', $industry)
+            ->where('is_blocked', false)
+            ->get(['title', 'gpt_response_json'])
+            ->map(function ($item) {
+                $parsed = json_decode($item->gpt_response_json, true);
+                return [
+                    'title' => $item->title,
+                    'content' => $parsed['description'] ?? '',
+                    'type' => 'сгенерированная',
+                ];
+            });
+
+        $allCapsules = collect(
+            $ready->map(function ($item) {
+                return [
+                    'title' => $item->title,
+                    'content' => $item->content,
+                    'type' => $item->type,
+                ];
+            })->toArray()
+        )->merge(
+            $planned->map(function ($item) {
+                return [
+                    'title' => $item->title,
+                    'content' => $item->content,
+                    'type' => $item->type,
+                ];
+            })->toArray()
+        )->merge($generated);
+
+        $capsuleText = $allCapsules->map(function ($capsule, $i) {
+            return ($i + 1) . ". [{$capsule['type']}] {$capsule['title']}: {$capsule['content']}";
         })->implode("\n");
 
         $prompt = <<<PROMPT
-Ты — AI-ассистент, который генерирует идеи для автоматизации бизнес-процессов.
-
 Категория: $categoryName
-Сфера бизнеса: $industry
+Сфера деятельности пользователя: $industry
 
-Примеры существующих AI-капсул:
-$examplesText
+Вот список всех существующих AI-капсул в этой категории:
 
-Сгенерируй 4-6 новых процессов, которые можно автоматизировать в этой категории и сфере.
+$capsuleText
+
+1. Отсортируй капсулы по релевантности сфере "$industry"
+2. Сначала покажи готовые, потом "в планах", затем "сгенерированные"
+3. Если в результате получится менее 6 капсул — добавь ещё 3 новых, которых нет в списке выше
+
 Для каждого процесса укажи:
 - Название
 - Краткое описание (80 символов)
-- Преимущества(26 символов в строке максимум)
-- Что автоматизирует(26 символов в строке максимум)
+- Преимущества (26 символов в строке максимум)
+- Что автоматизирует (26 символов в строке максимум)
 - Среднее количество часов, которое тратит человек в неделю (число)
 - Приблизительно на сколько процентов эффективнее будет использовать капсулу (число)
 
-Ответ в JSON:
+Формат: JSON массив:
 [
   {
-    "title": "...",
-    "description": "...",
-    "benefits": "..."
+    "title": "..."
+    "description": "..."
+    "advantages": "Экономит время, улучшает качество"
+    "automates": "Создание контента"
+    "average_hours_per_week":
+    "efficiency_percentage":
+    "type": "готовая" | "в планах" | "сгенерированная"
   },
   ...
 ]
 PROMPT;
 
+        set_time_limit(90);
+
         $response = Http::withToken(env('OPENAI_API_KEY'))
-            ->timeout(600)
+            ->timeout(90)
             ->post('https://api.openai.com/v1/chat/completions', [
-            'model' => 'gpt-4',
-            'messages' => [
-                ['role' => 'system', 'content' => 'Ты помощник, генерирующий AI-капсулы'],
-                ['role' => 'user', 'content' => $prompt],
-            ],
-            'temperature' => 0.7,
-        ]);
+                'model' => 'gpt-4',
+                'messages' => [
+                    ['role' => 'system', 'content' => 'Ты ассистент по подбору AI-капсул'],
+                    ['role' => 'user', 'content' => $prompt],
+                ],
+                'temperature' => 0.7,
+            ]);
 
         $json = $response->json();
-
-        $gptText = $json['choices'][0]['message']['content'] ?? null;
-        $capsules = json_decode($gptText, true);
+        $content = $json['choices'][0]['message']['content'] ?? '';
+        $capsules = json_decode($content, true);
 
         return [
-            'title' => $capsules[0]['title'] ?? 'Новая AI-капсула',
-            'description' => $capsules[0]['description'] ?? '',
-            'benefits' => $capsules[0]['benefits'] ?? '',
-            'all' => $capsules,
-            'raw' => $gptText,
+            'selected_capsules' => $capsules,
+            'raw' => $content,
+            'from' => [
+                'ready' => $ready->count(),
+                'planned' => $planned->count(),
+                'generated' => $generated->count(),
+            ]
         ];
     }
 }
