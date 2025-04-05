@@ -183,7 +183,7 @@
                     </div>
                 </div>
                 <div id="w-node-aba22806-be2b-d4e9-a863-7f8a5f0bac07-6488eae4" data-w-id="aba22806-be2b-d4e9-a863-7f8a5f0bac07" style="opacity:0" class="wrapper-btn">
-                    <a href="#" class="blue-button w-inline-block">
+                    <a href="#" class="blue-button popap-show w-inline-block">
                         <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                 <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -559,7 +559,7 @@
                     </div>
                 </div>
                 <div id="w-node-c5cdf4f1-3eef-9851-3008-373806288852-6488eae4" data-w-id="c5cdf4f1-3eef-9851-3008-373806288852" style="opacity:0" class="wrapper-btn">
-                    <a href="#" class="blue-button w-inline-block">
+                    <a href="#" class="blue-button popap-show w-inline-block">
                         <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                 <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -611,6 +611,55 @@
                 <div class="legal-link-bl">
                     <a href="#" class="legal-link">Политика конфиденциальности</a>
                     <a href="#" class="legal-link">Условия обслуживания</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup-section">
+        <div class="popup-overflow">
+            <div class="popup-bg"></div>
+            <div class="popup-container">
+                <div class="popup-form-grid">
+                    <div class="form-header-block">
+                        <div class="form-heading">Заявка на разработку</div>
+                        <div class="standart-text center-aling">Заполните свои данные и выберите капсулу над которой вы бы хотели работать или опишите свою идею</div>
+                    </div>
+                    <div class="popup-form-block w-form">
+                        <form method="POST" action="{{ route('requests.store') }}" class="form-block">
+                            @csrf
+                            <input type="hidden" name="request_type" value="разработка">
+                            <div class="form-row-grid">
+                                <div class="field-block">
+                                    <div class="input-text">Имя</div>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
+                                </div>
+                                <div class="field-block">
+                                    <div class="input-text">Почта</div>
+                                    <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
+                                </div>
+                                <div class="field-block">
+                                    <div class="input-text">Опишите Вашу идею</div>
+                                    <textarea name="message" placeholder="Описание" maxlength="5000" class="text-field message-field w-input"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" class="form-button w-button" value="Отправить">
+                        </form>
+                        <div class="success-messagge w-form-done">
+                            <div>Спасибо! Ваша заявка отправлена.</div>
+                        </div>
+                        <div class="error-message w-form-fail">
+                            <div>Что-то пошло не так. Попробуйте ещё раз.</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
+                    <div class="icon-close w-embed">
+                        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="none" height="100%" width="100%"></rect>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
