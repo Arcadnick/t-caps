@@ -290,7 +290,8 @@
                 </div>
             </div>
             <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
-                <div class="icon-close w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <div class="icon-close w-embed">
+                    <svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                         <rect fill="none" height="100%" width="100%"></rect>
                         <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
                         <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>

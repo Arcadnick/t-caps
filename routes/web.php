@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\CapsuleController;
+use App\Http\Controllers\RequestController;
 
 // Главная страница
 Route::get('/', [PageController::class, 'index'])->name('welcome');
@@ -43,6 +45,9 @@ Route::middleware('auth')->group(function () {
     //Route::get('/admin', [AdminController::class, 'index']);
 });
 
+Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsules');
+
+Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
 
 
 require __DIR__.'/auth.php';
