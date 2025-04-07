@@ -19,6 +19,9 @@ return new class extends Migration
             $table->enum('type', ['готовая', 'в планах', 'сгенерированная']);
             $table->boolean('is_blocked')->default(false);
             $table->text('content');
+            $table->json('automates')->nullable();
+            $table->json('expected')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

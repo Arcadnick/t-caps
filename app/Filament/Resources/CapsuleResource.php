@@ -8,6 +8,7 @@ use App\Models\Capsule;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Fieldset;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
@@ -28,40 +29,19 @@ class CapsuleResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-//    public static function form(Form $form): Form
-//    {
-//        return $form
-//            ->schema([
-//                Forms\Components\TextInput::make('title')
-//                    ->required()
-//                    ->maxLength(255),
-//                Forms\Components\TextInput::make('slug')
-//                    ->required()
-//                    ->maxLength(255),
-//                Forms\Components\TextInput::make('category_id')
-//                    ->required()
-//                    ->numeric(),
-//                Forms\Components\TextInput::make('type')
-//                    ->required()
-//                    ->maxLength(255),
-//                Forms\Components\Toggle::make('is_blocked')
-//                    ->required(),
-//                Forms\Components\Textarea::make('content')
-//                    ->required()
-//                    ->columnSpanFull(),
-//            ]);
-//    }
-
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 TextInput::make('title')->required()->label('Название'),
+
                 TextInput::make('slug')->required()->label('Slug'),
+
                 Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required()
                     ->label('Категория'),
+
                 Select::make('type')
                     ->options([
                         'готовая' => 'Готовая',
@@ -70,50 +50,32 @@ class CapsuleResource extends Resource
                     ])
                     ->required()
                     ->label('Тип'),
+
                 RichEditor::make('content')
                     ->required()
                     ->label('Описание')
                     ->toolbarButtons(['bold', 'italic', 'link', 'undo', 'redo']),
+
                 Toggle::make('is_blocked')->label('Запрещена к показу'),
+
+                Fieldset::make('Что автоматизирует')
+                    ->schema([
+                        TextInput::make('automates.0')->label('Автоматизация #1'),
+                        TextInput::make('automates.1')->label('Автоматизация #2'),
+                        TextInput::make('automates.2')->label('Автоматизация #3'),
+                    ]),
+
+                Fieldset::make('Ожидаемый результат')
+                    ->schema([
+                        TextInput::make('expected.0')->label('Результат #1'),
+                        TextInput::make('expected.1')->label('Результат #2'),
+                        TextInput::make('expected.2')->label('Результат #3'),
+                    ]),
+
+                TextInput::make('image')->label('Ссылка на изображение')->nullable(),
             ]);
     }
 
-//    public static function table(Table $table): Table
-//    {
-//        return $table
-//            ->columns([
-//                Tables\Columns\TextColumn::make('title')
-//                    ->searchable(),
-//                Tables\Columns\TextColumn::make('slug')
-//                    ->searchable(),
-//                Tables\Columns\TextColumn::make('category_id')
-//                    ->numeric()
-//                    ->sortable(),
-//                Tables\Columns\TextColumn::make('type')
-//                    ->searchable(),
-//                Tables\Columns\IconColumn::make('is_blocked')
-//                    ->boolean(),
-//                Tables\Columns\TextColumn::make('created_at')
-//                    ->dateTime()
-//                    ->sortable()
-//                    ->toggleable(isToggledHiddenByDefault: true),
-//                Tables\Columns\TextColumn::make('updated_at')
-//                    ->dateTime()
-//                    ->sortable()
-//                    ->toggleable(isToggledHiddenByDefault: true),
-//            ])
-//            ->filters([
-//                //
-//            ])
-//            ->actions([
-//                Tables\Actions\EditAction::make(),
-//            ])
-//            ->bulkActions([
-//                Tables\Actions\BulkActionGroup::make([
-//                    Tables\Actions\DeleteBulkAction::make(),
-//                ]),
-//            ]);
-//    }
     public static function table(Table $table): Table
     {
         return $table
@@ -132,7 +94,6 @@ class CapsuleResource extends Resource
             ])
             ->bulkActions([
                 //DeleteBulkAction::make(),
-
             ]);
     }
 
