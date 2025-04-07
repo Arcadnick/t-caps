@@ -191,7 +191,7 @@
                 <section class="w-layout-grid capsules-grid">
                     @foreach($sortedCapsules as $capsule)
                         @php
-//                        dd($sortedCapsules);
+                            //dd($sortedCapsules);
                             $isReady = $capsule['type'] === 'готовая';
                             $isPlanned = $capsule['type'] === 'в планах';
                             $isGenerated = $capsule['type'] === 'сгенерированная';

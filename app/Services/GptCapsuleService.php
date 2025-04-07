@@ -4,8 +4,11 @@ namespace App\Services;
 
 use App\Models\Capsule;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use App\Models\Category;
 use App\Models\GeneratedCapsule;
+use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Http\Client\RequestException;
 
 class GptCapsuleService
 {
@@ -78,6 +81,9 @@ $capsuleText
 - Среднее количество часов, которое тратит человек в неделю (число)
 - Приблизительно на сколько процентов эффективнее будет использовать капсулу (число)
 
+если ты взял капсулу из массива из предоставленного, то она должна соответствовать type: готова.
+в ответ не пиши ничего кроме json
+
 Формат: JSON массив:
 [
   {
@@ -93,31 +99,62 @@ $capsuleText
 ]
 PROMPT;
 
-        set_time_limit(90);
+        try {
+            set_time_limit(90);
 
-        $response = Http::withToken(env('OPENAI_API_KEY'))
-            ->timeout(90)
-            ->post('https://api.openai.com/v1/chat/completions', [
-                'model' => 'gpt-4',
-                'messages' => [
-                    ['role' => 'system', 'content' => 'Ты ассистент по подбору AI-капсул'],
-                    ['role' => 'user', 'content' => $prompt],
-                ],
-                'temperature' => 0.7,
+            $response = Http::withToken(env('OPENAI_API_KEY'))
+                ->timeout(90)
+                ->post('https://api.openai.com/v1/chat/completions', [
+                    'model' => 'gpt-4',
+                    'messages' => [
+                        ['role' => 'system', 'content' => 'Ты ассистент по подбору AI-капсул'],
+                        ['role' => 'user', 'content' => $prompt],
+                    ],
+                    'temperature' => 0.7,
+                ]);
+
+            $json = $response->json();
+            $content = $json['choices'][0]['message']['content'] ?? '';
+
+            if (empty($content)) {
+                Log::error('Empty GPT response', ['json' => $json]);
+                return [];
+            }
+
+            $capsules = json_decode($content, true);
+
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                Log::error('Invalid GPT JSON response', [
+                    'error' => json_last_error_msg(),
+                    'content' => $content
+                ]);
+                return [];
+            }
+
+            Log::info('GPT response successful', ['category' => $categoryName, 'industry' => $industry]);
+
+            return [
+                'selected_capsules' => $capsules,
+                'raw' => $content,
+                'from' => [
+                    'ready' => $ready->count(),
+                    'planned' => $planned->count(),
+                    'generated' => $generated->count(),
+                ]
+            ];
+
+        } catch (ConnectionException $e) {
+            Log::error('GPT connection timeout', ['message' => $e->getMessage()]);
+            return [];
+        } catch (RequestException $e) {
+            Log::error('GPT API request error', [
+                'message' => $e->getMessage(),
+                'response' => optional($e->response)->body()
             ]);
-
-        $json = $response->json();
-        $content = $json['choices'][0]['message']['content'] ?? '';
-        $capsules = json_decode($content, true);
-
-        return [
-            'selected_capsules' => $capsules,
-            'raw' => $content,
-            'from' => [
-                'ready' => $ready->count(),
-                'planned' => $planned->count(),
-                'generated' => $generated->count(),
-            ]
-        ];
+            return [];
+        } catch (\Throwable $e) {
+            Log::critical('Unexpected error in GPTCapsuleService', ['message' => $e->getMessage()]);
+            return [];
+        }
     }
 }
