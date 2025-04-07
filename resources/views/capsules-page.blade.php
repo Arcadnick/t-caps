@@ -189,12 +189,14 @@
         <div class="container">
             @if(!empty($sortedCapsules))
                 <section class="w-layout-grid capsules-grid">
+
                     @foreach($sortedCapsules as $capsule)
                         @php
                             //dd($sortedCapsules);
                             $isReady = $capsule['type'] === 'готовая';
                             $isPlanned = $capsule['type'] === 'в планах';
                             $isGenerated = $capsule['type'] === 'сгенерированная';
+
                         @endphp
 
                         <div class="capsules-item">
@@ -203,10 +205,21 @@
                                 <div class="caps-circle-bl-bottom"></div>
                                 <img src="{{ asset('images/caps-2_1.png') }}" loading="lazy" alt=""
                                      class="img-small-caps">
-                                <img src="{{ asset('images/caps-4.png') }}" loading="lazy"
-                                     sizes="(max-width: 777px) 100vw, 777px"
-                                     srcset="images/caps-4-p-500.png 500w, {{ asset('images/caps-4.png') }} 777w" alt=""
-                                     class="capsules-page-img">
+                                @if($isReady)
+                                    <img src="{{ asset('images/'.$capsule['image'].'.png') }}" loading="lazy"
+                                         sizes="(max-width: 777px) 100vw, 777px"
+                                         srcset="images/caps-4-p-500.png 500w, {{ asset('images/'.$capsule['image'].'.png') }} 777w" alt=""
+                                         class="capsules-page-img">
+                                @else
+                                    <img src="{{ asset('images/caps-4.png') }}" loading="lazy"
+                                         sizes="(max-width: 777px) 100vw, 777px"
+                                         srcset="images/caps-4-p-500.png 500w, {{ asset('images/caps-4.png') }} 777w" alt=""
+                                         class="capsules-page-img">
+                                @endif
+{{--                                <img src="{{ asset('images/caps-4.png') }}" loading="lazy"--}}
+{{--                                     sizes="(max-width: 777px) 100vw, 777px"--}}
+{{--                                     srcset="images/caps-4-p-500.png 500w, {{ asset('images/'.$capsule['image'].'.png') }} 777w" alt=""--}}
+{{--                                     class="capsules-page-img">--}}
                                 <img src="{{ asset('images/caps-3.png') }}" loading="lazy" alt=""
                                      class="img-small-caps _3-v">
                                 <img src="{{ asset('images/caps--4.png') }}" loading="lazy" alt=""

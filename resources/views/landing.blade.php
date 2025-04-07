@@ -254,7 +254,7 @@
                                             </div>
                                         </div>
                                         <div class="wrapper-post-card-image">
-                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image) }}" alt="" class="post-card-image">
+                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image . '.jpg') }}" alt="" class="post-card-image">
                                         </div>
                                     </div>
                                 @endforeach
@@ -396,7 +396,7 @@
                                             </div>
                                         </div>
                                         <div class="wrapper-post-card-image">
-                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image) }}" alt="" class="post-card-image">
+                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image . '.jpg') }}" alt="" class="post-card-image">
                                         </div>
                                     </div>
                                 @endforeach
@@ -538,7 +538,7 @@
                                             </div>
                                         </div>
                                         <div class="wrapper-post-card-image">
-                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image) }}" alt="" class="post-card-image">
+                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image . '.jpg') }}" alt="" class="post-card-image">
                                         </div>
                                     </div>
                                 @endforeach
@@ -680,7 +680,7 @@
                                             </div>
                                         </div>
                                         <div class="wrapper-post-card-image">
-                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image) }}" alt="" class="post-card-image">
+                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image . '.jpg') }}" alt="" class="post-card-image">
                                         </div>
                                     </div>
                                 @endforeach
@@ -822,10 +822,11 @@
                                             </div>
                                         </div>
                                         <div class="wrapper-post-card-image">
-                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image) }}" alt="" class="post-card-image">
+                                            <img loading="lazy" src="{{ asset('images/' . $capsule->image . '.jpg') }}" alt="" class="post-card-image">
                                         </div>
                                     </div>
                                 @endforeach
+
                             </div>
                         </div>
                     </div>

@@ -19,12 +19,12 @@ class GptCapsuleService
         $ready = Capsule::where('category_id', $category->id)
             ->where('type', 'готовая')
             ->where('is_blocked', false)
-            ->get(['title', 'content', 'type']);
+            ->get(['title', 'content', 'type','image']);
 
         $planned = Capsule::where('category_id', $category->id)
             ->where('type', 'в планах')
             ->where('is_blocked', false)
-            ->get(['title', 'content', 'type']);
+            ->get(['title', 'content', 'type','image']);
 
         $generated = GeneratedCapsule::where('category_id', $category->id)
             ->where('user_input', $industry)
@@ -130,6 +130,19 @@ PROMPT;
                 ]);
                 return [];
             }
+
+            $readyMap = $ready->keyBy('title');
+            $plannedMap = $planned->keyBy('title');
+
+            foreach ($capsules as &$capsule) {
+                if ($capsule['type'] === 'готовая' && isset($readyMap[$capsule['title']])) {
+                    $capsule['image'] = $readyMap[$capsule['title']]->image;
+                }
+                if ($capsule['type'] === 'в планах' && isset($plannedMap[$capsule['title']])) {
+                    $capsule['image'] = $plannedMap[$capsule['title']]->image;
+                }
+            }
+            unset($capsule);
 
             Log::info('GPT response successful', ['category' => $categoryName, 'industry' => $industry]);
 
