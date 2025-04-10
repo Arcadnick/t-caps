@@ -964,7 +964,6 @@ a:hover {
 .favors-item.first {
   border-color: var(--picton-blue);
   background-color: #4baeeb1a;
-  /*justify-items: stretch;*/
 }
 
 .image-favors {
