@@ -30,9 +30,9 @@ Route::get('/consultation-page', [PageController::class, 'consultation'])->name(
 // Логин
 Route::get('/login', [PageController::class, 'login'])->name('login');
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/terms-and-conditions', [PageController::class, 'termsandconditions'])->name('termsandconditions');
+
+Route::get('/privacy-policy', [PageController::class, 'privacypolicy'])->name('privacypolicy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

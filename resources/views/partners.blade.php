@@ -202,13 +202,13 @@
             <div class="w-layout-grid footer-grid">
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756eab4-b756eab1" class="footer-logo-block">
                     <div class="heading mirage-f">дщпщ</div>
-                    <a href="#" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
+                    <a href="{{ route('welcome') }}" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Навигация</div>
-                    <a href="#" class="footer-link">AI-капсулы</a>
-                    <a href="#" class="footer-link">Как работает</a>
-                    <a href="#" class="footer-link">Партнерам</a>
+                    <a href="{{ route('landing') }}" class="footer-link">AI-капсулы</a>
+                    <a href="{{ route('welcome') }}#howWorkGrid" class="footer-link">Как работает</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Партнерам</a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Контакты</div>
@@ -216,20 +216,20 @@
                     <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
                     <div class="footer-text">г. Екатеринбург, ул.<br>Библиотечная 25</div>
                     <div class="footer-text">ИНН: 6658420044</div>
-                    <a href="#" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
+                    <a href="https://t.me/Time_Capsule_AI" target="_blank" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
                 </div>
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
-                        <a href="#" class="button-base footer w-button">Заказать консультацию</a>
-                        <a href="#" class="button-base footer w-button">Войти</a>
+                        <a href="{{ route('consultation') }}" class="button-base footer w-button">Заказать консультацию</a>
+                        <a href="{{ route('login') }}" class="button-base footer w-button">Войти</a>
                     </div>
                 </div>
             </div>
             <div class="bottom-footer-block">
-                <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
+                <div class="small-text-footer">© Since 2012 ООО &quot;РУ-Ю&quot;</div>
                 <div class="legal-link-bl">
-                    <a href="#" class="legal-link">Политика конфиденциальности</a>
-                    <a href="#" class="legal-link">Условия обслуживания</a>
+                    <a href="{{ route('privacypolicy') }}" class="legal-link">Политика конфиденциальности</a>
+                    <a href="{{ route('termsandconditions') }}" class="legal-link">Условия обслуживания</a>
                 </div>
             </div>
         </div>
@@ -288,7 +288,7 @@
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('capsule-in-development') }}" class="nav-link-block w-inline-block">
+                    <a href="{{ route('welcome') }}#howWorkGrid" class="nav-link-block w-inline-block">
                         <div>Как работает</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -314,7 +314,7 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>

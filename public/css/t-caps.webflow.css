@@ -964,7 +964,7 @@ a:hover {
 .favors-item.first {
   border-color: var(--picton-blue);
   background-color: #4baeeb1a;
-  justify-items: stretch;
+  /*justify-items: stretch;*/
 }
 
 .image-favors {
@@ -2489,7 +2489,7 @@ a:hover {
   }
 
   .search-item {
-    height: 4.75rem;
+    /*height: 4.75rem;*/
   }
 
   .search-item:hover {

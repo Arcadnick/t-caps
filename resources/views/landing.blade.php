@@ -31,7 +31,7 @@
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('capsule-in-development') }}" class="nav-link-block w-inline-block">
+                    <a href="{{ route('welcome') }}#howWorkGrid" class="nav-link-block w-inline-block">
                         <div>Как работает</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -57,7 +57,7 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>
@@ -118,7 +118,7 @@
                 <div class="tabs-content w-tab-content">
                     <div data-w-tab="Tab 2" class="tab-pane w-tab-pane w--tab-active">
                         <div class="container max-width">
-                            <div data-w-id="e5f29382-ce17-dd83-79eb-b99c306798c0" style="opacity:0" class="h2-block">
+                            <div data-w-id="e5f29382-ce17-dd83-79eb-b99c306798c0" class="h2-block">
                                 <h2>Маркетинг</h2>
                                 <div class="subheader">AI-капсулы для автоматизации Маркетинга</div>
                             </div>
@@ -249,7 +249,7 @@
                                                             <path d="M11.8656 19.7535C11.9827 19.2334 12.7239 19.2334 12.8411 19.7535L13.0571 20.7124C13.0995 20.9007 13.2466 21.0478 13.435 21.0903L14.3938 21.3062C14.914 21.4234 14.914 22.1646 14.3938 22.2818L13.435 22.4978C13.2466 22.5402 13.0995 22.6873 13.0571 22.8757L12.8411 23.8345C12.7239 24.3547 11.9827 24.3547 11.8656 23.8345L11.6496 22.8757C11.6071 22.6873 11.46 22.5402 11.2717 22.4978L10.3128 22.2818C9.79268 22.1646 9.79268 21.4234 10.3128 21.3062L11.2717 21.0903C11.46 21.0478 11.6071 20.9007 11.6496 20.7124L11.8656 19.7535Z" fill="white"></path>
                                                         </svg>
                                                     </div>
-                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Заказать капсулу' }}</div>
+                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Подключить капсулу' }}</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -263,7 +263,7 @@
                     </div>
                     <div data-w-tab="Tab 3" class="tab-pane w-tab-pane">
                         <div class="container max-width">
-                            <div data-w-id="b826c38b-f668-1cbb-c570-30f0cdc4b023" style="opacity:0" class="h2-block">
+                            <div class="h2-block">
                                 <h2>Контент</h2>
                                 <div class="subheader">AI-капсулы для создания  контента</div>
                             </div>
@@ -391,7 +391,7 @@
                                                             <path d="M11.8656 19.7535C11.9827 19.2334 12.7239 19.2334 12.8411 19.7535L13.0571 20.7124C13.0995 20.9007 13.2466 21.0478 13.435 21.0903L14.3938 21.3062C14.914 21.4234 14.914 22.1646 14.3938 22.2818L13.435 22.4978C13.2466 22.5402 13.0995 22.6873 13.0571 22.8757L12.8411 23.8345C12.7239 24.3547 11.9827 24.3547 11.8656 23.8345L11.6496 22.8757C11.6071 22.6873 11.46 22.5402 11.2717 22.4978L10.3128 22.2818C9.79268 22.1646 9.79268 21.4234 10.3128 21.3062L11.2717 21.0903C11.46 21.0478 11.6071 20.9007 11.6496 20.7124L11.8656 19.7535Z" fill="white"></path>
                                                         </svg>
                                                     </div>
-                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Заказать капсулу' }}</div>
+                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Подключить капсулу' }}</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -405,7 +405,7 @@
                     </div>
                     <div data-w-tab="Tab 4" class="tab-pane w-tab-pane">
                         <div class="container max-width">
-                            <div data-w-id="5d39b80c-5cac-9e6a-ada0-d0b4a59ee3b5" style="opacity:0" class="h2-block">
+                            <div class="h2-block">
                                 <h2>Рекрутинг</h2>
                                 <div class="subheader">AI-капсулы</div>
                             </div>
@@ -533,7 +533,7 @@
                                                             <path d="M11.8656 19.7535C11.9827 19.2334 12.7239 19.2334 12.8411 19.7535L13.0571 20.7124C13.0995 20.9007 13.2466 21.0478 13.435 21.0903L14.3938 21.3062C14.914 21.4234 14.914 22.1646 14.3938 22.2818L13.435 22.4978C13.2466 22.5402 13.0995 22.6873 13.0571 22.8757L12.8411 23.8345C12.7239 24.3547 11.9827 24.3547 11.8656 23.8345L11.6496 22.8757C11.6071 22.6873 11.46 22.5402 11.2717 22.4978L10.3128 22.2818C9.79268 22.1646 9.79268 21.4234 10.3128 21.3062L11.2717 21.0903C11.46 21.0478 11.6071 20.9007 11.6496 20.7124L11.8656 19.7535Z" fill="white"></path>
                                                         </svg>
                                                     </div>
-                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Заказать капсулу' }}</div>
+                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Подключить капсулу' }}</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -547,7 +547,7 @@
                     </div>
                     <div data-w-tab="Tab 5" class="tab-pane w-tab-pane">
                         <div class="container max-width">
-                            <div data-w-id="816ca650-4334-497c-e326-584b7fd9f3b3" style="opacity:0" class="h2-block">
+                            <div class="h2-block">
                                 <h2>Бизнес</h2>
                                 <div class="subheader">AI-капсулы</div>
                             </div>
@@ -675,7 +675,7 @@
                                                             <path d="M11.8656 19.7535C11.9827 19.2334 12.7239 19.2334 12.8411 19.7535L13.0571 20.7124C13.0995 20.9007 13.2466 21.0478 13.435 21.0903L14.3938 21.3062C14.914 21.4234 14.914 22.1646 14.3938 22.2818L13.435 22.4978C13.2466 22.5402 13.0995 22.6873 13.0571 22.8757L12.8411 23.8345C12.7239 24.3547 11.9827 24.3547 11.8656 23.8345L11.6496 22.8757C11.6071 22.6873 11.46 22.5402 11.2717 22.4978L10.3128 22.2818C9.79268 22.1646 9.79268 21.4234 10.3128 21.3062L11.2717 21.0903C11.46 21.0478 11.6071 20.9007 11.6496 20.7124L11.8656 19.7535Z" fill="white"></path>
                                                         </svg>
                                                     </div>
-                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Заказать капсулу' }}</div>
+                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Подключить капсулу' }}</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -689,7 +689,7 @@
                     </div>
                     <div data-w-tab="Tab 6" class="tab-pane w-tab-pane">
                         <div class="container max-width">
-                            <div data-w-id="33b9bfe2-3301-f5d6-739f-a6f68e1127fe" style="opacity:0" class="h2-block">
+                            <div class="h2-block">
                                 <h2>IT</h2>
                                 <div class="subheader">AI-капсулы</div>
                             </div>
@@ -817,7 +817,7 @@
                                                             <path d="M11.8656 19.7535C11.9827 19.2334 12.7239 19.2334 12.8411 19.7535L13.0571 20.7124C13.0995 20.9007 13.2466 21.0478 13.435 21.0903L14.3938 21.3062C14.914 21.4234 14.914 22.1646 14.3938 22.2818L13.435 22.4978C13.2466 22.5402 13.0995 22.6873 13.0571 22.8757L12.8411 23.8345C12.7239 24.3547 11.9827 24.3547 11.8656 23.8345L11.6496 22.8757C11.6071 22.6873 11.46 22.5402 11.2717 22.4978L10.3128 22.2818C9.79268 22.1646 9.79268 21.4234 10.3128 21.3062L11.2717 21.0903C11.46 21.0478 11.6071 20.9007 11.6496 20.7124L11.8656 19.7535Z" fill="white"></path>
                                                         </svg>
                                                     </div>
-                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Заказать капсулу' }}</div>
+                                                    <div>{{ $isReady ? 'Запустить капсулу' : 'Подключить капсулу' }}</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -844,13 +844,13 @@
             <div class="w-layout-grid footer-grid">
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756eab4-b756eab1" class="footer-logo-block">
                     <div class="heading mirage-f">дщпщ</div>
-                    <a href="#" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
+                    <a href="{{ route('welcome') }}" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Навигация</div>
-                    <a href="#" class="footer-link">AI-капсулы</a>
-                    <a href="#" class="footer-link">Как работает</a>
-                    <a href="#" class="footer-link">Партнерам</a>
+                    <a href="{{ route('landing') }}" class="footer-link">AI-капсулы</a>
+                    <a href="{{ route('welcome') }}#howWorkGrid" class="footer-link">Как работает</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Партнерам</a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Контакты</div>
@@ -858,20 +858,20 @@
                     <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
                     <div class="footer-text">г. Екатеринбург, ул.<br>Библиотечная 25</div>
                     <div class="footer-text">ИНН: 6658420044</div>
-                    <a href="#" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
+                    <a href="https://t.me/Time_Capsule_AI" target="_blank" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
                 </div>
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
-                        <a href="#" class="button-base footer w-button">Заказать консультацию</a>
-                        <a href="#" class="button-base footer w-button">Войти</a>
+                        <a href="{{ route('consultation') }}" class="button-base footer w-button">Заказать консультацию</a>
+                        <a href="{{ route('login') }}" class="button-base footer w-button">Войти</a>
                     </div>
                 </div>
             </div>
             <div class="bottom-footer-block">
-                <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
+                <div class="small-text-footer">© Since 2012 ООО &quot;РУ-Ю&quot;</div>
                 <div class="legal-link-bl">
-                    <a href="#" class="legal-link">Политика конфиденциальности</a>
-                    <a href="#" class="legal-link">Условия обслуживания</a>
+                    <a href="{{ route('privacypolicy') }}" class="legal-link">Политика конфиденциальности</a>
+                    <a href="{{ route('termsandconditions') }}" class="legal-link">Условия обслуживания</a>
                 </div>
             </div>
         </div>

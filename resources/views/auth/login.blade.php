@@ -10,9 +10,9 @@
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('https://fonts.googleapis.com') }}" rel="preconnect">
-    <link href="{{ asset('https://fonts.gstatic.com') }}" rel="preconnect" crossorigin="anonymous">
-    <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js') }}" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]  }});</script>
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
     <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/x-icon">
@@ -31,7 +31,7 @@
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('capsule-in-development') }}" class="nav-link-block w-inline-block">
+                    <a href="{{ route('welcome') }}#howWorkGrid" class="nav-link-block w-inline-block">
                         <div>Как работает</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -109,7 +109,7 @@
                         </div>
 
                         <!-- Remember Me -->
-                        <div class="small-text gray-color center-aling">
+                        <div class="small-text gray-color">
                             <label>
                                 <input type="checkbox" name="remember">
                                 Запомнить меня
@@ -125,7 +125,11 @@
                     <div class="action-block">
                         <button type="submit" class="form-button w-button">Войти</button>
                         <div class="small-text gray-color center-aling">
-                            Ознакомьтесь с <a href="#" class="small-link">Политикой конфиденциальности</a> и <a href="#" class="small-link">пользовательским соглашением</a>
+                            Доступ получают пользователи, подключившие хотя бы одну AI-Капсулу.
+                            Самостоятельная регистрация недоступна.
+                        </div>
+                        <div class="small-text gray-color center-aling">
+                            Ознакомьтесь с <a href="{{ route('privacypolicy') }}" class="small-link">Политикой конфиденциальности</a> и <a href="{{ route('termsandconditions') }}" class="small-link">пользовательским соглашением</a>
                         </div>
                     </div>
                 </form>
@@ -138,13 +142,13 @@
         <div class="w-layout-grid footer-grid">
             <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756eab4-b756eab1" class="footer-logo-block">
                 <div class="heading mirage-f">дщпщ</div>
-                <a href="#" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
+                <a href="{{ route('welcome') }}" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-time-caps-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
             </div>
             <div class="footer-link-block">
                 <div class="heading-footer">Навигация</div>
-                <a href="#" class="footer-link">AI-капсулы</a>
-                <a href="#" class="footer-link">Как работает</a>
-                <a href="#" class="footer-link">Партнерам</a>
+                <a href="{{ route('landing') }}" class="footer-link">AI-капсулы</a>
+                <a href="{{ route('welcome') }}#howWorkGrid" class="footer-link">Как работает</a>
+                <a href="{{ route('partners') }}" class="footer-link">Партнерам</a>
             </div>
             <div class="footer-link-block">
                 <div class="heading-footer">Контакты</div>
@@ -156,57 +160,16 @@
             </div>
             <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                 <div class="wrapper-btn left-aling">
-                    <a href="#" class="button-base footer w-button">Заказать консультацию</a>
-                    <a href="#" class="button-base footer w-button">Войти</a>
+                    <a href="{{ route('consultation') }}" class="button-base footer w-button">Заказать консультацию</a>
+                    <a href="{{ route('login') }}" class="button-base footer w-button">Войти</a>
                 </div>
             </div>
         </div>
         <div class="bottom-footer-block">
-            <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
+            <div class="small-text-footer">© Since 2012 ООО &quot;РУ-Ю&quot;</div>
             <div class="legal-link-bl">
-                <a href="#" class="legal-link">Политика конфиденциальности</a>
-                <a href="#" class="legal-link">Условия обслуживания</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="popup-section">
-    <div class="popup-overflow">
-        <div class="popup-bg"></div>
-        <div class="popup-container">
-            <div class="popup-form-grid">
-                <div class="form-header-block">
-                    <div class="form-heading">Заявка на разработку</div>
-                    <div class="standart-text center-aling">Заполните свои данные и выберите капсулу над которой вы бы хотели работать или опишите свою идею</div>
-                </div>
-                <div class="popup-form-block w-form">
-                    <form id="wf-form-Email-form" name="wf-form-Email-form" data-name="Email form" method="get" class="form-block" data-wf-page-id="67e50b5295fa03bbbc021d82" data-wf-element-id="4ee6f207-47d2-888e-2b36-068482ba3c23">
-                        <div class="form-row-grid">
-                            <div class="field-block">
-                                <div class="input-text">Имя</div><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Введите Ваше имя" type="text" id="Name" required="">
-                            </div>
-                            <div class="field-block">
-                                <div class="input-text">Почта</div><input class="text-field w-node-_4ee6f207-47d2-888e-2b36-068482ba3c27-82ba3c18 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Введите Вашу почту" type="tel" id="Phone" required="">
-                            </div>
-                            <div class="field-block">
-                                <div class="input-text">Опишите Вашу идею</div><textarea placeholder="Описание" maxlength="5000" id="Message" name="Message" data-name="Message" class="text-field message-field w-input"></textarea>
-                            </div>
-                        </div><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Отправить">
-                    </form>
-                    <div class="success-messagge w-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="error-message w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>
-                </div>
-            </div>
-            <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
-                <div class="icon-close w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="none" height="100%" width="100%"></rect>
-                        <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
-                        <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>
-                    </svg></div>
+                <a href="{{ route('privacypolicy') }}" class="legal-link">Политика конфиденциальности</a>
+                <a href="{{ route('termsandconditions') }}" class="legal-link">Условия обслуживания</a>
             </div>
         </div>
     </div>

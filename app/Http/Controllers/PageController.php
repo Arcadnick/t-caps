@@ -53,4 +53,14 @@ class PageController extends Controller
     {
         return view('login');
     }
+
+    public function termsandconditions()
+    {
+        return view('terms-and-conditions');
+    }
+    //Политика конфиденциальности
+    public function privacypolicy()
+    {
+        return view('privacy-policy');
+    }
 }
