@@ -4238,3 +4238,17 @@ a:hover {
   font-style: normal;
   font-display: swap;
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    background-color: #4BAEEB;
+    border-radius: 25%;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
