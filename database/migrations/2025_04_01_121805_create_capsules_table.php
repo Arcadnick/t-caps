@@ -22,6 +22,13 @@ return new class extends Migration
             $table->json('automates')->nullable();
             $table->json('expected')->nullable();
             $table->string('image')->nullable();
+
+            // новые поля
+            $table->string('landing_url')->nullable(); // ссылка на лендинг
+            $table->boolean('use_default_page')->default(true); // использовать типовую страницу
+            $table->decimal('default_price', 10, 2)->nullable(); // цена по умолчанию
+            $table->json('default_integrations')->nullable(); // список интеграций
+
             $table->timestamps();
         });
     }

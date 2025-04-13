@@ -58,11 +58,25 @@ class CapsuleController extends Controller
         $sortedCapsules = $decoded['selected_capsules'] ?? [];
 
         return view('capsules-page', [
-            'capsules' => $capsules, // необязательные, если используешь только gpt
+            'capsules' => $capsules,
             'generated' => $existingGeneration,
             'sortedCapsules' => $sortedCapsules,
             'industry' => $industry,
             'category' => $category,
         ]);
     }
+    public function showDefault($slug)
+    {
+        $capsule = Capsule::where('slug', $slug)
+            ->where('use_default_page', true)
+            ->firstOrFail();
+
+        return view('capsule-in-development', [
+            'capsule' => $capsule,
+            'price' => $capsule->default_price,
+            'integrations' => $capsule->default_integrations,
+            'capsule' => $capsule,
+        ]);
+    }
+
 }

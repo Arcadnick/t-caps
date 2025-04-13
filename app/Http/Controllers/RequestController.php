@@ -17,6 +17,7 @@ class RequestController extends Controller
         $time = $request->input('selected_time');
         $request_type = $request->input('request_type');
         $message = $request->input('message');
+        $capsule_id = $request->input('capsule_id');
 
         $parsedDate = null;
         if ($date) {
@@ -29,6 +30,7 @@ class RequestController extends Controller
 
         RequestModel::create([
             'user_name' => $userName,
+            'capsule_id'=> $capsule_id,
             'email' => $email,
             'phone' => $phone,
             'message' => $message,

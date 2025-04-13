@@ -15,9 +15,6 @@ Route::get('/capsules-page', [PageController::class, 'capsules'])->name('capsule
 // Автоответы
 Route::get('/auto-response-page', [PageController::class, 'autoResponse'])->name('auto-response');
 
-// Капсула в разработке
-Route::get('/capsule-in-development', [PageController::class, 'capsuleInDevelopment'])->name('capsule-in-development');
-
 // Лендинг капсулы
 Route::get('/landing', [PageController::class, 'landing'])->name('landing');
 
@@ -49,5 +46,8 @@ Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsule
 
 Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
 
+Route::get('/capsule-in-development/{slug}', [CapsuleController::class, 'showDefault'])->name('capsule.default');
+
+Route::get('/developed-capsule-page',[PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 require __DIR__.'/auth.php';

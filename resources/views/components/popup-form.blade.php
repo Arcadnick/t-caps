@@ -131,48 +131,6 @@
 </script>
 
 <script>
-    function setCurrentDateTime() {
-        const now = new Date();
-        const date = now.toLocaleDateString('ru-RU').replace(/\//g, '.'); // формат dd.mm.yyyy
-        const time = now.toTimeString().slice(0, 5); // формат hh:mm
-
-        const dateInput = document.getElementById('popupSelectedDateInput');
-        const timeInput = document.getElementById('popupSelectedTimeInput');
-
-        if (dateInput) dateInput.value = date;
-        if (timeInput) timeInput.value = time;
-    }
-
-    const observer = new MutationObserver((mutations) => {
-        mutations.forEach(mutation => {
-            mutation.addedNodes.forEach(node => {
-                if (
-                    node.nodeType === 1 &&
-                    node.classList.contains('popup-section') &&
-                    node.classList.contains('popap-show')
-                ) {
-                    setCurrentDateTime();
-                }
-            });
-        });
-
-        // Также обрабатываем случаи, когда класс добавляется динамически
-        const popup = document.querySelector('.popup-section');
-        if (popup && popup.classList.contains('popap-show')) {
-            setCurrentDateTime();
-        }
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    // Также на всякий случай при загрузке страницы
-    document.addEventListener("DOMContentLoaded", () => {
-        const popup = document.querySelector('.popup-section.popap-show');
-        if (popup) setCurrentDateTime();
-    });
-</script>
-
-<script>
     function closePopup() {
         document.querySelectorAll('.popap-show').forEach(el => {
             el.classList.remove('popap-show');

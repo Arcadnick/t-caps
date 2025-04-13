@@ -16,12 +16,19 @@ class Capsule extends Model
         'automates',
         'expected',
         'image',
+        'landing_url',
+        'use_default_page',
+        'default_price',
+        'default_integrations',
     ];
 
     protected $casts = [
         'automates' => 'array',
         'expected' => 'array',
+        'default_integrations' => 'array',
         'is_blocked' => 'boolean',
+        'use_default_page' => 'boolean',
+        'default_price' => 'decimal:2',
     ];
 
     public function category()

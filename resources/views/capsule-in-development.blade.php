@@ -10,9 +10,9 @@
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('https://fonts.googleapis.com') }}" rel="preconnect">
-    <link href="{{ asset('https://fonts.gstatic.com') }}" rel="preconnect" crossorigin="anonymous">
-    <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js') }}" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]  }});</script>
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
     <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/x-icon">
@@ -57,7 +57,7 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>
@@ -210,7 +210,7 @@
             <div class="w-layout-grid step-grid">
                 <div id="w-node-c5cdf4f1-3eef-9851-3008-37380628880d-6488eae4" data-w-id="c5cdf4f1-3eef-9851-3008-37380628880d" style="opacity:0" class="price-item">
                     <div class="h3-block">
-                        <h3 class="price-heading">99 000 ₽</h3>
+                        <h3 class="price-heading">{{ number_format($price, 0, ',', ' ') }} ₽</h3>
                         <p class="left-aling">Разработка кастомной AI-Капсулы</p>
                     </div>
                     <div class="text-block">
@@ -225,7 +225,8 @@
                         <div class="box-padding-12 bg-color">
                             <div class="grid-icon center-aling gap-12">
                                 <div class="wrapper-icon-bg min-size">
-                                    <div class="icon-palantir w-embed"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="icon-palantir w-embed">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_dd_164_577)">
                                                 <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>
                                                 <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>
@@ -234,44 +235,45 @@
                                                 <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>
                                             </g>
                                             <defs>
-                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feflood flood-opacity="0" result="BackgroundImageFix">
-                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                            <feoffset dy="1">
-                                                                <fegaussianblur stddeviation="1">
-                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">
-                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">
-                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                                                <feoffset dy="1">
-                                                                                    <fegaussianblur stddeviation="1.5">
-                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">
-                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">
-                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">
-                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>
-                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">
+                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                    <feOffset dy="1"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0"></feColorMatrix>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577"></feBlend>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                    <feOffset dy="1"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0"></feColorMatrix>
+                                                    <feBlend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577"></feBlend>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape"></feBlend>
+                                                </filter>
+                                                <linearGradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="#56A0D9"></stop>
                                                     <stop offset="1" stop-color="#2886CE"></stop>
-                                                </lineargradient>
-                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">
+                                                </linearGradient>
+                                                <radialGradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 2) rotate(90) scale(12)">
                                                     <stop stop-color="white" stop-opacity="0"></stop>
                                                     <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>
                                                     <stop offset="0.99" stop-color="white"></stop>
                                                     <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">
+                                                </radialGradient>
+                                                <radialGradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 10) rotate(90) scale(8)">
                                                     <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>
                                                     <stop offset="1" stop-color="white"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">
+                                                </radialGradient>
+                                                <radialGradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 6.6) rotate(90) scale(7)">
                                                     <stop stop-color="white"></stop>
                                                     <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">
+                                                </radialGradient>
+                                                <linearGradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientUnits="userSpaceOnUse">
                                                     <stop stop-color="white"></stop>
                                                     <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
-                                                </lineargradient>
+                                                </linearGradient>
                                             </defs>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <p class="left-aling">Обученный AI-ассистент, созданный под ваши задачи</p>
                             </div>
@@ -391,168 +393,120 @@
                         <h3>Дополнительные интеграции</h3>
                     </div>
                     <div class="w-layout-grid rows-grid">
-                        <div class="box-padding-12 bg-color">
-                            <div class="grid-icon center-aling gap-12">
-                                <div class="wrapper-icon-bg min-size">
-                                    <div class="icon-palantir w-embed"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_dd_164_577)">
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>
-                                                <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feflood flood-opacity="0" result="BackgroundImageFix">
-                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                            <feoffset dy="1">
-                                                                <fegaussianblur stddeviation="1">
-                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">
-                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">
-                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                                                <feoffset dy="1">
-                                                                                    <fegaussianblur stddeviation="1.5">
-                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">
-                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">
-                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">
-                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>
-                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="#56A0D9"></stop>
-                                                    <stop offset="1" stop-color="#2886CE"></stop>
-                                                </lineargradient>
-                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">
-                                                    <stop stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.99" stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">
-                                                    <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="1" stop-color="white"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
-                                                </lineargradient>
-                                            </defs>
-                                        </svg></div>
+{{--                        <div class="box-padding-12 bg-color">--}}
+{{--                            <div class="grid-icon center-aling gap-12">--}}
+{{--                                <div class="wrapper-icon-bg min-size">--}}
+{{--                                    <div class="icon-palantir w-embed">--}}
+{{--                                        <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                            <g filter="url(#filter0_dd_164_577)">--}}
+{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>--}}
+{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>--}}
+{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>--}}
+{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>--}}
+{{--                                                <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>--}}
+{{--                                            </g>--}}
+{{--                                            <defs>--}}
+{{--                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">--}}
+{{--                                                    <feflood flood-opacity="0" result="BackgroundImageFix">--}}
+{{--                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">--}}
+{{--                                                            <feoffset dy="1">--}}
+{{--                                                                <fegaussianblur stddeviation="1">--}}
+{{--                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">--}}
+{{--                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">--}}
+{{--                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">--}}
+{{--                                                                                <feoffset dy="1">--}}
+{{--                                                                                    <fegaussianblur stddeviation="1.5">--}}
+{{--                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">--}}
+{{--                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">--}}
+{{--                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">--}}
+{{--                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>--}}
+{{--                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">--}}
+{{--                                                    <stop stop-color="#56A0D9"></stop>--}}
+{{--                                                    <stop offset="1" stop-color="#2886CE"></stop>--}}
+{{--                                                </lineargradient>--}}
+{{--                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">--}}
+{{--                                                    <stop stop-color="white" stop-opacity="0"></stop>--}}
+{{--                                                    <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>--}}
+{{--                                                    <stop offset="0.99" stop-color="white"></stop>--}}
+{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>--}}
+{{--                                                </radialgradient>--}}
+{{--                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">--}}
+{{--                                                    <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>--}}
+{{--                                                    <stop offset="1" stop-color="white"></stop>--}}
+{{--                                                </radialgradient>--}}
+{{--                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">--}}
+{{--                                                    <stop stop-color="white"></stop>--}}
+{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>--}}
+{{--                                                </radialgradient>--}}
+{{--                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">--}}
+{{--                                                    <stop stop-color="white"></stop>--}}
+{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>--}}
+{{--                                                </lineargradient>--}}
+{{--                                            </defs>--}}
+{{--                                        </svg></div>--}}
+{{--                                </div>--}}
+{{--                                <p class="left-aling">CRM-системы <span class="opacity-color-50">Битрикс24, AmoCRM, HubSpot и др.</span></p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+                        @if ($integrations && is_array($integrations))
+                                @foreach ($integrations as $integration)
+                                <div class="box-padding-12 bg-color">
+                                    <div class="grid-icon center-aling gap-12">
+                                        <div class="wrapper-icon-bg min-size">
+                                            <div class="icon-palantir w-embed">
+                                                <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_dd_164_577)">
+                                                        <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>
+                                                        <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>
+                                                        <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>
+                                                        <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>
+                                                        <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feflood flood-opacity="0" result="BackgroundImageFix">
+                                                                <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                                                    <feoffset dy="1">
+                                                                        <fegaussianblur stddeviation="1">
+                                                                            <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">
+                                                                                <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">
+                                                                                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                                                                        <feoffset dy="1">
+                                                                                            <fegaussianblur stddeviation="1.5">
+                                                                                                <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">
+                                                                                                    <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">
+                                                                                                        <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">
+                                                                                                        </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>
+                                                        <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">
+                                                            <stop stop-color="#56A0D9"></stop>
+                                                            <stop offset="1" stop-color="#2886CE"></stop>
+                                                        </lineargradient>
+                                                        <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">
+                                                            <stop stop-color="white" stop-opacity="0"></stop>
+                                                            <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>
+                                                            <stop offset="0.99" stop-color="white"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                                        </radialgradient>
+                                                        <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">
+                                                            <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>
+                                                            <stop offset="1" stop-color="white"></stop>
+                                                        </radialgradient>
+                                                        <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">
+                                                            <stop stop-color="white"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                                        </radialgradient>
+                                                        <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">
+                                                            <stop stop-color="white"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
+                                                        </lineargradient>
+                                                    </defs>
+                                                </svg></div>
+                                        </div>
+                                        <p class="left-aling">{{ $integration }}</p>
+                                    </div>
                                 </div>
-                                <p class="left-aling">CRM-системы <span class="opacity-color-50">Битрикс24, AmoCRM, HubSpot и др.</span></p>
-                            </div>
-                        </div>
-                        <div class="box-padding-12 bg-color">
-                            <div class="grid-icon center-aling gap-12">
-                                <div class="wrapper-icon-bg min-size">
-                                    <div class="icon-palantir w-embed"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_dd_164_577)">
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>
-                                                <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feflood flood-opacity="0" result="BackgroundImageFix">
-                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                            <feoffset dy="1">
-                                                                <fegaussianblur stddeviation="1">
-                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">
-                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">
-                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                                                <feoffset dy="1">
-                                                                                    <fegaussianblur stddeviation="1.5">
-                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">
-                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">
-                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">
-                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>
-                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="#56A0D9"></stop>
-                                                    <stop offset="1" stop-color="#2886CE"></stop>
-                                                </lineargradient>
-                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">
-                                                    <stop stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.99" stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">
-                                                    <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="1" stop-color="white"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
-                                                </lineargradient>
-                                            </defs>
-                                        </svg></div>
-                                </div>
-                                <p class="left-aling">Мессенджеры <span class="opacity-color-50">WhatsApp, Telegram, Instagram и др.</span></p>
-                            </div>
-                        </div>
-                        <div class="box-padding-12 bg-color">
-                            <div class="grid-icon center-aling gap-12">
-                                <div class="wrapper-icon-bg min-size">
-                                    <div class="icon-palantir w-embed"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_dd_164_577)">
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>
-                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>
-                                                <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feflood flood-opacity="0" result="BackgroundImageFix">
-                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                            <feoffset dy="1">
-                                                                <fegaussianblur stddeviation="1">
-                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">
-                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">
-                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
-                                                                                <feoffset dy="1">
-                                                                                    <fegaussianblur stddeviation="1.5">
-                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">
-                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">
-                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">
-                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>
-                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="#56A0D9"></stop>
-                                                    <stop offset="1" stop-color="#2886CE"></stop>
-                                                </lineargradient>
-                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">
-                                                    <stop stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="0.99" stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">
-                                                    <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>
-                                                    <stop offset="1" stop-color="white"></stop>
-                                                </radialgradient>
-                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                                                </radialgradient>
-                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">
-                                                    <stop stop-color="white"></stop>
-                                                    <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
-                                                </lineargradient>
-                                            </defs>
-                                        </svg></div>
-                                </div>
-                                <p class="left-aling">Системы аналитики и учёта</p>
-                            </div>
-                        </div>
+                                @endforeach
+                        @endif
                     </div>
                     <div class="text-block">
                         <p class="left-aling">Точную стоимость интеграции мы рассчитаем бесплатно после заявки!</p>
@@ -627,22 +581,32 @@
                     <div class="popup-form-block w-form">
                         <form method="POST" action="{{ route('requests.store') }}" class="form-block">
                             @csrf
-                            <input type="hidden" name="request_type" value="разработка">
+
+                            <input type="hidden" name="request_type" value="подключение">
+                            <input type="hidden" name="capsule_id" value="{{$capsule->id}}">
+
                             <div class="form-row-grid">
                                 <div class="field-block">
                                     <div class="input-text">Имя</div>
-                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите имя" type="text" required>
                                 </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Номер телефона</div>
+                                    <input class="text-field w-input" maxlength="18" name="phone" placeholder="+7 (___) ___-__-__" type="text" id="popupPhoneInput" required>
+                                </div>
+
                                 <div class="field-block">
                                     <div class="input-text">Почта</div>
                                     <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
                                 </div>
-                                <div class="field-block">
-                                    <div class="input-text">Опишите Вашу идею</div>
-                                    <textarea name="message" placeholder="Описание" maxlength="5000" class="text-field message-field w-input"></textarea>
-                                </div>
+
+{{--                                <div class="field-block">--}}
+{{--                                    <div class="input-text">Опишите Вашу идею</div>--}}
+{{--                                    <textarea name="message" placeholder="Описание" maxlength="5000" class="text-field message-field w-input" style="resize: none"></textarea>--}}
+{{--                                </div>--}}
                             </div>
-                            <input type="submit" class="form-button w-button" value="Отправить">
+                            <input type="submit" class="form-button w-button" value="Оставить заявку">
                         </form>
                         <div class="success-messagge w-form-done">
                             <div>Спасибо! Ваша заявка отправлена.</div>
@@ -665,7 +629,24 @@
         </div>
     </section>
 </div>
-<script src="{{ asset('https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae') }}" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const popupPhoneInput = document.getElementById('popupPhoneInput');
+
+        popupPhoneInput.addEventListener('input', function () {
+            let x = this.value.replace(/\D/g, '').slice(1);
+            let formatted = '+7';
+
+            if (x.length > 0) formatted += ' (' + x.substring(0, 3);
+            if (x.length >= 4) formatted += ') ' + x.substring(3, 6);
+            if (x.length >= 7) formatted += '-' + x.substring(6, 8);
+            if (x.length >= 9) formatted += '-' + x.substring(8, 10);
+
+            this.value = formatted;
+        });
+    });
+</script>
 </body>
 </html>
