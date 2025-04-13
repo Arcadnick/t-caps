@@ -31,7 +31,7 @@
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('welcome') }}#howWorkGrid" aria-current="page" class="nav-link-block w-inline-block w--current">
+                    <a href="{{ route('welcome') }}#howWorkGrid" aria-current="page" class="nav-link-block w-inline-block">
                         <div>Как работает</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>

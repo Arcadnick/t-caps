@@ -31,7 +31,12 @@ class RequestResource extends Resource
         return $form
             ->schema([
                 TextInput::make('user_name')->label('Имя')->required(),
-                TextInput::make('email')->label('Email')->email()->required(),
+                TextInput::make('email')->label('Email')->email(),
+                TextInput::make('phone')
+                    ->label('Телефон')
+                    ->placeholder('+7 (___) ___-__-__')
+                    ->maxLength(18)
+                    ->tel(),
                 TextInput::make('message')->label('Сообщение'),
                 Select::make('capsule_id')
                     ->relationship('capsule', 'title')
@@ -50,6 +55,8 @@ class RequestResource extends Resource
                         'закрыта' => 'Закрыта',
                     ])
                     ->label('Статус'),
+                TextInput::make('consultation_date'),
+                TextInput::make('consultation_time'),
             ]);
     }
 
@@ -59,6 +66,7 @@ class RequestResource extends Resource
             ->columns([
                 TextColumn::make('user_name')->label('Имя'),
                 TextColumn::make('email')->label('Email'),
+                TextColumn::make('phone')->label('Телефон'),
                 TextColumn::make('capsule.title')->label('Капсула'),
                 TextColumn::make('request_type')->label('Тип'),
                 TextColumn::make('status')->label('Статус'),

@@ -66,7 +66,7 @@
                         <a href="{{ route('login') }}" class="button-base navbar-btn blue-color w-inline-block">
                             <div>Войти</div>
                         </a>
-                        <a href="#" class="button-base navbar-btn w-inline-block"><img
+                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block"><img
                                 src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt=""
                                 class="icon-whatsapp">
                             <div>Связаться в Telegram</div>

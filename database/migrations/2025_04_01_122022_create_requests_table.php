@@ -15,16 +15,19 @@ return new class extends Migration
             $table->id();
             $table->foreignId('capsule_id')->nullable()->constrained()->onDelete('set null');
             $table->string('user_name');
-            $table->string('email');
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
             $table->text('message')->nullable();
             $table->enum('request_type', ['подключение', 'разработка', 'консультация']);
             $table->enum('status', ['новая', 'в работе', 'закрыта'])->default('новая');
+            $table->date('consultation_date')->nullable();
+            $table->time('consultation_time')->nullable();
             $table->timestamps();
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations
      */
     public function down(): void
     {

@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div data-w-id="780b7d4d-e9d2-97a5-29c8-7ecd785ddb89" style="opacity:0" class="wrapper-btn">
-                <a href="#" class="blue-button w-inline-block">
+                <a href="{{ route('landing') }}" class="blue-button w-inline-block">
                     <div>Все AI капсулы</div>
                 </a>
             </div>
@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div data-w-id="5231aef4-b560-be81-52cb-e5752cf44460" style="opacity:0" class="wrapper-btn">
-                <a href="#" class="blue-button w-inline-block">
+                <a href="{{ route('landing') }}" class="blue-button w-inline-block">
                     <div>Выбрать AI-Капсулу для разработки</div>
                 </a>
             </div>
@@ -235,47 +235,7 @@
         </div>
     </section>
 </div>
-<section class="popup-section">
-    <div class="popup-overflow">
-        <div class="popup-bg"></div>
-        <div class="popup-container">
-            <div class="popup-form-grid">
-                <div class="form-header-block">
-                    <div class="form-heading">Заявка на разработку</div>
-                    <div class="standart-text center-aling">Заполните свои данные и выберите капсулу над которой вы бы хотели работать или опишите свою идею</div>
-                </div>
-                <div class="popup-form-block w-form">
-                    <form id="wf-form-Email-form" name="wf-form-Email-form" data-name="Email form" method="get" class="form-block" data-wf-page-id="67e4123fc3c98f89e4d172ec" data-wf-element-id="4ee6f207-47d2-888e-2b36-068482ba3c23">
-                        <div class="form-row-grid">
-                            <div class="field-block">
-                                <div class="input-text">Имя</div><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Введите Ваше имя" type="text" id="Name" required="">
-                            </div>
-                            <div class="field-block">
-                                <div class="input-text">Почта</div><input class="text-field w-node-_4ee6f207-47d2-888e-2b36-068482ba3c27-82ba3c18 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Введите Вашу почту" type="tel" id="Phone" required="">
-                            </div>
-                            <div class="field-block">
-                                <div class="input-text">Опишите Вашу идею</div><textarea placeholder="Описание" maxlength="5000" id="Message" name="Message" data-name="Message" class="text-field message-field w-input"></textarea>
-                            </div>
-                        </div><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Отправить">
-                    </form>
-                    <div class="success-messagge w-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="error-message w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>
-                </div>
-            </div>
-            <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
-                <div class="icon-close w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="none" height="100%" width="100%"></rect>
-                        <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
-                        <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>
-                    </svg></div>
-            </div>
-        </div>
-    </div>
-</section>
+<x-popup-form />
 <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out" data-easing2="ease-in-out" role="banner" class="navbar w-nav">
     <div class="nav-container">
         <a href="{{ route('welcome') }}" class="nav-logo w-nav-brand"><img src="{{ asset('images/logo-time-caps.svg') }}" loading="lazy" alt="" class="logo"></a>
@@ -304,7 +264,7 @@
                         <a href="{{ route('login') }}" class="button-base navbar-btn blue-color w-inline-block">
                             <div>Войти</div>
                         </a>
-                        <a href="#" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
+                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
                             <div>Связаться в Telegram</div>
                         </a>
                         <a href="{{ route('consultation') }}" class="button-base navbar-btn w-inline-block">

@@ -7,7 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Request extends Model
 {
     protected $fillable = [
-        'capsule_id', 'user_name', 'email', 'message', 'request_type', 'status'
+        'capsule_id',
+        'user_name',
+        'email',
+        'phone',
+        'message',
+        'request_type',
+        'status',
+        'consultation_date',
+        'consultation_time'
     ];
 
     public function capsule()

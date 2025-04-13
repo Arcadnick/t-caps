@@ -47,7 +47,7 @@
                         <a href="{{ route('login') }}" aria-current="page" class="button-base navbar-btn blue-color w-inline-block w--current">
                             <div>Войти</div>
                         </a>
-                        <a href="#" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
+                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
                             <div>Связаться в Telegram</div>
                         </a>
                         <a href="{{ route('consultation') }}" class="button-base navbar-btn w-inline-block">
@@ -57,7 +57,7 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>
@@ -156,7 +156,7 @@
                 <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
                 <div class="footer-text">г. Екатеринбург, ул.<br>Библиотечная 25</div>
                 <div class="footer-text">ИНН: 6658420044</div>
-                <a href="#" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="social-block w-inline-block"><img src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
             </div>
             <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                 <div class="wrapper-btn left-aling">
