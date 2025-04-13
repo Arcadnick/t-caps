@@ -52,9 +52,13 @@ class CapsuleResource extends Resource
                 RichEditor::make('content')
                     ->required()
                     ->label('Описание')
-                    ->toolbarButtons(['bold', 'italic', 'link', 'undo', 'redo']),
+                    ->toolbarButtons(['undo', 'redo']),
 
                 Toggle::make('is_blocked')->label('Запрещена к показу'),
+
+                TextInput::make('image')
+                    ->label('Название изображения без расширения (изображения должны быть загружены с одинаковым названием для landing \'.jpg\', для страницы capsules \'.png\')')
+                    ->nullable(),
 
                 Fieldset::make('Что автоматизирует')
                     ->schema([
@@ -70,7 +74,30 @@ class CapsuleResource extends Resource
                         TextInput::make('expected.2')->label('Результат #3'),
                     ]),
 
-                TextInput::make('image')->label('Ссылка на изображение')->nullable(),
+                Fieldset::make('Настройки страницы и стоимости')
+                    ->schema([
+                        TextInput::make('landing_url')
+                            ->label('Ссылка на лендинг капсулы')
+                            //->url()
+                            ->nullable(),
+
+                        Toggle::make('use_default_page')
+                            ->label('Использовать типовую страницу'),
+
+                        TextInput::make('default_price')
+                            ->label('Цена по умолчанию (типовая страница)')
+                            ->numeric()
+                            ->inputMode('decimal')
+                            ->suffix('₽')
+                            ->nullable(),
+
+                        Fieldset::make('Интеграции по умолчанию')
+                            ->schema([
+                                TextInput::make('default_integrations.0')->label('Интеграция #1'),
+                                TextInput::make('default_integrations.1')->label('Интеграция #2'),
+                                TextInput::make('default_integrations.2')->label('Интеграция #3'),
+                            ]),
+                    ])
             ]);
     }
 
