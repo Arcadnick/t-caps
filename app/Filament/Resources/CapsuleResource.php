@@ -58,7 +58,8 @@ class CapsuleResource extends Resource
 
                 TextInput::make('image')
                     ->label('Название изображения без расширения (изображения должны быть загружены с одинаковым названием для landing \'.jpg\', для страницы capsules \'.png\')')
-                    ->nullable(),
+                    ->nullable()
+                    ->required(),
 
                 Fieldset::make('Что автоматизирует')
                     ->schema([

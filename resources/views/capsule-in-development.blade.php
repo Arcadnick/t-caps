@@ -57,7 +57,7 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>

@@ -630,15 +630,11 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Получаем хэш из URL
         var hash = window.location.hash;
 
-        // Если хэш присутствует и соответствует элементу на странице
         if (hash) {
-            // Получаем элемент по идентификатору
             var targetElement = document.querySelector(hash);
 
-            // Прокручиваем до элемента
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
             }
@@ -652,7 +648,7 @@
         const clickableButtons = document.querySelectorAll('.dropdown-link, .favors-item');
         const submitButton = document.getElementById('submit-capsule-search');
 
-        let selectedCategory = null;
+        let selectedCategory = "Продажи";
 
         clickableButtons.forEach((btn) => {
             btn.addEventListener('click', function (e) {

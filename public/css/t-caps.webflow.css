@@ -708,7 +708,6 @@ a:hover {
 
 .close-popup-btn {
   cursor: pointer;
-  background-color: #adb9c345;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -716,7 +715,6 @@ a:hover {
   height: 35px;
   padding: 5px;
   transition: all .15s;
-  display: none;
   position: absolute;
   inset: 1vw 1vw auto auto;
 }
@@ -986,7 +984,6 @@ a:hover {
 .favors-item.first {
   border-color: var(--picton-blue);
   background-color: #4baeeb1a;
-  justify-items: stretch;
 }
 
 .image-favors {
@@ -1482,6 +1479,11 @@ a:hover {
   font-size: .75rem;
   line-height: 1.2rem;
   text-decoration: none;
+  transition: all .4s;
+}
+
+.legal-link:hover{
+    color:white;
 }
 
 .hero-shapes-wrapper, .icon-nav-arrow, .button-nav-block {
@@ -3089,7 +3091,7 @@ a:hover {
   }
 
   .search-item {
-    height: 4.75rem;
+    /*height: 4.75rem;*/
   }
 
   .search-item:hover {
@@ -4888,7 +4890,17 @@ a:hover {
     text-decoration: none;
     transition: all .4s;
     display: flex;
+      .selected {
+          background-color: #f0f7ff;
+          border-radius: 6px;
+      }
   }
+
+    .dropdown-link-time.selected {
+        background-color: #f0f7ff;
+        border-radius: 6px;
+    }
+
 
   .dropdown-link-time:hover {
     background-color: #adb9c31a;
@@ -4900,68 +4912,6 @@ a:hover {
 
   .small-text {
     font-size: 14px;
-  }
-
-  .heading-privacy-block {
-    width: 100%;
-  }
-
-  .focus-blue-block {
-    flex-flow: row;
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .left-side {
-    grid-template-columns: 1fr;
-  }
-
-  .text-what-does-bl {
-    font-size: 14px;
-  }
-
-  .right-side {
-    border-radius: 24px;
-    padding: 24px;
-  }
-
-  .who-will-fit-grid {
-    min-height: auto;
-  }
-
-  .who-will-fit-left {
-    padding: 1.5rem 1rem;
-  }
-
-  .tabs-link-who-will-fit.w--current {
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-  }
-
-  .tabs-menu-who-will-fit {
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .container-tabs-who-will-fit {
-    width: 100%;
-  }
-
-  .caps-absolute {
-    width: 120px;
-    height: 120px;
-    top: 10%;
-  }
-
-  .caps-medium {
-    width: 80px;
-    height: 80px;
-  }
-
-  .caps-medium.min-s {
-    inset: 50% 10% auto auto;
   }
 }
 
@@ -5097,4 +5047,18 @@ a:hover {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    background-color: #4BAEEB;
+    border-radius: 25%;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
