@@ -22,7 +22,7 @@ class GptCapsuleService
         $generatedCapsules = GeneratedCapsule::where('is_blocked', false)->get(['id', 'title', 'gpt_response_json', 'category_id']);
 
         $allCapsulesText = $allCapsules->map(function ($item, $i) {
-            return ($i + 1) . ". [{$item->id}] {$item->title}: {$item->categy->name}";
+            return ($i + 1) . ". [{$item->id}] {$item->title}: {$item->content}";
         })->implode("\n");
 
         $prompt = <<<PROMPT
