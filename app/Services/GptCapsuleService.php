@@ -18,11 +18,11 @@ class GptCapsuleService
 
         $category = Category::where('name', $categoryName)->firstOrFail();
 
-        $allCapsules = Capsule::where('is_blocked', false)->get(['id', 'title', 'content', 'type', 'image', 'category_id']);
+        $allCapsules = Capsule::where('is_blocked', false)->get(['id', 'title', 'content', 'category_id']);
         $generatedCapsules = GeneratedCapsule::where('is_blocked', false)->get(['id', 'title', 'gpt_response_json', 'category_id']);
 
-        $allCapsulesText = $allCapsules->take(10)->map(function ($item, $i) {
-            return ($i + 1) . ". [{$item->type}] {$item->title}: {$item->content}";
+        $allCapsulesText = $allCapsules->map(function ($item, $i) {
+            return ($i + 1) . ". [{$item->id}] {$item->title}: {$item->categy->name}";
         })->implode("\n");
 
         $prompt = <<<PROMPT
@@ -90,6 +90,7 @@ PROMPT;
                 Log::error('Empty GPT response', ['json' => $json]);
                 return [];
             }
+            Log::info('GPT content', [$content]);
 
             $sections = preg_split('/(?<=\])\s*\n(?=\[)/', trim($content));
             $recommended = json_decode($sections[0] ?? '[]', true);
