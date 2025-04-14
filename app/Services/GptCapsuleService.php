@@ -131,6 +131,8 @@ PROMPT;
             }
 
             $final = collect($recommended)->merge($generated);
+            Log::info('FINAL', [$final]);
+            Log::info('final2.0', [$final->shuffle()->values()->all()]);
             return $final->shuffle()->values()->all();
 
         } catch (ConnectionException $e) {
