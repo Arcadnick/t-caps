@@ -197,7 +197,7 @@
                             $isGenerated = isset($capsule['type']) && $capsule['type'] === 'сгенерированная';
 
                             $image = 'caps-4';
-                            $link='#';
+                            $link=route('develop-generated-capsule');
 
                             if (!$isGenerated && isset($capsule['capsule_id']) && isset($capsuleMap[$capsule['capsule_id']])) {
                                 $capsuleData = $capsuleMap[$capsule['capsule_id']];
