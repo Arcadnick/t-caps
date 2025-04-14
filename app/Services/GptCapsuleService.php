@@ -96,6 +96,9 @@ PROMPT;
             $recommended = json_decode($sections[0] ?? '[]', true);
             $generated = json_decode($sections[1] ?? '[]', true);
 
+            Log::info('RECOMENDED', [$recommended]);
+            Log::info('GENERATED', [$generated]);
+
             if (json_last_error() !== JSON_ERROR_NONE) {
                 Log::error('Invalid GPT JSON response', ['error' => json_last_error_msg(), 'content' => $content]);
                 return [];
