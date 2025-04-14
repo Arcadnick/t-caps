@@ -25,9 +25,9 @@ class PageController extends Controller
     }
 
     // Капсула в разработке
-    public function capsuleInDevelopment()
+    public function developGeneratedCapsule()
     {
-        return view('capsule-in-development');
+        return view('develop-generated-capsule');
     }
 
     // Лендинг капсулы

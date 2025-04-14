@@ -723,7 +723,7 @@
                 </div>
             </div>
             <div class="bottom-footer-block">
-                <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
+                <div class="small-text-footer">© Since 2012 ООО &quot;РУ-Ю&quot;</div>
                 <div class="legal-link-bl">
                     <a href="{{ route('privacypolicy') }}" class="legal-link">Политика конфиденциальности</a>
                     <a href="{{ route('termsandconditions') }}" class="legal-link">Условия обслуживания</a>
