@@ -79,7 +79,7 @@ PROMPT;
                     'temperature' => 0.7,
                 ]);
 
-            Log::info('GPT responded');
+            Log::info('GPT responded', ['response' => $response->json()]);
 
             $json = $response->json();
             $content = $json['choices'][0]['message']['content'] ?? '';
