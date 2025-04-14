@@ -48,6 +48,8 @@ Route::post('/requests', [RequestController::class, 'store'])->name('requests.st
 
 Route::get('/capsule-in-development/{slug}', [CapsuleController::class, 'showDefault'])->name('capsule.default');
 
+//Route::get('/capsule-in-development', [CapsuleController::class, 'capsuleInDevelopment'])->name('capsuleInDevelopment');
+
 Route::get('/developed-capsule-page',[PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 require __DIR__.'/auth.php';

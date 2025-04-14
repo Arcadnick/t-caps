@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\RequestException;
+use App\Models\GptCapsuleResponse;
+
 
 class GptCapsuleService
 {
@@ -37,11 +39,12 @@ $allCapsulesText
 
 1. Из них выбери 2–4 капсулы, которые максимально подходят под сферу "$industry".
    Если в текущей категории мало подходящих, выбери из других, максимально похожих по смыслу.
-   ВАЖНО!!! Ответ должен быть получен в формате JSON
+   ВАЖНО!!! Ответ должен быть получен в формате JSON, учитывай description - 80 символов, advantage - 20 символо, automates - 20 символов, average_hours_per_week - число, efficiency_percentage - число
    Формат ответа:
 [
   {
     "capsule_id": "...",
+    "title": "...",
     "description": "...",
     "advantages": "...",
     "automates": "...",
@@ -52,7 +55,7 @@ $allCapsulesText
 
 2. Если получилось меньше 9 капсул — сгенерируй недостающие капсулы (до 9 в сумме).
    Убедись, что они отличаются от существующих.
-   ВАЖНО!!! Ответ должен быть получен в формате JSON
+   ВАЖНО!!! Ответ должен быть получен в формате JSON, учитывай description - 80 символов, advantage - 20 символо, automates - 20 символов, average_hours_per_week - число, efficiency_percentage - число
    Формат сгенерированных:
 [
   {
@@ -90,20 +93,15 @@ PROMPT;
                 Log::error('Empty GPT response', ['json' => $json]);
                 return [];
             }
-            Log::info('GPT content', [$content]);
-
-//            $sections = preg_split('/(?<=\])\s*\n(?=\[)/', trim($content));
-//            $recommended = json_decode($sections[0] ?? '[]', true);
-//            $generated = json_decode($sections[1] ?? '[]', true);
+            //Log::info('GPT content', [$content]);
 
             preg_match_all('/\[\s*\{.*?\}\s*\]/s', $content, $matches);
 
             $recommended = isset($matches[0][0]) ? json_decode($matches[0][0], true) : [];
             $generated = isset($matches[0][1]) ? json_decode($matches[0][1], true) : [];
 
-
-            Log::info('RECOMENDED', [$recommended]);
-            Log::info('GENERATED', [$generated]);
+            //Log::info('RECOMENDED', [$recommended]);
+            //Log::info('GENERATED', [$generated]);
 
             if (json_last_error() !== JSON_ERROR_NONE) {
                 Log::error('Invalid GPT JSON response', ['error' => json_last_error_msg(), 'content' => $content]);
@@ -131,8 +129,15 @@ PROMPT;
             }
 
             $final = collect($recommended)->merge($generated);
-            Log::info('FINAL', [$final]);
-            Log::info('final2.0', [$final->shuffle()->values()->all()]);
+            //Log::info('FINAL', [$final]);
+            Log::info('FINAL:', [$final->shuffle()->values()->all()]);
+
+            GptCapsuleResponse::create([
+                'category_id' => $category->id,
+                'user_input' => $industry,
+                'response_json' => $final->values()->all(),
+            ]);
+
             return $final->shuffle()->values()->all();
 
         } catch (ConnectionException $e) {

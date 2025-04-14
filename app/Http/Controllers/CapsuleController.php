@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Capsule;
 use App\Models\Category;
-use App\Models\GeneratedCapsule;
 use Illuminate\Http\Request;
 use App\Services\GptCapsuleService;
+use App\Models\GptCapsuleResponse;
 
 class CapsuleController extends Controller
 {
@@ -25,46 +25,66 @@ class CapsuleController extends Controller
             return redirect()->route('welcome')->with('error', 'Категория не найдена.');
         }
 
-        $capsules = Capsule::where('category_id', $category->id)
-            ->where('is_blocked', false)
-            ->get();
+//        $capsules = Capsule::where('category_id', $category->id)
+//            ->where('is_blocked', false)
+//            ->get();
+        $capsules = Capsule::where('is_blocked', false)->get();
+
+        $capsuleMap = $capsules->mapWithKeys(function ($item) {
+            return [
+                $item->id => [
+                    'image' => $item->image,
+                    'slug' => $item->slug,
+                    'landing_url' => $item->landing_url,
+                ],
+            ];
+        })->toArray();
 
         $regenerate = $request->get('regenerate');
+        $gptService = app(GptCapsuleService::class);
 
-        $existingGeneration = GeneratedCapsule::where('category_id', $category->id)
-            ->where('user_input', $industry)
-            ->first();
+        // Если регенерация запрошена или нет вообще капсул по данной сфере — генерируем
+//        if ($regenerate || !GeneratedCapsule::where('category_id', $category->id)->where('user_input', $industry)->exists()) {
+//            $finalCapsules = $gptService->generateCapsule($category->name, $industry);
+//        } else {
+//            // Просто берём последние 9 подходящих (если они уже есть)
+//            $generatedCapsules = GeneratedCapsule::where('category_id', $category->id)
+//                ->where('user_input', $industry)
+//                ->where('is_blocked', false)
+//                ->latest()
+//                ->take(9)
+//                ->get();
+//
+//            $finalCapsules = $generatedCapsules->map(function ($item) {
+//                $data = json_decode($item->gpt_response_json, true);
+//                $data['title'] = $item->title;
+//                return $data;
+//            })->shuffle()->values()->all();
+//        }
 
-        if ($regenerate || !$existingGeneration) {
-            $gptService = app(GptCapsuleService::class);
-            $response = $gptService->generateCapsule($category->name, $industry);
-
-            GeneratedCapsule::create([
-                'title' => $response['selected_capsules'][0]['title'] ?? 'AI-капсулы',
-                'category_id' => $category->id,
-                'user_input' => $industry,
-                'gpt_response_json' => json_encode($response),
-            ]);
-
-            $existingGeneration = GeneratedCapsule::where('category_id', $category->id)
-                ->where('user_input', $industry)
-                ->orderByDesc('created_at')
-                ->first();
+        if ($regenerate || !GptCapsuleResponse::where('category_id', $category->id)->where('user_input', $industry)->exists()) {
+            $finalCapsules = $gptService->generateCapsule($category->name, $industry);
         } else {
-            $existingGeneration->increment('used_count');
-        }
+            $response = GptCapsuleResponse::where('category_id', $category->id)
+                ->where('user_input', $industry)
+                ->latest()
+                ->first();
 
-        $decoded = json_decode($existingGeneration->gpt_response_json, true);
-        $sortedCapsules = $decoded['selected_capsules'] ?? [];
+            $data = $response->response_json;
+
+            $finalCapsules = is_array($data) ? $data : json_decode($data ?? '[]', true);
+            $finalCapsules = collect($finalCapsules)->shuffle()->values()->all();
+        }
 
         return view('capsules-page', [
             'capsules' => $capsules,
-            'generated' => $existingGeneration,
-            'sortedCapsules' => $sortedCapsules,
-            'industry' => $industry,
             'category' => $category,
+            'industry' => $industry,
+            'final' => $finalCapsules,
+            'capsuleMap' => $capsuleMap,
         ]);
     }
+
     public function showDefault($slug)
     {
         $capsule = Capsule::where('slug', $slug)
@@ -75,8 +95,6 @@ class CapsuleController extends Controller
             'capsule' => $capsule,
             'price' => $capsule->default_price,
             'integrations' => $capsule->default_integrations,
-            'capsule' => $capsule,
         ]);
     }
-
 }
