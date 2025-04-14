@@ -92,9 +92,15 @@ PROMPT;
             }
             Log::info('GPT content', [$content]);
 
-            $sections = preg_split('/(?<=\])\s*\n(?=\[)/', trim($content));
-            $recommended = json_decode($sections[0] ?? '[]', true);
-            $generated = json_decode($sections[1] ?? '[]', true);
+//            $sections = preg_split('/(?<=\])\s*\n(?=\[)/', trim($content));
+//            $recommended = json_decode($sections[0] ?? '[]', true);
+//            $generated = json_decode($sections[1] ?? '[]', true);
+
+            preg_match_all('/\[\s*\{.*?\}\s*\]/s', $content, $matches);
+
+            $recommended = isset($matches[0][0]) ? json_decode($matches[0][0], true) : [];
+            $generated = isset($matches[0][1]) ? json_decode($matches[0][1], true) : [];
+
 
             Log::info('RECOMENDED', [$recommended]);
             Log::info('GENERATED', [$generated]);
