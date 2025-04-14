@@ -14,6 +14,8 @@ class GptCapsuleService
 {
     public function generateCapsule(string $categoryName, string $industry): array
     {
+        Log::info('Starting GPT generation...', ['category' => $categoryName, 'industry' => $industry]);
+
         $category = Category::where('name', $categoryName)->firstOrFail();
 
         $allCapsules = Capsule::where('is_blocked', false)->get(['id', 'title', 'content', 'type', 'image', 'category_id']);
@@ -127,6 +129,7 @@ PROMPT;
             ]);
             return [];
         } catch (\Throwable $e) {
+            Log::critical('GPT FAIL', ['msg' => $e->getMessage(), 'trace' => $e->getTraceAsString()]);
             Log::critical('Unexpected error in GPTCapsuleService', ['message' => $e->getMessage()]);
             return [];
         }
