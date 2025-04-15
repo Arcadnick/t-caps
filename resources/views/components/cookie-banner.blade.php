@@ -70,7 +70,7 @@
     }
 
     .cookie-button {
-        background-color: #3B82F6;
+        background-color: #4BAEEB;
         color: #fff;
         font-weight: 600;
         font-size: 14px;
