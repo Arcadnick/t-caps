@@ -338,7 +338,7 @@
 
                             <div class="wrapper-btn">
                                 <a href="{{ $link }}" class="blue-button {{ $isGenerated ? 'green-color' : '' }} max-width w-inline-block">
-                                    <div>{{ $isGenerated ? 'Заказать капсулу' : 'Готовая капсула' }}</div>
+                                    <div>Подключить капсулу</div>
                                 </a>
                             </div>
                         </div>
