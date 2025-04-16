@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PageResource\Pages;
-use App\Filament\Resources\PageResource\RelationManagers;
 use App\Models\Page;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -28,11 +27,29 @@ class PageResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')->label('Название')->required(),
-                TextInput::make('slug')->label('Slug')->required(),
+                TextInput::make('title')
+                    ->label('Название')
+                    ->disabled()
+                    ->required(),
+
+                TextInput::make('slug')
+                    ->label('Slug')
+                    ->disabled()
+                    ->required(),
+
+                TextInput::make('price')
+                    ->label('Стоимость капсулы')
+                    ->numeric()
+                    ->minValue(0)
+                    ->step(100)
+                    ->required()
+                    ->visible(fn ($record) => $record && $record->slug === 'develop-generated-capsule'),
+
                 RichEditor::make('content')
                     ->label('Контент')
-                    ->toolbarButtons(['bold', 'italic', 'link', 'undo', 'redo']),
+                    ->toolbarButtons(['undo', 'redo'])
+                    ->required()
+                    ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions'])),
             ]);
     }
 
@@ -45,7 +62,7 @@ class PageResource extends Resource
             ])
             ->actions([
                 EditAction::make(),
-                DeleteAction::make(),
+                //DeleteAction::make(),
             ]);
     }
 

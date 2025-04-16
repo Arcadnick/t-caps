@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\CapsuleController;
 use App\Http\Controllers\RequestController;
+use App\Models\Page;
 
 // Главная страница
 Route::get('/', [PageController::class, 'index'])->name('welcome');
@@ -27,9 +28,19 @@ Route::get('/consultation-page', [PageController::class, 'consultation'])->name(
 // Логин
 Route::get('/login', [PageController::class, 'login'])->name('login');
 
-Route::get('/terms-and-conditions', [PageController::class, 'termsandconditions'])->name('termsandconditions');
+//Route::get('/terms-and-conditions', [PageController::class, 'termsandconditions'])->name('termsandconditions');
 
-Route::get('/privacy-policy', [PageController::class, 'privacypolicy'])->name('privacypolicy');
+//Route::get('/privacy-policy', [PageController::class, 'privacypolicy'])->name('privacypolicy');
+
+Route::get('/privacy-policy', function () {
+    $page = Page::where('slug', 'privacy-policy')->firstOrFail();
+    return view('privacy-policy', ['content' => $page->content]);
+})->name('privacypolicy');
+
+Route::get('/terms-and-conditions', function () {
+    $page = Page::where('slug', 'terms-and-conditions')->firstOrFail();
+    return view('terms-and-conditions', ['content' => $page->content]);
+})->name('termsandconditions');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\models\Page;
 
 class PageController extends Controller
 {
@@ -27,7 +28,13 @@ class PageController extends Controller
     // Капсула в разработке
     public function developGeneratedCapsule()
     {
-        return view('develop-generated-capsule');
+        $page = Page::where('slug', 'develop-generated-capsule')->firstOrFail();
+
+        return view('develop-generated-capsule', [
+            'price' => $page->price,
+        ]);
+
+        //return view('develop-generated-capsule');
     }
 
     // Лендинг капсулы

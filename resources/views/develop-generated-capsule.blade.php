@@ -211,7 +211,7 @@
                 <div id="w-node-c5cdf4f1-3eef-9851-3008-37380628880d-6488eae4" data-w-id="c5cdf4f1-3eef-9851-3008-37380628880d" style="opacity:0" class="price-item">
                     <div class="h3-block">
 {{--                        123--}}
-                        <h3 class="price-heading">123 321 ₽</h3>
+                        <h3 class="price-heading">{{ number_format($price, 0, ',', ' ') }} ₽</h3>
 {{--                        123--}}
                         <p class="left-aling">Разработка кастомной AI-Капсулы</p>
                     </div>
