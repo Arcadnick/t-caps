@@ -766,8 +766,8 @@
 
                             <div class="form-row-grid">
                                 <div class="field-block">
-                                    <div class="input-text">Имя</div>
-                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите имя" type="text" required>
+                                    <div class="input-text">Как к вам обращаться?</div>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
                                 </div>
 
                                 <div class="field-block">

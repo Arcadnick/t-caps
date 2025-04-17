@@ -93,7 +93,7 @@
                     <div class="rows-form-block">
                         <div class="flex-vertical gap-6">
                             <label for="Name-consultation-page" class="input-text">Как к вам обращаться?</label>
-                            <input class="text-field w-input" maxlength="256" name="user_name" data-name="Name-consultation-page" placeholder="Введите имя" type="text" id="Name-consultation-page" required="">
+                            <input class="text-field w-input" maxlength="256" name="user_name" data-name="Name-consultation-page" placeholder="Введите Ваше имя" type="text" id="Name-consultation-page" required="">
                         </div>
                         <div class="flex-vertical gap-6">
                             <label for="phone" class="input-text">Номер телефона</label>
