@@ -21,7 +21,6 @@ class GptCapsuleService
         $category = Category::where('name', $categoryName)->firstOrFail();
 
         $allCapsules = Capsule::where('is_blocked', false)->get(['id', 'title', 'content', 'category_id']);
-        $generatedCapsules = GeneratedCapsule::where('is_blocked', false)->get(['id', 'title', 'gpt_response_json', 'category_id']);
 
         $allCapsulesText = $allCapsules->map(function ($item, $i) {
             return ($i + 1) . ". [{$item->id}] {$item->title}: {$item->content}";
@@ -84,7 +83,7 @@ PROMPT;
                     'temperature' => 0.7,
                 ]);
 
-            Log::info('GPT responded', ['response' => $response->json()]);
+            //Log::info('GPT responded', ['response' => $response->json()]);
 
             $json = $response->json();
             $content = $json['choices'][0]['message']['content'] ?? '';
@@ -99,9 +98,6 @@ PROMPT;
 
             $recommended = isset($matches[0][0]) ? json_decode($matches[0][0], true) : [];
             $generated = isset($matches[0][1]) ? json_decode($matches[0][1], true) : [];
-
-            //Log::info('RECOMENDED', [$recommended]);
-            //Log::info('GENERATED', [$generated]);
 
             if (json_last_error() !== JSON_ERROR_NONE) {
                 Log::error('Invalid GPT JSON response', ['error' => json_last_error_msg(), 'content' => $content]);
@@ -129,8 +125,7 @@ PROMPT;
             }
 
             $final = collect($recommended)->merge($generated);
-            //Log::info('FINAL', [$final]);
-            Log::info('FINAL:', [$final->shuffle()->values()->all()]);
+            //Log::info('FINAL:', [$final->shuffle()->values()->all()]);
 
             GptCapsuleResponse::create([
                 'category_id' => $category->id,

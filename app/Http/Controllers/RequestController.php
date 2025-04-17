@@ -51,22 +51,11 @@ class RequestController extends Controller
                 . "📅 Дата: {$date}\n"
                 . "🕓 Время: {$time}";
 
-            Log::info('TELEGRAM TOKEN: ' . $token);
-            Log::info('TELEGRAM CHAT ID: ' . $chatId);
-
-            $response = Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
+            Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
                 'chat_id' => $chatId,
                 'text' => $text,
                 'parse_mode' => 'HTML',
             ]);
-
-            Log::info('TELEGRAM RESPONSE: ' . $response->body());
-
-//            Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
-//                'chat_id' => $chatId,
-//                'text' => $text,
-//                'parse_mode' => 'HTML',
-//            ]);
         } catch (\Exception $e) {
             Log::error('Ошибка при отправке в Telegram: ' . $e->getMessage());
         }

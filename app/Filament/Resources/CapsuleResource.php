@@ -76,28 +76,55 @@ class CapsuleResource extends Resource
 
                 Fieldset::make('Настройки страницы и стоимости')
                     ->schema([
+                        Toggle::make('use_default_page')
+                            ->label('Использовать типовую страницу')
+                            ->reactive(),
+
                         TextInput::make('landing_url')
                             ->label('Ссылка на лендинг капсулы')
-                            //->url()
-                            ->nullable(),
-
-                        Toggle::make('use_default_page')
-                            ->label('Использовать типовую страницу'),
+                            ->nullable()
+                            ->visible(fn (callable $get) => !$get('use_default_page')),
 
                         TextInput::make('default_price')
                             ->label('Цена по умолчанию (типовая страница)')
                             ->numeric()
                             ->inputMode('decimal')
                             ->suffix('₽')
-                            ->nullable(),
+                            ->nullable()
+                            ->visible(fn (callable $get) => $get('use_default_page')),
 
                         Fieldset::make('Интеграции по умолчанию')
                             ->schema([
                                 Textarea::make('default_integrations.0')->label('Интеграция #1'),
                                 Textarea::make('default_integrations.1')->label('Интеграция #2'),
                                 Textarea::make('default_integrations.2')->label('Интеграция #3'),
-                            ]),
-                    ])
+                            ])
+                            ->visible(fn (callable $get) => $get('use_default_page')),
+                    ]),
+
+//                Fieldset::make('Настройки страницы и стоимости')
+//                    ->schema([
+//                        TextInput::make('landing_url')
+//                            ->label('Ссылка на лендинг капсулы')
+//                            ->nullable(),
+//
+//                        Toggle::make('use_default_page')
+//                            ->label('Использовать типовую страницу'),
+//
+//                        TextInput::make('default_price')
+//                            ->label('Цена по умолчанию (типовая страница)')
+//                            ->numeric()
+//                            ->inputMode('decimal')
+//                            ->suffix('₽')
+//                            ->nullable(),
+//
+//                        Fieldset::make('Интеграции по умолчанию')
+//                            ->schema([
+//                                Textarea::make('default_integrations.0')->label('Интеграция #1'),
+//                                Textarea::make('default_integrations.1')->label('Интеграция #2'),
+//                                Textarea::make('default_integrations.2')->label('Интеграция #3'),
+//                            ]),
+//                    ])
             ]);
     }
 
