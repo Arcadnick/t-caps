@@ -18,6 +18,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Filters\SelectFilter;
 
 
 class CapsuleResource extends Resource
@@ -101,30 +102,6 @@ class CapsuleResource extends Resource
                             ])
                             ->visible(fn (callable $get) => $get('use_default_page')),
                     ]),
-
-//                Fieldset::make('Настройки страницы и стоимости')
-//                    ->schema([
-//                        TextInput::make('landing_url')
-//                            ->label('Ссылка на лендинг капсулы')
-//                            ->nullable(),
-//
-//                        Toggle::make('use_default_page')
-//                            ->label('Использовать типовую страницу'),
-//
-//                        TextInput::make('default_price')
-//                            ->label('Цена по умолчанию (типовая страница)')
-//                            ->numeric()
-//                            ->inputMode('decimal')
-//                            ->suffix('₽')
-//                            ->nullable(),
-//
-//                        Fieldset::make('Интеграции по умолчанию')
-//                            ->schema([
-//                                Textarea::make('default_integrations.0')->label('Интеграция #1'),
-//                                Textarea::make('default_integrations.1')->label('Интеграция #2'),
-//                                Textarea::make('default_integrations.2')->label('Интеграция #3'),
-//                            ]),
-//                    ])
             ]);
     }
 
@@ -138,7 +115,16 @@ class CapsuleResource extends Resource
                 IconColumn::make('is_blocked')->label('Запрещена к показу')->boolean(),
             ])
             ->filters([
-                // Фильтры добавим позже
+                SelectFilter::make('category_id')
+                    ->label('Категория')
+                    ->relationship('category', 'name'),
+
+                SelectFilter::make('type')
+                    ->label('Тип')
+                    ->options([
+                        'готовая' => 'Готовая',
+                        'в планах' => 'В планах',
+                    ]),
             ])
             ->actions([
                 EditAction::make(),

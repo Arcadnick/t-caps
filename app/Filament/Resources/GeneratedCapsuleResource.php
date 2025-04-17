@@ -5,10 +5,9 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\GeneratedCapsuleResource\Pages;
 use App\Filament\Resources\GeneratedCapsuleResource\RelationManagers;
 use App\Models\GeneratedCapsule;
-use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Tables;
+use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
@@ -17,8 +16,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\BooleanColumn;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Filters\SelectFilter;
 
 class GeneratedCapsuleResource extends Resource
 {
@@ -56,8 +54,14 @@ class GeneratedCapsuleResource extends Resource
                 TextColumn::make('used_count')->label('Повторения'),
                 BooleanColumn::make('is_blocked')->label('Запрещена'),
             ])
+            ->filters([
+                SelectFilter::make('category_id')
+                    ->label('Категория')
+                    ->relationship('category', 'name'),
+            ])
             ->actions([
                 EditAction::make(),
+                DeleteAction::make(),
             ]);
     }
 
