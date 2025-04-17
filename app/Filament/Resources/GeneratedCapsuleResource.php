@@ -51,12 +51,9 @@ class GeneratedCapsuleResource extends Resource
                 TextColumn::make('title')->label('Название'),
                 TextColumn::make('category.name')->label('Категория'),
                 TextColumn::make('user_input')->label('Запрос'),
-                TextColumn::make('used_count')->label('Повторения'),
-                IconColumn::make('is_blocked')->label('Запрещена'),
-                TextColumn::make('created_at')
-                    ->label('Создана')
-                    ->dateTime('d.m.Y H:i')
-                    ->sortable(),
+                TextColumn::make('used_count')->label('Повторения')->sortable(),
+                IconColumn::make('is_blocked')->label('Запрещена')->boolean(),
+                TextColumn::make('created_at')->label('Создана')->dateTime('d.m.Y H:i')->sortable(),
             ])
             ->filters([
                 SelectFilter::make('category_id')
