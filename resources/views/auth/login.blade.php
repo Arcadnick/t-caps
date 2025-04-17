@@ -110,8 +110,13 @@
 
                         <!-- Remember Me -->
                         <div class="small-text gray-color">
-                            <label>
-                                <input type="checkbox" name="remember">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="remember" checked>
+                                <span class="checkmark">
+                                    <svg class="check-icon" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 1.5L4.25065 7.91667L1.33398 5" stroke="#4BAEEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
                                 Запомнить меня
                             </label>
                         </div>
@@ -177,4 +182,39 @@
 <script src="{{ asset('https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae') }}" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
 </body>
+<style>
+    .custom-checkbox {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #414651;
+        gap: 10px;
+    }
+
+    .custom-checkbox input {
+        display: none;
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #63aeee;
+        border-radius: 6px;
+        background-color: #f0f7fd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .check-icon {
+        display: none;
+    }
+
+    .custom-checkbox input:checked + .checkmark .check-icon {
+        display: block;
+    }
+</style>
 </html>

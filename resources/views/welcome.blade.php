@@ -168,7 +168,6 @@
                                     </span>
                                 </button>
                             </div>
-
                         </form>
                         <div class="w-form-done">
                             <div>Thank you! Your submission has been received!</div>
@@ -700,7 +699,6 @@
                 this.classList.add('first');
 
                 selectedCategory = this.getAttribute('data-category');
-                console.log(selectedCategory);
             });
         });
 
@@ -764,9 +762,19 @@
 </body>
 <style>
     .search-item.error {
-        border: 2px solid #EF4444 !important;
+        border: 1px solid #EF4444 !important;
         background-color: #FFF8F7;
         color: #EF4444;
+        font-size: 20px;
+        box-shadow: 0 0 0 4px #eff0f6;
+    }
+
+    .search-item:focus{
+        color: #4baeeb;
+    }
+
+    .w-input{
+        font-size: 20px;
     }
 
     .search-item.error::placeholder {
