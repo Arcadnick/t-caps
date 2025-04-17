@@ -8,6 +8,7 @@ use App\Models\GeneratedCapsule;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
@@ -15,7 +16,6 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Columns\BooleanColumn;
 use Filament\Tables\Filters\SelectFilter;
 
 class GeneratedCapsuleResource extends Resource
@@ -40,7 +40,6 @@ class GeneratedCapsuleResource extends Resource
                         $formatted = json_encode($decoded, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
                         $component->state($formatted);
                     }),
-//                    ->json(),
                 Toggle::make('is_blocked')->label('Запрещена к показу'),
                 TextInput::make('used_count')->label('Количество повторений')->numeric(),
             ]);
@@ -53,7 +52,11 @@ class GeneratedCapsuleResource extends Resource
                 TextColumn::make('category.name')->label('Категория'),
                 TextColumn::make('user_input')->label('Запрос'),
                 TextColumn::make('used_count')->label('Повторения'),
-                BooleanColumn::make('is_blocked')->label('Запрещена'),
+                IconColumn::make('is_blocked')->label('Запрещена'),
+                TextColumn::make('created_at')
+                    ->label('Создана')
+                    ->dateTime('d.m.Y H:i')
+                    ->sortable(),
             ])
             ->filters([
                 SelectFilter::make('category_id')
