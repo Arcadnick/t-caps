@@ -34,6 +34,7 @@ class GeneratedCapsuleResource extends Resource
                 TextInput::make('user_input')->label('Запрос пользователя'),
                 Textarea::make('gpt_response_json')
                     ->label('Ответ GPT')
+                    ->rows(15)
                     ->afterStateHydrated(function (Textarea $component, $state) {
                         $decoded = json_decode($state, true);
                         $formatted = json_encode($decoded, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
