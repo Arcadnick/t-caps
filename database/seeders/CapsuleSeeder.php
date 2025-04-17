@@ -29,7 +29,7 @@ class CapsuleSeeder extends Seeder
                     'Снижение времени на лидогенерацию в 4 раза',
                     'Экономия до 70% на SDR'
                 ],
-                'image' => 'capsules-13',
+                'image' => 'caps-13',
                 'landing_url' => null,
                 'use_default_page' => true,
                 'default_price' => '94000.00',
@@ -107,7 +107,7 @@ class CapsuleSeeder extends Seeder
                     'Обработанных заявок в 3 раза больше',
                     'Экономия до 30% на зарплатах операторов'
                 ],
-                'image' => '_8ddd0800-c437-45bc-a276-c284b2629fb5-2',
+                'image' => 'caps-35',
                 'landing_url' => 'developed-capsule-page',
                 'use_default_page' => false,
                 'default_price' => null,
@@ -289,7 +289,7 @@ class CapsuleSeeder extends Seeder
                     'Контент за часы, а не дни',
                     'Экономия на копирайтере и дизайнере'
                 ],
-                'image' => 'capsules-15',
+                'image' => 'caps-15',
                 'landing_url' => null,
                 'use_default_page' => true,
                 'default_price' => '94000.00',
@@ -393,7 +393,7 @@ class CapsuleSeeder extends Seeder
                     'Экономия на рекрутинге до 50%',
                     'HR получает готовый список кандидатов за 1 минуту'
                 ],
-                'image' => '_8ddd0800-c437-45bc-a276-c284b2629fb5-3',
+                'image' => 'caps-36',
                 'landing_url' => null,
                 'use_default_page' => true,
                 'default_price' => '94000.00',

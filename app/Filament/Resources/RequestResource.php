@@ -5,10 +5,8 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\RequestResource\Pages;
 use App\Filament\Resources\RequestResource\RelationManagers;
 use App\Models\Request;
-use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
@@ -17,8 +15,6 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Actions\EditAction;
 use Filament\Forms\Components\DatePicker;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class RequestResource extends Resource
 {
