@@ -44,7 +44,7 @@ class RequestController extends Controller
 //            $token = env('TELEGRAM_BOT_TOKEN');
 //            $chatId = env('TELEGRAM_CHAT_ID');
 //
-//            $text = "📩 Новая заявка на консультацию:\n\n"
+//            $text = "📩 Новая заявка ({$request_type}):\n\n"
 //                . "👤 Имя: {$userName}\n"
 //                . "📞 Телефон: {$phone}\n"
 //                . "📅 Дата: {$date}\n"

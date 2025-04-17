@@ -393,61 +393,6 @@
                         <h3>Дополнительные интеграции</h3>
                     </div>
                     <div class="w-layout-grid rows-grid">
-{{--                        <div class="box-padding-12 bg-color">--}}
-{{--                            <div class="grid-icon center-aling gap-12">--}}
-{{--                                <div class="wrapper-icon-bg min-size">--}}
-{{--                                    <div class="icon-palantir w-embed">--}}
-{{--                                        <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                            <g filter="url(#filter0_dd_164_577)">--}}
-{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint0_linear_164_577)"></rect>--}}
-{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint1_radial_164_577)" fill-opacity="0.08"></rect>--}}
-{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint2_radial_164_577)" fill-opacity="0.18"></rect>--}}
-{{--                                                <rect x="3" y="2" width="16" height="16" rx="8" fill="url(#paint3_radial_164_577)" fill-opacity="0.05"></rect>--}}
-{{--                                                <path d="M15.7992 6.04153C15.7992 7.3899 13.6502 6.52982 10.9992 6.52982C8.34825 6.52982 6.19922 7.3899 6.19922 6.04153C6.19922 4.69316 8.34825 3.6001 10.9992 3.6001C13.6502 3.6001 15.7992 4.69316 15.7992 6.04153Z" fill="url(#paint4_linear_164_577)" fill-opacity="0.4"></path>--}}
-{{--                                            </g>--}}
-{{--                                            <defs>--}}
-{{--                                                <filter id="filter0_dd_164_577" x="0" y="0" width="22" height="22" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">--}}
-{{--                                                    <feflood flood-opacity="0" result="BackgroundImageFix">--}}
-{{--                                                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">--}}
-{{--                                                            <feoffset dy="1">--}}
-{{--                                                                <fegaussianblur stddeviation="1">--}}
-{{--                                                                    <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.06 0">--}}
-{{--                                                                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_164_577">--}}
-{{--                                                                            <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">--}}
-{{--                                                                                <feoffset dy="1">--}}
-{{--                                                                                    <fegaussianblur stddeviation="1.5">--}}
-{{--                                                                                        <fecolormatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.1 0">--}}
-{{--                                                                                            <feblend mode="normal" in2="effect1_dropShadow_164_577" result="effect2_dropShadow_164_577">--}}
-{{--                                                                                                <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_164_577" result="shape">--}}
-{{--                                                                                                </feblend></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feblend></fecolormatrix></fegaussianblur></feoffset></fecolormatrix></feflood></filter>--}}
-{{--                                                <lineargradient id="paint0_linear_164_577" x1="7" y1="18" x2="15" y2="2" gradientunits="userSpaceOnUse">--}}
-{{--                                                    <stop stop-color="#56A0D9"></stop>--}}
-{{--                                                    <stop offset="1" stop-color="#2886CE"></stop>--}}
-{{--                                                </lineargradient>--}}
-{{--                                                <radialgradient id="paint1_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 2) rotate(90) scale(12)">--}}
-{{--                                                    <stop stop-color="white" stop-opacity="0"></stop>--}}
-{{--                                                    <stop offset="0.5" stop-color="white" stop-opacity="0"></stop>--}}
-{{--                                                    <stop offset="0.99" stop-color="white"></stop>--}}
-{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>--}}
-{{--                                                </radialgradient>--}}
-{{--                                                <radialgradient id="paint2_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 10) rotate(90) scale(8)">--}}
-{{--                                                    <stop offset="0.746599" stop-color="white" stop-opacity="0"></stop>--}}
-{{--                                                    <stop offset="1" stop-color="white"></stop>--}}
-{{--                                                </radialgradient>--}}
-{{--                                                <radialgradient id="paint3_radial_164_577" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(11 6.6) rotate(90) scale(7)">--}}
-{{--                                                    <stop stop-color="white"></stop>--}}
-{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>--}}
-{{--                                                </radialgradient>--}}
-{{--                                                <lineargradient id="paint4_linear_164_577" x1="10.9992" y1="3.6001" x2="10.9992" y2="6.8001" gradientunits="userSpaceOnUse">--}}
-{{--                                                    <stop stop-color="white"></stop>--}}
-{{--                                                    <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>--}}
-{{--                                                </lineargradient>--}}
-{{--                                            </defs>--}}
-{{--                                        </svg></div>--}}
-{{--                                </div>--}}
-{{--                                <p class="left-aling">CRM-системы <span class="opacity-color-50">Битрикс24, AmoCRM, HubSpot и др.</span></p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
                         @if ($integrations && is_array($integrations))
                                 @foreach ($integrations as $integration)
                                 <div class="box-padding-12 bg-color">
@@ -575,8 +520,8 @@
             <div class="popup-container">
                 <div class="popup-form-grid">
                     <div class="form-header-block">
-                        <div class="form-heading">Заявка на разработку</div>
-                        <div class="standart-text center-aling">Заполните свои данные и выберите капсулу над которой вы бы хотели работать или опишите свою идею</div>
+                        <div class="form-heading">Заявка на внедрение</div>
+                        <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
                     </div>
                     <div class="popup-form-block w-form">
                         <form method="POST" action="{{ route('requests.store') }}" class="form-block">
@@ -588,7 +533,7 @@
                             <div class="form-row-grid">
                                 <div class="field-block">
                                     <div class="input-text">Имя</div>
-                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите имя" type="text" required>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
                                 </div>
 
                                 <div class="field-block">
@@ -600,19 +545,14 @@
                                     <div class="input-text">Почта</div>
                                     <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
                                 </div>
-
-{{--                                <div class="field-block">--}}
-{{--                                    <div class="input-text">Опишите Вашу идею</div>--}}
-{{--                                    <textarea name="message" placeholder="Описание" maxlength="5000" class="text-field message-field w-input" style="resize: none"></textarea>--}}
-{{--                                </div>--}}
                             </div>
                             <input type="submit" class="form-button w-button" value="Оставить заявку">
                         </form>
                         <div class="success-messagge w-form-done">
-                            <div>Спасибо! Ваша заявка отправлена.</div>
+                            <div class="standart-text center-aling">Спасибо! Ваша заявка отправлена.</div>
                         </div>
                         <div class="error-message w-form-fail">
-                            <div>Что-то пошло не так. Попробуйте ещё раз.</div>
+                            <div class="standart-text center-aling">Что-то пошло не так. Попробуйте ещё раз.</div>
                         </div>
                     </div>
                 </div>
@@ -648,5 +588,41 @@
         });
     });
 </script>
+
+<script>
+    function closePopup() {
+        document.querySelectorAll('.popap-show').forEach(el => {
+            el.classList.remove('popap-show');
+        });
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 </html>

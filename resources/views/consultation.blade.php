@@ -290,6 +290,7 @@
         });
     });
 </script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const timeLinks = document.querySelectorAll(".dropdown-link-time");
@@ -311,6 +312,34 @@
         });
     });
 </script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
+        });
+    });
+</script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const phoneInput = document.getElementById('phone');

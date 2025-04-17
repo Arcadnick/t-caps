@@ -33,8 +33,6 @@ class PageController extends Controller
         return view('develop-generated-capsule', [
             'price' => $page->price,
         ]);
-
-        //return view('develop-generated-capsule');
     }
 
     // Лендинг капсулы

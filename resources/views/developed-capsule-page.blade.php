@@ -613,7 +613,7 @@
                         </div>
                     </div>
                     <div class="wrapper-btn margin-auto">
-                        <a href="#" class="blue-button max-width w-inline-block">
+                        <a href="#" class="blue-button popap-show max-width w-inline-block">
                             <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                     <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -672,7 +672,7 @@
                         </div>
                     </div>
                     <div class="wrapper-btn margin-auto">
-                        <a href="#" class="blue-button max-width w-inline-block">
+                        <a href="#" class="blue-button popap-show max-width w-inline-block">
                             <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                     <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -731,8 +731,123 @@
             </div>
         </div>
     </section>
+    <section class="popup-section">
+        <div class="popup-overflow">
+            <div class="popup-bg"></div>
+            <div class="popup-container">
+                <div class="popup-form-grid">
+                    <div class="form-header-block">
+                        <div class="form-heading">Заявка на внедрение</div>
+                        <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
+                    </div>
+                    @php
+                        use App\Models\Capsule;
+
+                        $currentPath = request()->path();
+                        $capsule = Capsule::where('landing_url', $currentPath)->first();
+                        $capsuleId = $capsule?->id;
+                    @endphp
+
+                    <div class="popup-form-block w-form">
+                        <form method="POST" action="{{ route('requests.store') }}" class="form-block">
+                            @csrf
+
+                            <input type="hidden" name="request_type" value="подключение">
+                            <input type="hidden" name="capsule_id" value="{{$capsuleId}}">
+
+                            <div class="form-row-grid">
+                                <div class="field-block">
+                                    <div class="input-text">Имя</div>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
+                                </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Номер телефона</div>
+                                    <input class="text-field w-input" maxlength="18" name="phone" placeholder="+7 (___) ___-__-__" type="text" id="popupPhoneInput" required>
+                                </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Почта</div>
+                                    <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
+                                </div>
+                            </div>
+                            <input type="submit" class="form-button w-button" value="Оставить заявку">
+                        </form>
+                        <div class="success-messagge w-form-done">
+                            <div class="standart-text center-aling">Спасибо! Ваша заявка отправлена.</div>
+                        </div>
+                        <div class="error-message w-form-fail">
+                            <div class="standart-text center-aling">Что-то пошло не так. Попробуйте ещё раз.</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
+                    <div class="icon-close w-embed">
+                        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="none" height="100%" width="100%"></rect>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const popupPhoneInput = document.getElementById('popupPhoneInput');
+
+        popupPhoneInput.addEventListener('input', function () {
+            let x = this.value.replace(/\D/g, '').slice(1);
+            let formatted = '+7';
+
+            if (x.length > 0) formatted += ' (' + x.substring(0, 3);
+            if (x.length >= 4) formatted += ') ' + x.substring(3, 6);
+            if (x.length >= 7) formatted += '-' + x.substring(6, 8);
+            if (x.length >= 9) formatted += '-' + x.substring(8, 10);
+
+            this.value = formatted;
+        });
+    });
+</script>
+
+<script>
+    function closePopup() {
+        document.querySelectorAll('.popap-show').forEach(el => {
+            el.classList.remove('popap-show');
+        });
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\CapsuleController;
 use App\Http\Controllers\RequestController;
+use App\Http\Controllers\RedirectDevelopedCapsuleController;
 use App\Models\Page;
 
 // Главная страница
@@ -61,6 +62,10 @@ Route::get('/capsule-in-development/{slug}', [CapsuleController::class, 'showDef
 
 Route::get('/develop-generated-capsule', [PageController::class, 'developGeneratedCapsule'])->name('develop-generated-capsule');
 
-Route::get('/developed-capsule-page',[PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
+//Route::get('/developed-capsule-page',[PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
+
+Route::get('/redirect-to-developed/{id}', [RedirectDevelopedCapsuleController::class, 'handle'])->name('redirect-developed');
+
+Route::get('/developed-capsule-page', [PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 require __DIR__.'/auth.php';

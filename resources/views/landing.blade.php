@@ -47,7 +47,8 @@
                         <a href="{{ route('login') }}" class="button-base navbar-btn blue-color w-inline-block">
                             <div>Войти</div>
                         </a>
-                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
+                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block">
+                            <img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
                             <div>Связаться в Telegram</div>
                         </a>
                         <a href="{{ route('consultation') }}" class="button-base navbar-btn w-inline-block">
@@ -57,7 +58,8 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
+                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block">
+                    <img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
                 <a href="{{ route('consultation') }}" class="button-base w-inline-block">
                     <div>Заказать консультацию</div>
                 </a>
@@ -240,8 +242,8 @@
                                             </div>
                                             <div class="wrapper-btn left-aling padding-left">
                                                 @if($capsule->landing_url)
-                                                    <a href="{{$isReady ? '#' : route($capsule->landing_url)}}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('redirect-developed', ['id' => $capsule->id]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -253,8 +255,8 @@
                                                         <div>Подключить капсулу</div>
                                                     </a>
                                                 @else
-                                                    <a href="{{$isReady ? '#' : route('capsule.default', ['slug' => $capsule->slug]) }}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('capsule.default', ['slug' => $capsule->slug]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -397,8 +399,8 @@
                                             </div>
                                             <div class="wrapper-btn left-aling padding-left">
                                                 @if($capsule->landing_url)
-                                                    <a href="{{$isReady ? '#' : route($capsule->landing_url)}}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('redirect-developed', ['id' => $capsule->id]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -410,8 +412,8 @@
                                                         <div>Подключить капсулу</div>
                                                     </a>
                                                 @else
-                                                    <a href="{{$isReady ? '#' : route('capsule.default', ['slug' => $capsule->slug]) }}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{route('capsule.default', ['slug' => $capsule->slug]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -554,8 +556,8 @@
                                             </div>
                                             <div class="wrapper-btn left-aling padding-left">
                                                 @if($capsule->landing_url)
-                                                    <a href="{{$isReady ? '#' : route($capsule->landing_url)}}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('redirect-developed', ['id' => $capsule->id]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -567,8 +569,8 @@
                                                         <div>Подключить капсулу</div>
                                                     </a>
                                                 @else
-                                                    <a href="{{$isReady ? '#' : route('capsule.default', ['slug' => $capsule->slug]) }}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{route('capsule.default', ['slug' => $capsule->slug]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -711,8 +713,8 @@
                                             </div>
                                             <div class="wrapper-btn left-aling padding-left">
                                                 @if($capsule->landing_url)
-                                                    <a href="{{$isReady ? '#' : route($capsule->landing_url)}}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('redirect-developed', ['id' => $capsule->id]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -724,8 +726,8 @@
                                                         <div>Подключить капсулу</div>
                                                     </a>
                                                 @else
-                                                    <a href="{{$isReady ? '#' : route('capsule.default', ['slug' => $capsule->slug]) }}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{route('capsule.default', ['slug' => $capsule->slug]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -868,8 +870,8 @@
                                             </div>
                                             <div class="wrapper-btn left-aling padding-left">
                                                 @if($capsule->landing_url)
-                                                    <a href="{{$isReady ? '#' : route($capsule->landing_url)}}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{ route('redirect-developed', ['id' => $capsule->id]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -881,8 +883,8 @@
                                                         <div>Подключить капсулу</div>
                                                     </a>
                                                 @else
-                                                    <a href="{{$isReady ? '#' : route('capsule.default', ['slug' => $capsule->slug]) }}"
-                                                       class="blue-button {{$isReady ? 'popap-show' : 'green-color'}} w-inline-block">
+                                                    <a href="{{route('capsule.default', ['slug' => $capsule->slug]) }}"
+                                                       class="blue-button {{$isReady ? '' : 'green-color'}} w-inline-block">
                                                         <div class="icon-btn w-embed">
                                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -957,7 +959,6 @@
         <path d="M23.0612 13.0613C22.9218 13.2011 22.7563 13.3121 22.5739 13.3878C22.3916 13.4635 22.1961 13.5025 21.9987 13.5025C21.8013 13.5025 21.6058 13.4635 21.4235 13.3878C21.2411 13.3121 21.0756 13.2011 20.9362 13.0613L11.9999 4.12505L3.0612 13.0613C2.7794 13.3431 2.39721 13.5014 1.9987 13.5014C1.60018 13.5014 1.21799 13.3431 0.936196 13.0613C0.654403 12.7795 0.496094 12.3973 0.496094 11.9988C0.496094 11.6003 0.654403 11.2181 0.936196 10.9363L10.9362 0.936299C11.0756 0.796459 11.2411 0.685505 11.4235 0.609797C11.6058 0.534088 11.8013 0.495117 11.9987 0.495117C12.1961 0.495117 12.3916 0.534088 12.5739 0.609797C12.7563 0.685505 12.9218 0.796459 13.0612 0.936299L23.0612 10.9363C23.201 11.0757 23.312 11.2412 23.3877 11.4236C23.4634 11.6059 23.5024 11.8014 23.5024 11.9988C23.5024 12.1962 23.4634 12.3917 23.3877 12.574C23.312 12.7564 23.201 12.9219 23.0612 13.0613Z" fill="white"/>
     </svg>
 </button>
-<x-popup-form />
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
 <script>
@@ -975,6 +976,33 @@
         window.scrollTo({
             top: 0,
             behavior: "smooth"
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
         });
     });
 </script>

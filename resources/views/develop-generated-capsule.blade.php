@@ -210,9 +210,7 @@
             <div class="w-layout-grid step-grid">
                 <div id="w-node-c5cdf4f1-3eef-9851-3008-37380628880d-6488eae4" data-w-id="c5cdf4f1-3eef-9851-3008-37380628880d" style="opacity:0" class="price-item">
                     <div class="h3-block">
-{{--                        123--}}
                         <h3 class="price-heading">{{ number_format($price, 0, ',', ' ') }} ₽</h3>
-{{--                        123--}}
                         <p class="left-aling">Разработка кастомной AI-Капсулы</p>
                     </div>
                     <div class="text-block">
@@ -756,8 +754,8 @@
             <div class="popup-container">
                 <div class="popup-form-grid">
                     <div class="form-header-block">
-                        <div class="form-heading">Заявка на разработку</div>
-                        <div class="standart-text center-aling">Заполните свои данные и выберите капсулу над которой вы бы хотели работать или опишите свою идею</div>
+                        <div class="form-heading">Заявка на внедрение</div>
+                        <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
                     </div>
                     <div class="popup-form-block w-form">
                         <form method="POST" action="{{ route('requests.store') }}" class="form-block">
@@ -830,5 +828,41 @@
         });
     });
 </script>
+
+<script>
+    function closePopup() {
+        document.querySelectorAll('.popap-show').forEach(el => {
+            el.classList.remove('popap-show');
+        });
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 </html>

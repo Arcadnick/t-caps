@@ -606,28 +606,6 @@
                         </button>
 
                     </div>
-{{--                    <div class="w-layout-grid favors-grid">--}}
-{{--                        <a data-w-id="76fde4ea-cd1d-d82a-c22f-6319dde202ea" style="opacity:0" href="#" class="favors-item first w-inline-block">--}}
-{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-1.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
-{{--                            <div class="heading min-h">Продажи</div>--}}
-{{--                        </a>--}}
-{{--                        <a data-w-id="76fde4ea-cd1d-d82a-c22f-6319dde202ef" style="opacity:0" href="#" class="favors-item w-inline-block">--}}
-{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-5.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
-{{--                            <div class="heading min-h">Контент</div>--}}
-{{--                        </a>--}}
-{{--                        <a data-w-id="76fde4ea-cd1d-d82a-c22f-6319dde202f4" style="opacity:0" href="#" class="favors-item w-inline-block">--}}
-{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-2.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
-{{--                            <div class="heading min-h">Рекрутинг</div>--}}
-{{--                        </a>--}}
-{{--                        <a data-w-id="76fde4ea-cd1d-d82a-c22f-6319dde202f9" style="opacity:0" href="#" class="favors-item w-inline-block">--}}
-{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-3.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
-{{--                            <div class="heading min-h">Бизнес</div>--}}
-{{--                        </a>--}}
-{{--                        <a data-w-id="76fde4ea-cd1d-d82a-c22f-6319dde202fe" style="opacity:0" href="#" class="favors-item w-inline-block">--}}
-{{--                            <div class="wrap-img-favors"><img src="{{ asset('images/small-4.jpg') }}" loading="lazy" alt="" class="image-favors"></div>--}}
-{{--                            <div class="heading min-h">IT</div>--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
                 </div>
             </div>
         </div>
@@ -669,7 +647,6 @@
             </div>
         </div>
     </section>
-    <x-popup-form />
     @include('components.cookie-banner')
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -752,10 +729,6 @@
                 industry: industry
             });
 
-            // setTimeout(() => {
-            //     window.location.href = `/capsules-page?${params.toString()}`;
-            // }, 1500);
-
             window.location.href = `/capsules-page?${params.toString()}`;
         });
 
@@ -783,10 +756,6 @@
                 category: selectedCategory,
                 industry: industry
             });
-
-            // setTimeout(() => {
-            //     window.location.href = `/capsules-page?${params.toString()}`;
-            // }, 1500);
 
             window.location.href = `/capsules-page?${params.toString()}`;
         });
