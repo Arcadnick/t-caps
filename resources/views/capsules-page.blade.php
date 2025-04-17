@@ -33,7 +33,7 @@
             <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-menu-block">
                     <a href="{{ route('landing') }}" class="nav-link-block w-inline-block">
-                        <div>AI-капсулы</div>
+                        <div>Наши AI-капсулы</div>
                         <div class="icon-nav-arrow w-embed">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -484,7 +484,7 @@
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Навигация</div>
-                    <a href="{{ route('landing') }}" class="footer-link">AI-капсулы</a>
+                    <a href="{{ route('landing') }}" class="footer-link">Наши AI-капсулы</a>
                     <a href="{{ route('welcome') }}#howWorkGrid" class="footer-link">Как работает</a>
                     <a href="{{ route('partners') }}" class="footer-link">Партнерам</a>
                 </div>
