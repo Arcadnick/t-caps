@@ -10,6 +10,7 @@ use Filament\Resources\Resource;
 use Filament\Forms\Components\Fieldset;
 use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Toggle;
@@ -17,9 +18,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\BulkAction;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+
 
 class CapsuleResource extends Resource
 {
@@ -94,9 +93,9 @@ class CapsuleResource extends Resource
 
                         Fieldset::make('Интеграции по умолчанию')
                             ->schema([
-                                TextInput::make('default_integrations.0')->label('Интеграция #1'),
-                                TextInput::make('default_integrations.1')->label('Интеграция #2'),
-                                TextInput::make('default_integrations.2')->label('Интеграция #3'),
+                                Textarea::make('default_integrations.0')->label('Интеграция #1'),
+                                Textarea::make('default_integrations.1')->label('Интеграция #2'),
+                                Textarea::make('default_integrations.2')->label('Интеграция #3'),
                             ]),
                     ])
             ]);

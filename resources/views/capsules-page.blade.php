@@ -570,12 +570,11 @@
                     return;
                 }
 
-                // Анимация генерации
                 submitButton.classList.add('generating');
                 submitButton.querySelector('.button-text').style.display = 'none';
                 submitButton.querySelector('.button-spinner').style.display = 'inline-flex';
 
-                form.submit(); // отправляем форму
+                form.submit();
             });
         });
     });

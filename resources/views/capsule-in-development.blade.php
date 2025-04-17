@@ -447,7 +447,7 @@
                                                     </defs>
                                                 </svg></div>
                                         </div>
-                                        <p class="left-aling">{{ $integration }}</p>
+                                        <p class="left-aling">{!! $integration !!}</p>
                                     </div>
                                 </div>
                                 @endforeach
@@ -620,6 +620,29 @@
                     $('.w-form-fail').fadeIn();
                 }
             });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const formBlock = document.querySelector('.popup-form-block form');
+        const formHeader = document.querySelector('.form-header-block');
+        const successMessage = document.querySelector('.success-messagge.w-form-done');
+
+        if (successMessage && successMessage.offsetParent !== null) {
+            formHeader.style.display = 'none';
+        }
+
+        formBlock?.addEventListener('submit', function () {
+            const observer = new MutationObserver(() => {
+                if (successMessage.offsetParent !== null) {
+                    formHeader.style.display = 'none';
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(successMessage, { attributes: true, childList: true, subtree: true });
         });
     });
 </script>

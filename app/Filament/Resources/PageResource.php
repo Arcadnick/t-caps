@@ -16,6 +16,7 @@ use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\EditAction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\Textarea;
 
 class PageResource extends Resource
 {
@@ -45,9 +46,15 @@ class PageResource extends Resource
                     ->required()
                     ->visible(fn ($record) => $record && $record->slug === 'develop-generated-capsule'),
 
-                RichEditor::make('content')
-                    ->label('Контент')
-                    ->toolbarButtons(['undo', 'redo'])
+//                RichEditor::make('content')
+//                    ->label('Контент')
+//                    ->toolbarButtons(['undo', 'redo'])
+//                    ->required()
+//                    ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions'])),
+                Textarea::make('content')
+                    ->label('Контент (HTML)')
+                    ->rows(150)
+                    ->columnSpanFull()
                     ->required()
                     ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions'])),
             ]);
@@ -62,7 +69,6 @@ class PageResource extends Resource
             ])
             ->actions([
                 EditAction::make(),
-                //DeleteAction::make(),
             ]);
     }
 

@@ -405,5 +405,29 @@
     });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const formBlock = document.querySelector('.popup-form-block form');
+        const formHeader = document.querySelector('.form-header-block');
+        const successMessage = document.querySelector('.success-messagge.w-form-done');
+
+        if (successMessage && successMessage.offsetParent !== null) {
+            formHeader.style.display = 'none';
+        }
+
+        formBlock?.addEventListener('submit', function () {
+            // Наблюдаем за появлением блока success
+            const observer = new MutationObserver(() => {
+                if (successMessage.offsetParent !== null) {
+                    formHeader.style.display = 'none';
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(successMessage, { attributes: true, childList: true, subtree: true });
+        });
+    });
+</script>
+
 </body>
 </html>

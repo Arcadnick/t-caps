@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Request as RequestModel;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class RequestController extends Controller
 {
@@ -40,24 +41,24 @@ class RequestController extends Controller
             'consultation_time' => $time,
         ]);
 
-//        try {
-//            $token = env('TELEGRAM_BOT_TOKEN');
-//            $chatId = env('TELEGRAM_CHAT_ID');
-//
-//            $text = "📩 Новая заявка ({$request_type}):\n\n"
-//                . "👤 Имя: {$userName}\n"
-//                . "📞 Телефон: {$phone}\n"
-//                . "📅 Дата: {$date}\n"
-//                . "🕓 Время: {$time}";
-//
-//            Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
-//                'chat_id' => $chatId,
-//                'text' => $text,
-//                'parse_mode' => 'HTML',
-//            ]);
-//        } catch (\Exception $e) {
-//            \Log::error('Ошибка при отправке в Telegram: ' . $e->getMessage());
-//        }
+        try {
+            $token = env('TELEGRAM_BOT_TOKEN');
+            $chatId = env('TELEGRAM_CHAT_ID');
+
+            $text = "📩 Новая заявка ({$request_type}):\n\n"
+                . "👤 Имя: {$userName}\n"
+                . "📞 Телефон: {$phone}\n"
+                . "📅 Дата: {$date}\n"
+                . "🕓 Время: {$time}";
+
+            Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
+                'chat_id' => $chatId,
+                'text' => $text,
+                'parse_mode' => 'HTML',
+            ]);
+        } catch (\Exception $e) {
+            Log::error('Ошибка при отправке в Telegram: ' . $e->getMessage());
+        }
 
         return back()->with('success', 'Заявка успешно отправлена!');
     }
