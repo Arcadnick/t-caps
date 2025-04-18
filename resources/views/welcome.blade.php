@@ -328,7 +328,7 @@
                         </div>
                     </div>
                     <div id="w-node-_6976fb19-309d-43a5-c6c3-4ee2b5a7da82-9d9941ce" class="wrapper-post-card-image">
-                        <img src="{{ asset('images/_8ddd0800-c437-45bc-a276-c284b2629fb5-2.jpg') }}" loading="lazy" alt="" class="post-card-image">
+                        <img src="{{ asset('images/caps-35.jpg') }}" loading="lazy" alt="" class="post-card-image">
                     </div>
                 </div>
                 <div data-w-id="6976fb19-309d-43a5-c6c3-4ee2b5a7da84" style="opacity:0" class="w-layout-grid blog-post-grid">
