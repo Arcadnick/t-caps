@@ -773,9 +773,17 @@
                             </div>
                             <input type="submit" class="form-button w-button" value="Оставить заявку">
                         </form>
-                        <div class="success-messagge w-form-done">
-
-                            <div class="standart-text center-aling">Спасибо! Ваша заявка отправлена.</div>
+                        <div class="success-messagge w-form-done" >
+                            <div class="form-header-block" style="width: 100%; grid-row-gap: 24px">
+                                <div class="wrapper-shapes-benefits">
+                                    <img src="{{ asset('images/caps-2_1.png') }}" loading="lazy" alt="" class="img-small-caps">
+                                    <img src="{{ asset('images/success-cap.png') }}" loading="lazy" alt="" class="capsules-page-img">
+                                    <img src="{{ asset('images/caps-3.png') }}" loading="lazy" alt="" class="img-small-caps _3-v">
+                                    <img src="{{ asset('images/caps--4.png') }}" loading="lazy" alt="" class="img-small-caps _2-v">
+                                </div>
+                                <div class="form-heading">Спасибо!</div>
+                                <div class="standart-text center-aling">Ваша заявка отправлена</div>
+                            </div>
                         </div>
                         <div class="error-message w-form-fail">
                             <div class="standart-text center-aling">Что-то пошло не так. Попробуйте ещё раз.</div>
@@ -862,7 +870,6 @@
         }
 
         formBlock?.addEventListener('submit', function () {
-            // Наблюдаем за появлением блока success
             const observer = new MutationObserver(() => {
                 if (successMessage.offsetParent !== null) {
                     formHeader.style.display = 'none';

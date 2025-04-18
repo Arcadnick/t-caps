@@ -81,10 +81,12 @@
     <div class="container">
         <div data-w-id="78795549-880c-569d-71f1-96f409591285" style="opacity:0" class="login-block">
             <div class="heading-login-block">
-                <div class="box-center-aling"><img src="{{ asset('images/logo-mark-2.svg') }}" loading="lazy" alt="" class="logo-mark"></div>
+                <div class="box-center-aling">
+                    <img src="{{ asset('images/logo-mark-2.svg') }}" loading="lazy" alt="" class="logo-mark">
+                </div>
                 <div class="text-block center-aling gap-12">
                     <div class="heading-login">Закажите консультацию</div>
-                    <div class="standart-text min-s">Введите свои контактные данные и время когда будет удобно с вами связаться</div>
+                    <div class="standart-text min-s">Введите свои контактные данные и время когда будет удобно с Вами связаться</div>
                 </div>
             </div>
             <div class="form-login-wrapper w-form">
@@ -198,37 +200,30 @@
                                                 <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg></div>
                                     </a>
-                                    <a href="#" class="dropdown-link-time w-inline-block">
-                                        <div>13:00</div>
-                                        <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </a>
-                                    <a href="#" class="dropdown-link-time w-inline-block">
-                                        <div>13:00</div>
-                                        <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </a>
-                                    <a href="#" class="dropdown-link-time w-inline-block">
-                                        <div>8:00</div>
-                                        <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </a>
                                 </nav>
                             </div>
                         </div>
                     </div>
-                    <div class="wrapper-button-form"><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Оставить заявку"><input type="submit" data-wait="Please wait..." class="form-button white w-button" value="Отмена"></div>
+                    <div class="wrapper-button-form">
+                        <input type="submit" data-wait="Please wait..." class="form-button w-button" value="Оставить заявку">
+{{--                        <input type="submit" data-wait="Please wait..." class="form-button white w-button" value="Отмена"></div>--}}
                     <input type="hidden" name="selected_date" id="selectedDateInput">
                     <input type="hidden" name="request_type" value="консультация">
                 </form>
-                <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
                 <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
+                    <div>Что-то пошло не так. Попробуйте ещё раз.</div>
+                </div>
+            </div>
+            <div class="w-form-done" style="background-color: transparent">
+                <div class="form-header-block" style="width: 100%; grid-row-gap: 24px">
+                    <div class="wrapper-shapes-benefits">
+                        <img src="{{ asset('images/caps-2_1.png') }}" loading="lazy" alt="" class="img-small-caps">
+                        <img src="{{ asset('images/success-cap.png') }}" loading="lazy" alt="" class="capsules-page-img">
+                        <img src="{{ asset('images/caps-3.png') }}" loading="lazy" alt="" class="img-small-caps _3-v">
+                        <img src="{{ asset('images/caps--4.png') }}" loading="lazy" alt="" class="img-small-caps _2-v">
+                    </div>
+                    <div class="form-heading">Спасибо!</div>
+                    <div class="standart-text center-aling">Ваша заявка отправлена</div>
                 </div>
             </div>
         </div>
@@ -365,6 +360,39 @@
         });
     });
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const headingBlock = document.querySelector('.heading-login-block');
+        const formElement = document.querySelector('#email-form');
+        const successMessage = document.querySelector('.w-form-done');
+
+        if (!headingBlock || !formElement || !successMessage) return;
+
+        // Проверка при загрузке
+        if (getComputedStyle(successMessage).display !== 'none') {
+            headingBlock.style.display = 'none';
+            formElement.style.display = 'none';
+        }
+
+        // Наблюдатель за изменением display: none → block
+        const observer = new MutationObserver(() => {
+            if (getComputedStyle(successMessage).display !== 'none') {
+                headingBlock.style.display = 'none';
+                formElement.style.display = 'none';
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(successMessage, {
+            attributes: true,
+            attributeFilter: ['style'],
+        });
+    });
+</script>
+
+
+
 </body>
 <style>
     .flatpickr-calendar {
