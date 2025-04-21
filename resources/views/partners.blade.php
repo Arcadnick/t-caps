@@ -266,7 +266,7 @@
                             </div>
 
                             <div class="field-block">
-                                <div class="input-text">Опишите Вашу идею</div>
+                                <div class="input-text">Что бы вы хотели автоматизировать с помощью AI?</div>
                                 <textarea name="message" placeholder="Описание" maxlength="5000"
                                           class="text-field message-field w-input" style="resize: none"></textarea>
                             </div>

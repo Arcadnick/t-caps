@@ -214,12 +214,7 @@
                                     $link = route('capsule.default', ['slug' => $capsuleData['slug']]);
                                 }
                             }
-
-//                            if (!$isGenerated && isset($capsule['capsule_id'])) {
-//                                $image = $capsuleImages[$capsule['capsule_id']] ?? $image;
-//                            }
                         @endphp
-
                         <div class="capsules-item">
                             <div class="wrapper-shapes-benefits">
                                 <div class="caps-circle-bl"></div>

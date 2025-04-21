@@ -73,7 +73,7 @@ class CapsuleController extends Controller
             $data = $response->response_json;
 
             $finalCapsules = is_array($data) ? $data : json_decode($data ?? '[]', true);
-            $finalCapsules = collect($finalCapsules)->shuffle()->values()->all();
+            $finalCapsules = collect($finalCapsules)->values()->all();
         }
 
         return view('capsules-page', [

@@ -1552,7 +1552,8 @@ a:hover {
 
 .capsules-page-img {
     z-index: 1;
-    object-fit: cover;
+    object-fit: contain;
+    /*object-fit: cover;*/
     width: 180px;
     height: 160px;
     position: relative;

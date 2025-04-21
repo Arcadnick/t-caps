@@ -75,15 +75,13 @@ PROMPT;
             $response = Http::withToken(env('OPENAI_API_KEY'))
                 ->timeout(90)
                 ->post('https://api.openai.com/v1/chat/completions', [
-                    'model' => 'gpt-4',
+                    'model' => 'gpt-3.5-turbo',
                     'messages' => [
                         ['role' => 'system', 'content' => 'Ты ассистент по подбору AI-капсул'],
                         ['role' => 'user', 'content' => $prompt],
                     ],
                     'temperature' => 0.7,
                 ]);
-
-            //Log::info('GPT responded', ['response' => $response->json()]);
 
             $json = $response->json();
             $content = $json['choices'][0]['message']['content'] ?? '';
@@ -92,7 +90,6 @@ PROMPT;
                 Log::error('Empty GPT response', ['json' => $json]);
                 return [];
             }
-            //Log::info('GPT content', [$content]);
 
             preg_match_all('/\[\s*\{.*?\}\s*\]/s', $content, $matches);
 
@@ -125,7 +122,6 @@ PROMPT;
             }
 
             $final = collect($recommended)->merge($generated);
-            //Log::info('FINAL:', [$final->shuffle()->values()->all()]);
 
             GptCapsuleResponse::create([
                 'category_id' => $category->id,
@@ -133,7 +129,7 @@ PROMPT;
                 'response_json' => $final->values()->all(),
             ]);
 
-            return $final->shuffle()->values()->all();
+            return $final->values()->all();
 
         } catch (ConnectionException $e) {
             Log::error('GPT connection timeout', ['message' => $e->getMessage()]);
