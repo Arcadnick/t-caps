@@ -2,11 +2,10 @@
 <html data-wf-page="67e50b5295fa03bbbc021d82" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Login</title>
-    <meta content="Login" property="og:title">
-    <meta content="Login" property="twitter:title">
+    <title>TimeCapsule | Войти в личный кабинет</title>
+    <meta content="Доступ к вашим капсулам, настройкам и результатам в один клик. Войдите и управляйте AI-решениями." property="og:title">
+    <meta content="Доступ к вашим капсулам, настройкам и результатам в один клик. Войдите и управляйте AI-решениями." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

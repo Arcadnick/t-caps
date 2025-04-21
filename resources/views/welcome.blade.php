@@ -2,11 +2,10 @@
 <html data-wf-page="6613afc0b9b7fac29d9941ce" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Green energy solutions provider | Ecowatts</title>
-    <meta content="Green energy solutions provider | Ecowatts" property="og:title">
-    <meta content="Green energy solutions provider | Ecowatts" property="twitter:title">
+    <title>TimeCapsule | Умные AI-решения для бизнеса</title>
+    <meta content="Создавайте, настраивайте и запускайте AI-капсулы для автоматизации задач. Повышайте эффективность с первого дня!" property="og:title">
+    <meta content="Создавайте, настраивайте и запускайте AI-капсулы для автоматизации задач. Повышайте эффективность с первого дня!" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

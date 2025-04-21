@@ -3,11 +3,10 @@
 <html data-wf-page="67ece482da1c868e1ac6f211" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Privacy Policy</title>
-    <meta content="Privacy Policy" property="og:title">
-    <meta content="Privacy Policy" property="twitter:title">
+    <title>TimeCapsule | Политика конфиденциальности</title>
+    <meta content="Узнайте, как мы храним и защищаем ваши данные. Конфиденциальность и безопасность — наш приоритет." property="og:title">
+    <meta content="Узнайте, как мы храним и защищаем ваши данные. Конфиденциальность и безопасность — наш приоритет." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

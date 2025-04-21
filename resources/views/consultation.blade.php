@@ -2,11 +2,10 @@
 <html data-wf-page="67e5136bf4d6e968caa5072f" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Consultation page</title>
-    <meta content="Consultation page" property="og:title">
-    <meta content="Consultation page" property="twitter:title">
+    <title>TimeCapsule | Подбор капсул под ваш бизнес</title>
+    <meta content="Не знаете, с чего начать? Получите персональную подборку капсул для задач вашей компании." property="og:title">
+    <meta content="Не знаете, с чего начать? Получите персональную подборку капсул для задач вашей компании." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

@@ -2,11 +2,10 @@
 <html data-wf-page="67e2af4f26c4fb1a63bedddf" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>landing</title>
-    <meta content="landing" property="og:title">
-    <meta content="landing" property="twitter:title">
+    <title>TimeCapsule | Все AI-капсулы в одном месте</title>
+    <meta content="Изучите готовые AI-решения для бизнеса. Выберите капсулу, которая решит ваши задачи быстро и точно." property="og:title">
+    <meta content="Изучите готовые AI-решения для бизнеса. Выберите капсулу, которая решит ваши задачи быстро и точно." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

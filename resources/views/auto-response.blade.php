@@ -2,11 +2,10 @@
 <html data-wf-page="67e29442a77d567009f1f460" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Auto-response page</title>
-    <meta content="Auto-response page" property="og:title">
-    <meta content="Auto-response page" property="twitter:title">
+    <title>TimeCapsule | Автоответы для клиентов 24/7</title>
+    <meta content="AI отвечает за вас — без задержек, 24 часа в сутки. Увеличьте лояльность и сэкономьте время." property="og:title">
+    <meta content="AI отвечает за вас — без задержек, 24 часа в сутки. Увеличьте лояльность и сэкономьте время." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

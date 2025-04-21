@@ -2,11 +2,10 @@
 <html data-wf-page="67e2733425715a876488eae4" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Capsule in development</title>
-    <meta content="Capsule in development" property="og:title">
-    <meta content="Capsule in development" property="twitter:title">
+    <title>TimeCapsule | AI-капсула в разработке</title>
+    <meta content="Следите за созданием новой капсулы. Подпишитесь и получайте доступ к инновации раньше всех." property="og:title">
+    <meta content="Следите за созданием новой капсулы. Подпишитесь и получайте доступ к инновации раньше всех." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">

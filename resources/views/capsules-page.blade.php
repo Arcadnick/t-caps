@@ -2,9 +2,9 @@
 <html data-wf-page="67e1830233faffe1916b83de" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Capsules page</title>
-    <meta content="Capsules page" property="og:title">
-    <meta content="Capsules page" property="twitter:title">
+    <title>TimeCapsule | Ваши AI-капсулы готовы!</title>
+    <meta content="Посмотрите подходящие капсулы по вашему запросу. Настройте и начните использовать за пару минут." property="og:title">
+    <meta content="Посмотрите подходящие капсулы по вашему запросу. Настройте и начните использовать за пару минут." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
