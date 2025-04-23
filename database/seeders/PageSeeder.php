@@ -277,5 +277,15 @@ class PageSeeder extends Seeder
                 'price' => 10000,
             ]
         );
+
+        Page::updateOrCreate(
+            ['slug' => 'home'],
+            [
+                'title' => 'Главная',
+                'content' => '',
+                'price' => null,
+                'capsule_ids' => [],
+            ]
+        );
     }
 }

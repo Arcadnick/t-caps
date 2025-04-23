@@ -4,14 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Page;
-
+use App\Models\Capsule;
 class PageController extends Controller
 {
-    // Главная страница
     public function index()
     {
-        return view('welcome');
+        $page = Page::where('slug', 'home')->first();
+        $capsules = collect();
+
+        if ($page && is_array($page->capsule_ids)) {
+            $capsules = Capsule::whereIn('id', $page->capsule_ids)->get();
+        }
+
+        return view('welcome', [
+            'capsules' => $capsules,
+        ]);
     }
+
+    // Главная страница
+//    public function index()
+//    {
+//        return view('welcome');
+//    }
 
     // Все капсулы
     public function capsules()

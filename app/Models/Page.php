@@ -10,6 +10,10 @@ class Page extends Model
         'slug',
         'title',
         'content',
-        'price'
+        'price',
+        'capsule_ids'
+    ];
+    protected $casts = [
+        'capsule_ids' => 'array',
     ];
 }

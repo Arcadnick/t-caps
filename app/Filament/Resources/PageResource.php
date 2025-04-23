@@ -17,6 +17,8 @@ use Filament\Tables\Actions\EditAction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\Select;
+use App\Models\Capsule;
 
 class PageResource extends Resource
 {
@@ -46,17 +48,19 @@ class PageResource extends Resource
                     ->required()
                     ->visible(fn ($record) => $record && $record->slug === 'develop-generated-capsule'),
 
-//                RichEditor::make('content')
-//                    ->label('Контент')
-//                    ->toolbarButtons(['undo', 'redo'])
-//                    ->required()
-//                    ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions'])),
                 Textarea::make('content')
                     ->label('Контент (HTML)')
                     ->rows(150)
                     ->columnSpanFull()
                     ->required()
                     ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions'])),
+
+                Select::make('capsule_ids')
+                    ->label('Капсулы для главной страницы')
+                    ->multiple()
+                    ->options(Capsule::all()->pluck('title', 'id'))
+                    ->maxItems(3)
+                    ->visible(fn ($record) => $record && $record->slug === 'home'),
             ]);
     }
 
