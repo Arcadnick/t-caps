@@ -2,7 +2,7 @@
 <html data-wf-page="67e29442a77d567009f1f460" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Автоответы для клиентов 24/7</title>
+    <title>Time Caps | Автоответы для клиентов 24/7</title>
     <meta content="AI отвечает за вас — без задержек, 24 часа в сутки. Увеличьте лояльность и сэкономьте время." property="og:title">
     <meta content="AI отвечает за вас — без задержек, 24 часа в сутки. Увеличьте лояльность и сэкономьте время." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

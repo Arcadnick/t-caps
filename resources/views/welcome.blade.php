@@ -2,7 +2,7 @@
 <html data-wf-page="6613afc0b9b7fac29d9941ce" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Умные AI-решения для бизнеса</title>
+    <title>Time Caps | Умные AI-решения для бизнеса</title>
     <meta content="Создавайте, настраивайте и запускайте AI-капсулы для автоматизации задач. Повышайте эффективность с первого дня!" property="og:title">
     <meta content="Создавайте, настраивайте и запускайте AI-капсулы для автоматизации задач. Повышайте эффективность с первого дня!" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

@@ -3,7 +3,7 @@
 <html data-wf-page="67ec07363f5a90ebcd9694fa" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Условия использования сервиса</title>
+    <title>Time Caps | Условия использования сервиса</title>
     <meta content="Ознакомьтесь с правилами и условиями использования AI-капсул. Безопасность и прозрачность прежде всего." property="og:title">
     <meta content="Ознакомьтесь с правилами и условиями использования AI-капсул. Безопасность и прозрачность прежде всего." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

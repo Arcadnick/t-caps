@@ -2,7 +2,7 @@
 <html data-wf-page="67e5136bf4d6e968caa5072f" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Подбор капсул под ваш бизнес</title>
+    <title>Time Caps | Подбор капсул под ваш бизнес</title>
     <meta content="Не знаете, с чего начать? Получите персональную подборку капсул для задач вашей компании." property="og:title">
     <meta content="Не знаете, с чего начать? Получите персональную подборку капсул для задач вашей компании." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

@@ -2,7 +2,7 @@
 <html data-wf-page="67e4123fc3c98f89e4d172ec" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Партнёрская программа для роста</title>
+    <title>Time Caps | Партнёрская программа для роста</title>
     <meta content="Зарабатывайте на продвижении AI-капсул. Прозрачные условия и высокий процент за рекомендации." property="og:title">
     <meta content="Зарабатывайте на продвижении AI-капсул. Прозрачные условия и высокий процент за рекомендации." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

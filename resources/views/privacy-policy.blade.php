@@ -3,7 +3,7 @@
 <html data-wf-page="67ece482da1c868e1ac6f211" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | Политика конфиденциальности</title>
+    <title>Time Caps | Политика конфиденциальности</title>
     <meta content="Узнайте, как мы храним и защищаем ваши данные. Конфиденциальность и безопасность — наш приоритет." property="og:title">
     <meta content="Узнайте, как мы храним и защищаем ваши данные. Конфиденциальность и безопасность — наш приоритет." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

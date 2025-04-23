@@ -2,7 +2,7 @@
 <html data-wf-page="67e2733425715a876488eae4" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | AI-капсула в разработке</title>
+    <title>Time Caps | AI-капсула в разработке</title>
     <meta content="Следите за созданием новой капсулы. Подпишитесь и получайте доступ к инновации раньше всех." property="og:title">
     <meta content="Следите за созданием новой капсулы. Подпишитесь и получайте доступ к инновации раньше всех." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">

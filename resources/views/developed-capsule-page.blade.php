@@ -2,7 +2,7 @@
 <html data-wf-page="67ef8b4ed764533fe4fa32ab" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TimeCapsule | AI-капсула: решение под задачу</title>
+    <title>Time Caps | AI-капсула: решение под задачу</title>
     <meta content="Узнайте, как капсула автоматизирует ваш процесс. Готовое решение с понятным интерфейсом и быстрой пользой." property="og:title">
     <meta content="Узнайте, как капсула автоматизирует ваш процесс. Готовое решение с понятным интерфейсом и быстрой пользой." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
