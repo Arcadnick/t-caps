@@ -47,6 +47,7 @@ class RequestController extends Controller
 
             $text = "📩 Новая заявка ({$request_type}):\n\n"
                 . "👤 Имя: {$userName}\n"
+                . "📮 E-mail: {$email}\n"
                 . "📞 Телефон: {$phone}\n"
                 . "📅 Дата: {$date}\n"
                 . "🕓 Время: {$time}";
