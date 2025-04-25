@@ -761,28 +761,27 @@
                             @csrf
 
                             <input type="hidden" name="request_type" value="подключение">
-{{--                            <input type="hidden" name="capsule_id" value="{{$capsule->id}}">--}}
+                            <input type="hidden" name="capsule_id" value="{{$capsuleId}}">
 
                             <div class="form-row-grid">
                                 <div class="field-block">
-                                    <div class="input-text">Как к вам обращаться?</div>
+                                    <div class="input-text">Как к вам обращаться? <span style="color: #d76364">*</span></div>
                                     <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
                                 </div>
 
                                 <div class="field-block">
-                                    <div class="input-text">Номер телефона</div>
-                                    <input class="text-field w-input" maxlength="18" name="phone" placeholder="+7 (___) ___-__-__" type="text" id="popupPhoneInput" required>
-                                </div>
-
-                                <div class="field-block">
-                                    <div class="input-text">Почта</div>
+                                    <div class="input-text">Почта <span style="color: #d76364">*</span></div>
                                     <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
                                 </div>
 
                                 <div class="field-block">
+                                    <div class="input-text">Номер телефона</div>
+                                    <input class="text-field w-input" maxlength="18" name="phone" placeholder="+7 (___) ___-__-__" type="text" id="popupPhoneInput">
+                                </div>
+
+                                <div class="field-block">
                                     <div class="input-text">Что бы вы хотели автоматизировать с помощью AI?</div>
-                                    <textarea name="message" placeholder="Описание" maxlength="5000"
-                                              class="text-field message-field w-input" style="resize: none"></textarea>
+                                    <textarea name="message" placeholder="Описание" maxlength="5000"  class="text-field message-field w-input" style="resize: none; height: auto"></textarea>
                                 </div>
                             </div>
                             <input type="submit" class="form-button w-button" value="Оставить заявку">

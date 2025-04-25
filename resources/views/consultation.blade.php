@@ -391,8 +391,6 @@
     });
 </script>
 
-
-
 </body>
 <style>
     .flatpickr-calendar {
