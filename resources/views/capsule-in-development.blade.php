@@ -526,7 +526,7 @@
                         <form method="POST" action="{{ route('requests.store') }}" class="form-block">
                             @csrf
 
-                            <input type="hidden" name="request_type" value="подключение">
+                            <input type="hidden" name="request_type" value="разработка">
                             <input type="hidden" name="capsule_id" value="{{$capsule->id}}">
 
                             <div class="form-row-grid">

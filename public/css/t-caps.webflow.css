@@ -4122,7 +4122,7 @@ a:hover {
     h1 {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 2.25rem;
+        font-size: 35px;
         line-height: 2.75rem;
     }
 
@@ -4293,7 +4293,7 @@ a:hover {
     }
 
     .form-heading {
-        font-size: 30px;
+        font-size: 27px;
         line-height: 36px;
     }
 
@@ -4667,6 +4667,7 @@ a:hover {
 
     .standart-text.center-aling {
         line-height: 20px;
+        font-size: 14px;
     }
 
     .blog-post-grid {

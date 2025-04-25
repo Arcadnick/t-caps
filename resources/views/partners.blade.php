@@ -240,8 +240,8 @@
         <div class="popup-container">
             <div class="popup-form-grid">
                 <div class="form-header-block">
-                    <div class="form-heading">Заявка на внедрение</div>
-                    <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
+                    <div class="form-heading">Присоединиться к команде</div>
+                    <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами.</div>
                 </div>
                 <div class="popup-form-block w-form">
                     <form method="POST" action="{{ route('requests.store') }}" class="form-block">
