@@ -2,9 +2,9 @@
 <html data-wf-page="6806454b5418165bd2a633e0" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Landing Talkinghead</title>
-    <meta content="Landing Talkinghead" property="og:title">
-    <meta content="Landing Talkinghead" property="twitter:title">
+    <title>Time Caps | AI-капсула: решение под задачу</title>
+    <meta content="Узнайте, как капсула автоматизирует ваш процесс. Готовое решение с понятным интерфейсом и быстрой пользой." property="og:title">
+    <meta content="Узнайте, как капсула автоматизирует ваш процесс. Готовое решение с понятным интерфейсом и быстрой пользой." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">

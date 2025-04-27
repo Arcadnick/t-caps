@@ -2,9 +2,9 @@
 <html data-wf-page="67e50b5295fa03bbbc021d82" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Forgot password</title>
-    <meta content="Login" property="og:title">
-    <meta content="Login" property="twitter:title">
+    <title>Time Caps | Восстановление пароля</title>
+    <meta content="Забыли пароль? Восстановите доступ к вашему аккаунту Time Caps. Следуйте простым инструкциям, чтобы вернуть доступ к вашему профилю." property="og:title">
+    <meta content="Забыли пароль? Восстановите доступ к вашему аккаунту Time Caps. Следуйте простым инструкциям, чтобы вернуть доступ к вашему профилю." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
