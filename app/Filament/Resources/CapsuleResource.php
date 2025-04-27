@@ -57,8 +57,16 @@ class CapsuleResource extends Resource
                 Toggle::make('is_blocked')->label('Запрещена к показу'),
 
                 TextInput::make('image')
-                    ->label('Название изображения без расширения (изображения должны быть загружены с одинаковым названием для landing \'.jpg\', для страницы capsules \'.png\')')
+                    ->label('Название изображения без расширения')
+                    ->helperText('Изображения должны быть загружены с одинаковым названием для landing \'.jpg\', для страницы capsules \'.png\'')
                     ->nullable()
+                    ->required(),
+
+                TextInput::make('priority')
+                    ->numeric()
+                    ->default(0)
+                    ->label('Приоритет')
+                    ->helperText('Чем больше число тем ниже капсула (если число одинаковое, то капсулы будут показываться друг за другом)')
                     ->required(),
 
                 Fieldset::make('Что автоматизирует')

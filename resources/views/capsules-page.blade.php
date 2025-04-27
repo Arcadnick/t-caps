@@ -225,10 +225,8 @@
                             </div>
                             <div class="heading min-h">IT</div>
                         </button>
-
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="container">
@@ -239,7 +237,7 @@
                             $isGenerated = isset($capsule['type']) && $capsule['type'] === 'сгенерированная';
 
                             $image = 'caps-4';
-                            $link=route('develop-generated-capsule');
+                            $link = route('develop-generated-capsule');
 
                             if (!$isGenerated && isset($capsule['capsule_id']) && isset($capsuleMap[$capsule['capsule_id']])) {
                                 $capsuleData = $capsuleMap[$capsule['capsule_id']];
@@ -575,16 +573,6 @@
             } else {
                 btn.classList.remove('first');
             }
-
-            // btn.addEventListener('click', function (e) {
-            //     e.preventDefault();
-            //
-            //     clickableButtons.forEach((b) => b.classList.remove('first'));
-            //     this.classList.add('first');
-            //
-            //     selectedCategory = this.getAttribute('data-category');
-            //     hiddenCategoryInput.value = selectedCategory;
-            // });
 
             btn.addEventListener('click', function (e) {
                 e.preventDefault();

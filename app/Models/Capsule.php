@@ -20,6 +20,7 @@ class Capsule extends Model
         'use_default_page',
         'default_price',
         'default_integrations',
+        'priority',
     ];
 
     protected $casts = [

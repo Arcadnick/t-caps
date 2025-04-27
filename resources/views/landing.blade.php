@@ -125,7 +125,10 @@
                             <div class="w-layout-grid rows-grid gap-32" data-w-id="">
                                 @php
                                     use App\Models\Capsule;
-                                    $capsules = Capsule::where('is_blocked', false)->where('category_id',1)->get();
+                                    $capsules = Capsule::where('is_blocked', false)
+                                    ->where('category_id',1)
+                                    ->orderByDesc('priority')
+                                    ->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
                                     @php $isReady = $capsule->type === 'готовая'; @endphp
