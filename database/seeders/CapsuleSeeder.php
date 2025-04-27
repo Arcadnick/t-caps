@@ -635,12 +635,36 @@ class CapsuleSeeder extends Seeder
                 'created_at' => Carbon::parse('2025-04-14T12:58:29.000000Z'),
                 'updated_at' => Carbon::parse('2025-04-14T12:58:29.000000Z'),
             ],
+            [
+                'id' => 25,
+                'title' => 'AI-Капсула по видео-аватарам',
+                'slug' => 'ai-videо-avatar',
+                'category_id' => 1,
+                'type' => 'в планах',
+                'is_blocked' => false,
+                'content' => '<p>Генерация видео с «говорящей головой» на базе фото и текста</p><p><br></p>',
+                'automates' =>[
+                    'Озвучка и создание видео на базе текста или аудио',
+                    'Упрощённая генерация роликов для карточек товаров, писем, соцсетей',
+                    'Быстрые приветствия, офферы, объяснения и реакции'
+                ],
+                'expected' =>[
+                    'Рост вовлечённости и доверия',
+                    'Упрощение видео-контента для команд',
+                    'Экономия времени и бюджета на съёмки'
+                ],
+                'image' => 'caps-37',
+                'landing_url' => null,
+                'use_default_page' => false,
+                'default_price' => '94000.00',
+                'default_integrations' =>['CRM-системы <span class="opacity-color-50">Битрикс24, AmoCRM, HubSpot и др.</span>', 'Мессенджеры <span class="opacity-color-50">WhatsApp, Telegram, Instagram и др.</span>', 'Системы аналитики и учёта <span class="opacity-color-50"></span>'],
+                'created_at' => Carbon::parse('2025-04-27T12:58:29.000000Z'),
+                'updated_at' => Carbon::parse('2025-04-27T12:58:29.000000Z'),
+            ],
         ];
 
         foreach ($data as $item) {
             Capsule::updateOrCreate(['id' => $item['id']], $item);
         }
-
-        echo "✅ Capsules seeded successfully.\n";
     }
 }

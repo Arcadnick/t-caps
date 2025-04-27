@@ -22,4 +22,12 @@ class RedirectDevelopedCapsuleController extends Controller
         return redirect()->route('developed-capsule-page');
     }
 
+    public function developedCapsulePage(){
+        return view('developed-capsule-page');
+    }
+
+    public function talkingHead()
+    {
+        return view('talkinghead');
+    }
 }

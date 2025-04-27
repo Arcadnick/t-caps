@@ -82,8 +82,4 @@ class PageController extends Controller
     {
         return view('privacy-policy');
     }
-
-    public function developedCapsulePage(){
-        return view('developed-capsule-page');
-    }
 }

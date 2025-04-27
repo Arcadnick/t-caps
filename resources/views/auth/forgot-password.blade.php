@@ -1,29 +1,3 @@
-{{--<x-guest-layout>--}}
-{{--    <div class="mb-4 text-sm text-gray-600">--}}
-{{--        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}--}}
-{{--    </div>--}}
-
-{{--    <!-- Session Status -->--}}
-{{--    <x-auth-session-status class="mb-4" :status="session('status')" />--}}
-
-{{--    <form method="POST" action="{{ route('password.email') }}">--}}
-{{--        @csrf--}}
-
-{{--        <!-- Email Address -->--}}
-{{--        <div>--}}
-{{--            <x-input-label for="email" :value="__('Email')" />--}}
-{{--            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />--}}
-{{--            <x-input-error :messages="$errors->get('email')" class="mt-2" />--}}
-{{--        </div>--}}
-
-{{--        <div class="flex items-center justify-end mt-4">--}}
-{{--            <x-primary-button>--}}
-{{--                {{ __('Email Password Reset Link') }}--}}
-{{--            </x-primary-button>--}}
-{{--        </div>--}}
-{{--    </form>--}}
-{{--</x-guest-layout>--}}
-
 <!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Apr 01 2025 09:40:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="67e50b5295fa03bbbc021d82" data-wf-site="640ac50b2e2b1655d9fef5ae" lang="en">
 <head>
@@ -41,8 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]  }});</script>
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-    <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/x-icon">
-    <link href="{{ asset('images/webclip.png') }}" rel="apple-touch-icon">
+    @include('partials.favicons')
 </head>
 <body class="body">
 <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out" data-easing2="ease-in-out" role="banner" class="navbar w-nav">

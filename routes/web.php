@@ -66,6 +66,8 @@ Route::get('/develop-generated-capsule', [PageController::class, 'developGenerat
 
 Route::get('/redirect-to-developed/{id}', [RedirectDevelopedCapsuleController::class, 'handle'])->name('redirect-developed');
 
-Route::get('/developed-capsule-page', [PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
+Route::get('/developed-capsule-page', [RedirectDevelopedCapsuleController::class, 'developedCapsulePage'])->name('developed-capsule-page');
+
+Route::get('/talkinghead', [RedirectDevelopedCapsuleController::class, 'talkingHead'])->name('talkinghead');
 
 require __DIR__.'/auth.php';
