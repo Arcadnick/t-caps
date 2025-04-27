@@ -422,14 +422,13 @@
                         <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="6613afc0b9b7fac29d9941ce" data-wf-element-id="7ed3e0c8-df03-323a-64f6-5f3992fc24db">
                             <div class="flex-vertical">
                                 <input class="search-item w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Ваша сфера деятельности" type="text" id="name-2">
-                                <div data-hover="false" data-delay="0" class="dropdown-categories w-dropdown second-dropdown">
+                                <div data-hover="false" data-delay="0" data-w-id="1ee6e070-e726-66b8-b843-f061940eec87" class="dropdown-categories w-dropdown">
                                     <div class="dropdown-toggle w-dropdown-toggle">
-                                        <div class="category-item">
-                                            <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        <div class="category-item"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                             <div>Продажи</div>
                                         </div>
                                         <div class="icon-dropdown w-embed">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5 7.5L10 12.5L15 7.5" stroke="#717680" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </div>
@@ -525,7 +524,6 @@
                             </div>
                             <div class="heading min-h">IT</div>
                         </button>
-
                     </div>
                 </div>
             </div>
@@ -618,7 +616,6 @@
         const form2 = document.querySelector('#email-form');
 
         const clickableButtons = document.querySelectorAll('.dropdown-link, .favors-item');
-        const categoryItem = document.querySelector('.category-item');
 
         let selectedCategory = "Продажи";
         const defaultPlaceholder = "Ваша сфера деятельности";
@@ -637,7 +634,6 @@
                 const newImageSrc = this.querySelector('img')?.getAttribute('src');
 
                 if (newText && newImageSrc) {
-                    // Найдем, в каком dropdown был клик
                     const parentDropdown = this.closest('.dropdown-categories');
                     if (parentDropdown) {
                         const categoryItem = parentDropdown.querySelector('.category-item');
@@ -649,26 +645,6 @@
                 }
             });
         });
-
-        // clickableButtons.forEach((btn) => {
-        //     btn.addEventListener('click', function (e) {
-        //         e.preventDefault();
-        //
-        //         clickableButtons.forEach((b) => b.classList.remove('first'));
-        //         this.classList.add('first');
-        //
-        //         selectedCategory = this.getAttribute('data-category');
-        //         console.log(selectedCategory);
-        //
-        //         const newText = this.querySelector('div.flex-horizontal div')?.textContent.trim();
-        //         const newImageSrc = this.querySelector('img')?.getAttribute('src');
-        //
-        //         if (newText && newImageSrc) {
-        //             categoryItem.querySelector('div').textContent = newText;
-        //             categoryItem.querySelector('img').setAttribute('src', newImageSrc);
-        //         }
-        //     });
-        // });
 
         inputField.addEventListener('input', () => {
             inputField.classList.remove('error');
