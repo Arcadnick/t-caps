@@ -6,20 +6,14 @@
     <meta content="Посмотрите подходящие капсулы по вашему запросу. Настройте и начните использовать за пару минут." property="og:title">
     <meta content="Посмотрите подходящие капсулы по вашему запросу. Настройте и начните использовать за пару минут." property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-            type="text/javascript"></script>
-    <script
-        type="text/javascript">WebFont.load({google: {families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]}});</script>
-    <script type="text/javascript">!function (o, c) {
-            var n = c.documentElement, t = " w-mod-";
-            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-        }(window, document);</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">WebFont.load({google: {families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]}});</script>
+    <script type="text/javascript">!function (o, c) {var n = c.documentElement, t = " w-mod-";n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")}(window, document);</script>
     <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/x-icon">
     <link href="{{ asset('images/webclip.png') }}" rel="apple-touch-icon">
 </head>
@@ -114,11 +108,55 @@
                 <div class="subheader">Подобрали автоматизации под ваш запрос — выбирайте нужные!</div>
                 <div class="search-block">
                     <div class="form-search w-form">
-                        <form method="GET" action="{{ route('capsules') }}" class="form"
-                              data-wf-page-id="67e1830233faffe1916b83de"
-                              data-wf-element-id="4b4bddf6-e556-2086-e2c1-b0b96f37ba9d">
-                            <input class="search-item w-input" maxlength="256" name="industry" data-name="Name"
-                                   placeholder="Ваша сфера деятельности" type="text" id="industry" value="{{ $industry }}">
+                        <form method="GET" action="{{ route('capsules') }}" class="form" data-wf-page-id="67e1830233faffe1916b83de" data-wf-element-id="4b4bddf6-e556-2086-e2c1-b0b96f37ba9d">
+                            <div class="flex-vertical">
+                                <input class="search-item w-input" maxlength="256" name="industry" data-name="Name" placeholder="Ваша сфера деятельности" type="text" id="industry" value="{{ $industry }}">
+                                <div data-hover="false" data-delay="0" data-w-id="1ee6e070-e726-66b8-b843-f061940eec87" class="dropdown-categories w-dropdown">
+                                    <div class="dropdown-toggle w-dropdown-toggle">
+                                        <div class="category-item"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                            <div>Продажи</div>
+                                        </div>
+                                        <div class="icon-dropdown w-embed">
+                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 7.5L10 12.5L15 7.5" stroke="#717680" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <nav class="dropdown-list categories w-dropdown-list">
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Продажи">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Продажи</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Контент">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Контент</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Рекрутинг">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Рекрутинг</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Бизнес">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Бизнес</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="IT">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>IT</div>
+                                            </div>
+                                        </button>
+                                    </nav>
+                                </div>
+                            </div>
+
                             <input type="hidden" name="category" value="{{ $category->name }}">
                             <input type="hidden" name="regenerate" value="1">
 
@@ -519,11 +557,7 @@
     </section>
 </div>
 @include('components.cookie-banner')
-<script
-    src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae"
-    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous">
-</script>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/webflow.js') }}" type="text/javascript"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -543,15 +577,38 @@
                 btn.classList.remove('first');
             }
 
+            // btn.addEventListener('click', function (e) {
+            //     e.preventDefault();
+            //
+            //     clickableButtons.forEach((b) => b.classList.remove('first'));
+            //     this.classList.add('first');
+            //
+            //     selectedCategory = this.getAttribute('data-category');
+            //     hiddenCategoryInput.value = selectedCategory;
+            // });
+
             btn.addEventListener('click', function (e) {
                 e.preventDefault();
 
                 clickableButtons.forEach((b) => b.classList.remove('first'));
-
                 this.classList.add('first');
 
                 selectedCategory = this.getAttribute('data-category');
-                hiddenCategoryInput.value = selectedCategory;
+                console.log(selectedCategory);
+
+                const newText = this.querySelector('div.flex-horizontal div')?.textContent.trim();
+                const newImageSrc = this.querySelector('img')?.getAttribute('src');
+
+                if (newText && newImageSrc) {
+                    const parentDropdown = this.closest('.dropdown-categories');
+                    if (parentDropdown) {
+                        const categoryItem = parentDropdown.querySelector('.category-item');
+                        if (categoryItem) {
+                            categoryItem.querySelector('div').textContent = newText;
+                            categoryItem.querySelector('img').setAttribute('src', newImageSrc);
+                        }
+                    }
+                }
             });
 
             submitButton.addEventListener('click', function (e) {
