@@ -123,20 +123,14 @@
                                 <h2>Продажи и маркетинг</h2>
                                 <div class="subheader">AI-капсулы для автоматизации продаж и маркетинга</div>
                             </div>
-                            <div class="w-layout-grid rows-grid gap-32" data-w-id=""
-                                {{--                                     style="opacity:0" --}}
-                            >
+                            <div class="w-layout-grid rows-grid gap-32" data-w-id="">
                                 @php
                                     use App\Models\Capsule;
                                     $capsules = Capsule::where('is_blocked', false)->where('category_id',1)->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
-                                    @php
-                                        $isReady = $capsule->type === 'готовая';
-                                    @endphp
-
-                                    <div class="w-layout-grid blog-post-grid"
-                                         style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                    @php $isReady = $capsule->type === 'готовая'; @endphp
+                                    <div class="w-layout-grid blog-post-grid" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                         <div class="blog-post-card-inf">
                                             <div class="h2-block padding-left">
                                                 <h3 class="more-size">{{ $capsule->title }}</h3>
@@ -1006,4 +1000,15 @@
     });
 </script>
 </body>
+<style>
+    @media (max-width: 768px) {
+        .blog-post-grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper-post-card-image {
+            order: -1;
+        }
+    }
+</style>
 </html>
