@@ -104,47 +104,43 @@
                                 <div data-hover="false" data-delay="0" data-w-id="1ee6e070-e726-66b8-b843-f061940eec87" class="dropdown-categories w-dropdown">
                                     <div class="dropdown-toggle w-dropdown-toggle">
                                         <div class="category-item"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                            <div>Маркетинг</div>
+                                            <div>Продажи</div>
                                         </div>
-                                        <div class="icon-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <div class="icon-dropdown w-embed">
+                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5 7.5L10 12.5L15 7.5" stroke="#717680" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <nav class="dropdown-list categories w-dropdown-list">
-                                        <button type="button" class="dropdown-link w-inline-block" data-category="Маркетинг">
-                                            <div class="flex-horizontal gap-8">
-                                                <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Маркетинг</div>
-                                            </div>
-                                        </button>
                                         <button type="button" class="dropdown-link w-inline-block" data-category="Продажи">
                                             <div class="flex-horizontal gap-8">
-                                                <img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Продажи</div>
                                             </div>
                                         </button>
-                                        <button type="button" class="dropdown-link w-inline-block" data-category="HR">
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Контент">
                                             <div class="flex-horizontal gap-8">
-                                                <img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>HR</div>
+                                                <img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Контент</div>
                                             </div>
                                         </button>
-                                        <button type="button" class="dropdown-link w-inline-block" data-category="Финансы">
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Рекрутинг">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Рекрутинг</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Бизнес">
                                             <div class="flex-horizontal gap-8">
                                                 <img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Финансы</div>
+                                                <div>Бизнес</div>
                                             </div>
                                         </button>
                                         <button type="button" class="dropdown-link w-inline-block" data-category="IT">
                                             <div class="flex-horizontal gap-8">
                                                 <img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>IT</div>
-                                            </div>
-                                        </button>
-                                        <button type="button" class="dropdown-link w-inline-block" data-category="Другое">
-                                            <div class="flex-horizontal gap-8">
-                                                <img src="{{ asset('images/other-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Другое</div>
                                             </div>
                                         </button>
                                     </nav>
@@ -426,64 +422,49 @@
                         <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="6613afc0b9b7fac29d9941ce" data-wf-element-id="7ed3e0c8-df03-323a-64f6-5f3992fc24db">
                             <div class="flex-vertical">
                                 <input class="search-item w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Ваша сфера деятельности" type="text" id="name-2">
-                                <div data-hover="false" data-delay="0" data-w-id="a23a1b26-3113-ce2e-e19d-9ccf6670da85" class="dropdown-categories w-dropdown">
+                                <div data-hover="false" data-delay="0" class="dropdown-categories w-dropdown second-dropdown">
                                     <div class="dropdown-toggle w-dropdown-toggle">
-                                        <div class="category-item"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                            <div>Маркетинг</div>
+                                        <div class="category-item">
+                                            <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                            <div>Продажи</div>
                                         </div>
-                                        <div class="icon-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <div class="icon-dropdown w-embed">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5 7.5L10 12.5L15 7.5" stroke="#717680" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <nav class="dropdown-list categories w-dropdown-list">
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Маркетинг</div>
-                                            </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Продажи">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>Продажи</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>HR</div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Контент">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/sales-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Контент</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Финансы</div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Рекрутинг">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/recruitment-and-hiring.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Рекрутинг</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="Бизнес">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/finances-шьп.png') }}" loading="lazy" alt="" class="image-dropdown">
+                                                <div>Бизнес</div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="dropdown-link w-inline-block" data-category="IT">
+                                            <div class="flex-horizontal gap-8">
+                                                <img src="{{ asset('images/it-img.png') }}" loading="lazy" alt="" class="image-dropdown">
                                                 <div>IT</div>
                                             </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
-                                        <a href="#" class="dropdown-link w-inline-block">
-                                            <div class="flex-horizontal gap-8"><img src="{{ asset('images/other-img.png') }}" loading="lazy" alt="" class="image-dropdown">
-                                                <div>Другое</div>
-                                            </div>
-                                            <div class="check-dropdown w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16.6673 5L7.50065 14.1667L3.33398 10" stroke="#56AFD9" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></div>
-                                        </a>
+                                        </button>
                                     </nav>
                                 </div>
                             </div>
@@ -629,11 +610,15 @@
     document.addEventListener('DOMContentLoaded', () => {
         const inputField = document.getElementById('name');
         const inputField2= document.getElementById('name-2');
-        const clickableButtons = document.querySelectorAll('.dropdown-link, .favors-item');
+
         const submitButton = document.getElementById('submit-capsule-search');
         const submitButton2 = document.getElementById('submit-capsule-search2');
+
         const form1 = document.querySelector('#search-ai-capsules');
         const form2 = document.querySelector('#email-form');
+
+        const clickableButtons = document.querySelectorAll('.dropdown-link, .favors-item');
+        const categoryItem = document.querySelector('.category-item');
 
         let selectedCategory = "Продажи";
         const defaultPlaceholder = "Ваша сфера деятельности";
@@ -643,12 +628,47 @@
                 e.preventDefault();
 
                 clickableButtons.forEach((b) => b.classList.remove('first'));
-
                 this.classList.add('first');
 
                 selectedCategory = this.getAttribute('data-category');
+                console.log(selectedCategory);
+
+                const newText = this.querySelector('div.flex-horizontal div')?.textContent.trim();
+                const newImageSrc = this.querySelector('img')?.getAttribute('src');
+
+                if (newText && newImageSrc) {
+                    // Найдем, в каком dropdown был клик
+                    const parentDropdown = this.closest('.dropdown-categories');
+                    if (parentDropdown) {
+                        const categoryItem = parentDropdown.querySelector('.category-item');
+                        if (categoryItem) {
+                            categoryItem.querySelector('div').textContent = newText;
+                            categoryItem.querySelector('img').setAttribute('src', newImageSrc);
+                        }
+                    }
+                }
             });
         });
+
+        // clickableButtons.forEach((btn) => {
+        //     btn.addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //
+        //         clickableButtons.forEach((b) => b.classList.remove('first'));
+        //         this.classList.add('first');
+        //
+        //         selectedCategory = this.getAttribute('data-category');
+        //         console.log(selectedCategory);
+        //
+        //         const newText = this.querySelector('div.flex-horizontal div')?.textContent.trim();
+        //         const newImageSrc = this.querySelector('img')?.getAttribute('src');
+        //
+        //         if (newText && newImageSrc) {
+        //             categoryItem.querySelector('div').textContent = newText;
+        //             categoryItem.querySelector('img').setAttribute('src', newImageSrc);
+        //         }
+        //     });
+        // });
 
         inputField.addEventListener('input', () => {
             inputField.classList.remove('error');
