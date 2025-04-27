@@ -602,6 +602,11 @@
             var targetElement = document.getElementById(targetId);
 
             targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            var navOverlay = document.querySelector('.w-nav-overlay');
+            if (navOverlay) {
+                navOverlay.style.display = 'none';
+            }
         });
     });
 </script>
@@ -632,8 +637,6 @@
 
         let selectedCategory = "Продажи";
         const defaultPlaceholder = "Ваша сфера деятельности";
-
-
 
         clickableButtons.forEach((btn) => {
             btn.addEventListener('click', function (e) {
