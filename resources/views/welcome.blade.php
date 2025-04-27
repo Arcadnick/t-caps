@@ -628,7 +628,6 @@
                 this.classList.add('first');
 
                 selectedCategory = this.getAttribute('data-category');
-                console.log(selectedCategory);
 
                 const newText = this.querySelector('div.flex-horizontal div')?.textContent.trim();
                 const newImageSrc = this.querySelector('img')?.getAttribute('src');
