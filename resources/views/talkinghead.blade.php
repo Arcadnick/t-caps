@@ -95,23 +95,36 @@
                         <div class="subheader left-aling">Оживите фото, озвучьте текст или аудио — и получите видео с говорящим аватаром за 1 минуту. Всё прямо в Telegram.</div>
                     </div>
                     <div class="wrapper-btn left-aling width-auto">
-                        <a href="{{route('capsules')}}" class="blue-button w-inline-block">
+                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button w-inline-block">
                             <div>Запустить бота в Telegram</div>
                         </a>
                     </div>
                 </div>
-                <div id="w-node-c131c758-c822-2911-506f-e45f19736631-d2a633e0" class="wrapper-image"><img src="{{asset('')}}images/head-1.jpg" loading="lazy" sizes="(max-width: 997px) 100vw, 997px" srcset="{{asset('images/head-1-p-500.jpg')}} 500w, {{asset('images/head-1-p-800.jpg')}} 800w, {{asset('images/head-1.jpg')}} 997w" alt="" class="img-main-head">
+                <div id="w-node-c131c758-c822-2911-506f-e45f19736631-d2a633e0" class="wrapper-image">
+                    <video id="main-video" class="img-main-head" preload="metadata" playsinline>
+                        <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+{{--                    <img src="{{asset('images/head-1.jpg')}}"
+                             loading="lazy" sizes="(max-width: 997px) 100vw, 997px"
+                             srcset="{{asset('images/head-1-p-500.jpg')}} 500w, {{asset('images/head-1-p-800.jpg')}} 800w, {{asset('images/head-1.jpg')}} 997w"
+                             alt=""
+                             class="img-main-head">--}}
                     <a data-w-id="19d01da6-523f-ee92-5ce5-7592e05ade43" href="#" class="play-block w-inline-block">
                         <div class="elipse-1">
                             <div class="elipse-2">
-                                <div style="display:block;opacity:1" class="play-icon w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                <div style="display:block;opacity:1" class="play-icon w-embed">
+                                    <svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                         <rect fill="none" height="100%" width="100%"></rect>
                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                    </svg></div>
-                                <div style="opacity:0;display:none" class="pause-btn hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    </svg>
+                                </div>
+                                <div style="opacity:0;display:none" class="pause-btn w-embed">
+                                    <svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                         <rect fill="none" height="100%" width="100%"></rect>
                                         <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -1403,7 +1416,7 @@
                     <div class="subheader left-aling light-gray">Очень просто, всего 4 шага</div>
                 </div>
                 <div class="wrapper-btn left-aling mobi-hide">
-                    <a href="{{ route('capsules')}}" class="white-button w-inline-block">
+                    <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="white-button w-inline-block">
                         <div>Запустить бота в Telegram</div>
                     </a>
                 </div>
@@ -1486,7 +1499,7 @@
                 </div>
             </div>
             <div class="wrapper-btn left-aling mobi-vis">
-                <a href="{{ route('capsules')}}" class="white-button w-inline-block">
+                <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="white-button w-inline-block">
                     <div>Запустить бота в Telegram</div>
                 </a>
             </div>
@@ -1540,14 +1553,52 @@
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{asset('js/webflow.js')}}" type="text/javascript"></script>
-<style>
-    .w-slider-dot {
-        background-color: #adb9c380 !important;
-    }
-    .w-slider-dot.w-active {
-        background-color: #4baeeb !important;
-    }
-</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('main-video');
+        const playIcon = document.querySelector('.play-icon');
+        const pauseIcon = document.querySelector('.pause-btn');
+        const playButton = document.querySelector('.play-block');
+
+        if (!video || !playIcon || !pauseIcon || !playButton) {
+            console.error('Не найден один из элементов');
+            return;
+        }
+
+        // Изначальное состояние
+        playIcon.classList.add('visible');
+        pauseIcon.classList.add('hidden');
+
+        playButton.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if (video.paused) {
+                video.play();
+                playIcon.classList.remove('visible');
+                playIcon.classList.add('hidden');
+
+                pauseIcon.classList.remove('hidden');
+                pauseIcon.classList.add('visible');
+            } else {
+                video.pause();
+                playIcon.classList.remove('hidden');
+                playIcon.classList.add('visible');
+
+                pauseIcon.classList.remove('visible');
+                pauseIcon.classList.add('hidden');
+            }
+        });
+
+        video.addEventListener('ended', function() {
+            playIcon.classList.remove('hidden');
+            playIcon.classList.add('visible');
+
+            pauseIcon.classList.remove('visible');
+            pauseIcon.classList.add('hidden');
+        });
+    });
+</script>
+
 <script>
     Webflow.push(function() {
         // When a thumbnail is clicked, update target slider
@@ -1586,4 +1637,21 @@
     }); // End ready function
 </script>
 </body>
+<style>
+    .w-slider-dot {
+        background-color: #adb9c380 !important;
+    }
+    .w-slider-dot.w-active {
+        background-color: #4baeeb !important;
+    }
+    .hidden {
+        display: none !important;
+        opacity: 0 !important;
+    }
+
+    .visible {
+        display: block !important;
+        opacity: 1 !important;
+    }
+</style>
 </html>
