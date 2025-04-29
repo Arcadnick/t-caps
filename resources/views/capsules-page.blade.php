@@ -529,7 +529,7 @@
                 <div class="footer-link-block">
                     <div class="heading-footer">Контакты</div>
                     <a href="tel:+73432435502" class="footer-link">+7 (343) 243-55-02</a>
-                    <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
+                    <a href="mailto:hello@timecaps.pro" class="footer-link">hello@timecaps.pro</a>
                     <div class="footer-text">г. Екатеринбург, ул.<br>Библиотечная 25</div>
                     <div class="footer-text">ИНН: 6658420044</div>
                     <a href="https://t.me/Time_Capsule_AI" target="_blank" class="social-block w-inline-block"><img
