@@ -3899,10 +3899,10 @@ a:hover {
   position: absolute;
 }
 
-/*.play-icon.hover {*/
-/*  opacity: 0;*/
-/*  position: absolute;*/
-/*}*/
+.play-icon.hover {
+  opacity: 0;
+  position: absolute;
+}
 
 .thumbnail-slider {
   background-color: var(--transparent);

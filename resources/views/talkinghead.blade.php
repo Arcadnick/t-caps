@@ -251,27 +251,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_4be13ad2-feba-29fc-5f56-b11546ae1f99-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_4be13ad2-feba-29fc-5f56-b11546ae1f99-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img sizes="(max-width: 767px) 100vw, 768px" srcset="{{asset('images/image-slider-7-p-500.jpg')}} 500w, {{asset('images/image-slider-7.jpg')}} 768w" alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case1.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img sizes="(max-width: 767px) 100vw, 768px" srcset="{{asset('images/image-slider-7-p-500.jpg')}} 500w, {{asset('images/image-slider-7.jpg')}} 768w" alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">
+                                                    </a>
+                                                    <img sizes="(max-width: 767px) 100vw, 768px" srcset="{{asset('images/image-slider-7-p-500.jpg')}} 500w, {{asset('images/image-slider-7.jpg')}} 768w" alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">
                                                 </div>
                                             </div>
                                         </div>
@@ -323,27 +338,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_174b0a18-fb08-e522-c969-b27a92b783d3-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_174b0a18-fb08-e522-c969-b27a92b783d3-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais3.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Cais3.MOV')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais3.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais3.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -395,31 +425,46 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_75035ea2-6bb8-3314-ee05-1c92d4dd0af8-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_75035ea2-6bb8-3314-ee05-1c92d4dd0af8-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais2.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case2.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais2.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais2.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -471,27 +516,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_26b5f679-c2f1-d9e2-d12c-3bff662de051-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_26b5f679-c2f1-d9e2-d12c-3bff662de051-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais4.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case4.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais4.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais4.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -544,27 +604,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-a401a825-7e20-81f6-4737-eed44789e541-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-a401a825-7e20-81f6-4737-eed44789e541-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais5.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case5.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais5.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais5.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -616,27 +691,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_74e42187-d087-8ffe-957a-c0ceb89c9373-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_74e42187-d087-8ffe-957a-c0ceb89c9373-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais6.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case6.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais6.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais6.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -686,27 +776,42 @@
                                                             </div>
                                                         </div>
                                                         <div class="wrapper-btn left-aling">
-                                                            <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                            <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                                 <div>Сделать похожее</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_64405fb1-5d08-96e4-b75f-94477ef963e4-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_64405fb1-5d08-96e4-b75f-94477ef963e4-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais7.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case7.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/Cais7.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/Cais7.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -861,26 +966,41 @@
                                                         </div>
                                                     </div>
                                                     <div class="wrapper-btn left-aling">
-                                                        <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                             <div>Сделать похожее</div>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-c29c2e7f-43dc-3ea7-7b4f-bde90e2b291d-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-c29c2e7f-43dc-3ea7-7b4f-bde90e2b291d-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case8.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -929,26 +1049,41 @@
                                                         </div>
                                                     </div>
                                                     <div class="wrapper-btn left-aling">
-                                                        <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                             <div>Сделать похожее</div>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_9b85cb0b-0621-7438-2c8a-fd77341a2859-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_9b85cb0b-0621-7438-2c8a-fd77341a2859-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img sizes="100vw" srcset="{{asset('images/content-img-2-p-500.jpg')}} 500w, {{asset('images/content-img-2.jpg')}} 566w" alt="" src="{{asset('images/content-img-2.jpg')}}" loading="lazy" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case9.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img sizes="100vw" srcset="{{asset('images/content-img-2-p-500.jpg')}} 500w, {{asset('images/content-img-2.jpg')}} 566w" alt="" src="{{asset('images/content-img-2.jpg')}}" loading="lazy" class="image-cases">
+                                                    </a>
+                                                    <img sizes="100vw" srcset="{{asset('images/content-img-2-p-500.jpg')}} 500w, {{asset('images/content-img-2.jpg')}} 566w" alt="" src="{{asset('images/content-img-2.jpg')}}" loading="lazy" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -997,26 +1132,41 @@
                                                         </div>
                                                     </div>
                                                     <div class="wrapper-btn left-aling">
-                                                        <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                             <div>Сделать похожее</div>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-ba88f0f2-a7c3-1031-2e18-66208ea2f3c2-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-ba88f0f2-a7c3-1031-2e18-66208ea2f3c2-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/image-sllide.png')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case10.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/image-sllide.png')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/image-sllide.png')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -1065,26 +1215,41 @@
                                                         </div>
                                                     </div>
                                                     <div class="wrapper-btn left-aling">
-                                                        <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                             <div>Сделать похожее</div>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-fa4ccffe-0242-22ec-e5ab-048c7c12d66e-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-fa4ccffe-0242-22ec-e5ab-048c7c12d66e-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-4.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case11.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/content-img-4.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/content-img-4.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -1133,26 +1298,41 @@
                                                         </div>
                                                     </div>
                                                     <div class="wrapper-btn left-aling">
-                                                        <a href="{{ route('capsules')}}" class="blue-button cases-block w-inline-block">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
                                                             <div>Сделать похожее</div>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div id="w-node-_4c54d2fd-7b76-8fff-5cee-2ade76acb042-d2a633e0" class="content-presentation">
-                                                    <a href="#" class="pause-block w-inline-block">
+{{--                                                <div id="w-node-_4c54d2fd-7b76-8fff-5cee-2ade76acb042-d2a633e0" class="content-presentation">--}}
+{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
+{{--                                                        <div class="elipse-1 white">--}}
+{{--                                                            <div class="elipse-2">--}}
+{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
+{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
+{{--                                                                    </svg></div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-5.jpg')}}" alt="" class="image-cases">--}}
+{{--                                                </div>--}}
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case12.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
                                                             <div class="elipse-2">
-                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>
-                                                                    </svg></div>
-                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                                                                         <rect fill="none" height="100%" width="100%"></rect>
                                                                         <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg></div>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </a><img loading="lazy" src="{{asset('images/content-img-5.jpg')}}" alt="" class="image-cases">
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/content-img-5.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -1549,6 +1729,14 @@
             </div>
         </div>
     </section>
+    <div id="video-popup" class="video-popup">
+        <div class="video-popup-inner">
+            <button id="video-popup-close" class="video-popup-close">×</button>
+            <div class="video-popup-content">
+                <video id="popup-video" playsinline></video>
+            </div>
+        </div>
+    </div>
     @include('components.cookie-banner')
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -1565,7 +1753,6 @@
             return;
         }
 
-        // Изначальное состояние
         playIcon.classList.add('visible');
         pauseIcon.classList.add('hidden');
 
@@ -1595,6 +1782,42 @@
 
             pauseIcon.classList.remove('visible');
             pauseIcon.classList.add('hidden');
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('video-popup');
+        const popupVideo = document.getElementById('popup-video');
+        const closeButton = document.getElementById('video-popup-close');
+
+        document.querySelectorAll('.open-video').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const parent = this.closest('.content-presentation');
+                const videoSrc = parent.getAttribute('data-video-src');
+                if (videoSrc) {
+                    popupVideo.src = videoSrc;
+                    popup.classList.add('active');
+                    popupVideo.play();
+                }
+            });
+        });
+
+        function closePopup() {
+            popupVideo.pause();
+            popupVideo.currentTime = 0;
+            popupVideo.src = '';
+            popup.classList.remove('active');
+        }
+
+        closeButton.addEventListener('click', closePopup);
+
+        popup.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                closePopup();
+            }
         });
     });
 </script>
@@ -1652,6 +1875,111 @@
     .visible {
         display: block !important;
         opacity: 1 !important;
+    }
+
+    .open-video .play-icon svg:hover path {
+        fill: #4baeeb;
+    }
+</style>
+
+<style>
+    .video-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #535862b3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .video-popup.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .video-popup-inner {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /*max-height: 90vh;*/
+        max-width: 90vw;
+    }
+
+    /*.video-popup-close {*/
+    /*    background: none;*/
+    /*    border: none;*/
+    /*    font-size: 32px;*/
+    /*    color: white;*/
+    /*    cursor: pointer;*/
+    /*    margin-bottom: 10px; !* Отступ вниз перед видео *!*/
+    /*}*/
+    .video-popup-close {
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        align-self: flex-end;
+    }
+
+    .video-popup-content {
+        width: 100%;
+        background: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .video-popup-content video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Адаптация */
+    @media (max-width: 768px) {
+        .video-popup-inner {
+            width: 95%;
+        }
+        .video-popup-close {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+    }
+
+    /*.video-popup-content {*/
+    /*    width: 100%;*/
+    /*    max-width: 100%;*/
+    /*    max-height: 100%;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    background: transparent;*/
+    /*    overflow: hidden;*/
+    /*}*/
+    .video-popup-content {
+        background: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .video-popup-content video {
+        max-height: 90vh;
+        max-width: 90vw;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        display: block;
     }
 </style>
 </html>
