@@ -101,6 +101,14 @@
                     </div>
                 </div>
                 <div id="w-node-c131c758-c822-2911-506f-e45f19736631-d2a633e0" class="wrapper-image">
+                    <img id="video-poster"
+                         src="{{asset('images/head-1.jpg')}}"
+                         loading="lazy" sizes="(max-width: 997px) 100vw, 997px"
+                         srcset="{{asset('images/head-1-p-500.jpg')}} 500w, {{asset('images/head-1-p-800.jpg')}} 800w, {{asset('images/head-1.jpg')}} 997w"
+                         alt=""
+                         class="img-main-head"
+                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;">
+
                     <video id="main-video" class="img-main-head" preload="metadata" playsinline>
                         <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">
                         Your browser does not support the video tag.
@@ -1858,6 +1866,19 @@
             });
         });
     }); // End ready function
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('main-video');
+        const poster = document.getElementById('video-poster');
+
+        video.addEventListener('canplaythrough', function() {
+            poster.style.opacity = '0';
+            poster.style.visibility = 'hidden';
+            poster.style.transition = 'opacity 0.5s ease';
+        });
+    });
 </script>
 </body>
 <style>
