@@ -13,7 +13,7 @@ class PageController extends Controller
         $capsules = collect();
 
         if ($page && is_array($page->capsule_ids)) {
-            $capsules = Capsule::whereIn('id', $page->capsule_ids)->get();
+            $capsules = Capsule::whereIn('id', $page->capsule_ids)->orderByDesc('priority')->get();
         }
 
         return view('welcome', [

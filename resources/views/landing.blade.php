@@ -281,7 +281,10 @@
                             </div>
                             <div class="w-layout-grid rows-grid gap-32">
                                 @php
-                                    $capsules = Capsule::where('is_blocked', false)->where('category_id',2)->get();
+                                    $capsules = Capsule::where('is_blocked', false)
+                                    ->where('category_id',2)
+                                    ->orderByDesc('priority')
+                                    ->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
                                     @php
@@ -438,7 +441,10 @@
                             </div>
                             <div class="w-layout-grid rows-grid gap-32">
                                 @php
-                                    $capsules = Capsule::where('is_blocked', false)->where('category_id',3)->get();
+                                    $capsules = Capsule::where('is_blocked', false)
+                                    ->where('category_id',3)
+                                    ->orderByDesc('priority')
+                                    ->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
                                     @php
@@ -595,7 +601,10 @@
                             </div>
                             <div class="w-layout-grid rows-grid gap-32">
                                 @php
-                                    $capsules = Capsule::where('is_blocked', false)->where('category_id',4)->get();
+                                    $capsules = Capsule::where('is_blocked', false)
+                                    ->where('category_id',4)
+                                    ->orderByDesc('priority')
+                                    ->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
                                     @php
@@ -752,7 +761,10 @@
                             </div>
                             <div class="w-layout-grid rows-grid gap-32">
                                 @php
-                                    $capsules = Capsule::where('is_blocked', false)->where('category_id',2)->get();
+                                    $capsules = Capsule::where('is_blocked', false)
+                                    ->where('category_id',2)
+                                    ->orderByDesc('priority')
+                                    ->get();
                                 @endphp
                                 @foreach($capsules as $capsule)
                                     @php
