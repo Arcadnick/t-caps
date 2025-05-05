@@ -771,7 +771,7 @@ a:hover {
 
 .close-popup-btn {
   cursor: pointer;
-  background-color: #adb9c345;
+  /*background-color: #adb9c345;*/
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -779,7 +779,7 @@ a:hover {
   height: 35px;
   padding: 5px;
   transition: all .15s;
-  display: none;
+  /*display: none;*/
   position: absolute;
   inset: 1vw 1vw auto auto;
 }

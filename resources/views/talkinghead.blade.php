@@ -8,10 +8,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/normalize-talkinghead.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webflow-talkinghead.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/t-caps.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/t-caps-talkinghead.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
@@ -79,9 +79,11 @@
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="#" class="button-base w-inline-block">
-                    <div>Заказать внедрение</div>
-                </a>
+                <button type="button" class="show-popup-link button-base w-inline-block" id="custom-popup-open-1">Заказать внедрение</button>
+
+{{--                <a href="#" class="button-base w-inline-block">--}}
+{{--                    <div>Заказать внедрение</div>--}}
+{{--                </a>--}}
                 <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base header-btn w-inline-block">
                     <div>Перейти в бота</div>
                 </a>
@@ -1534,7 +1536,8 @@
                 </div>
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
-                        <a href="#" class="popap-show button-base footer w-button">Заказать внедрение</a>
+{{--                        <a href="#" class="popap-show button-base footer w-button ">Заказать внедрение</a>--}}
+                        <button type="button" class="show-popup-link button-base footer w-button" id="custom-popup-open-2">Заказать внедрение</button>
                         <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base footer w-button">Перейти в бота</a>
                     </div>
                 </div>
@@ -1556,21 +1559,25 @@
             </div>
         </div>
     </div>
-    <section class="popup-section">
+    <div class="popup-section" id="custom-popup" style="display: none;">
         <div class="popup-overflow">
             <div class="popup-bg"></div>
             <div class="popup-container">
                 <div class="popup-form-grid">
                     <div class="form-header-block">
                         <div class="form-heading">Заявка на внедрение</div>
-                        <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
+                        <div class="standart-text center-aling">Оставьте контакт — мы внедрим AI-аватары в ваш бизнес под любые задачи: продажи, обучение, контент или поддержку.</div>
                     </div>
                     <div class="popup-form-block w-form">
                         <form method="POST" action="{{ route('requests.store') }}" class="form-block">
                             @csrf
-
-                            <input type="hidden" name="request_type" value="разработка">
-{{--                            <input type="hidden" name="capsule_id" value="{{$capsuleId}}">--}}
+                            <input type="hidden" name="request_type" value="подключение">
+                            @php
+                                use App\Models\Capsule;
+                                $capsule = Capsule::where('is_blocked', false)->where('slug', 'talkinghead')->first();
+                                $capsuleId = $capsule?->id;
+                            @endphp
+                            <input type="hidden" name="capsule_id" value="{{$capsuleId}}">
 
                             <div class="form-row-grid">
                                 <div class="field-block">
@@ -1623,18 +1630,63 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     @include('components.cookie-banner')
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{asset('js/webflow.js')}}" type="text/javascript"></script>
-
+{{-- Popup --}}
 <script>
-    function closePopup() {
-        document.querySelectorAll('.popap-show').forEach(el => {
-            el.classList.remove('popap-show');
+    document.addEventListener('DOMContentLoaded', function () {
+        const popup = document.getElementById('custom-popup');
+        const popupContainer = popup.querySelector('.popup-container');
+        const openBtn1 = document.getElementById('custom-popup-open-1');
+        const openBtn2 = document.getElementById('custom-popup-open-2');
+        const closeBtn = document.querySelector('.close-popup-btn');
+        const popupBg = document.querySelector('.popup-bg');
+
+        function openPopup() {
+            popup.style.display = 'block';
+            popup.style.opacity = 1;
+            if (popupContainer) {
+                popupContainer.style.display = 'block';
+                popupContainer.style.opacity = 1;
+            }
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup() {
+            popup.style.display = 'none';
+            if (popupContainer) {
+                popupContainer.style.display = 'none';
+            }
+            document.body.style.overflow = '';
+        }
+
+        if (openBtn1) openBtn1.addEventListener('click', openPopup);
+        if (openBtn2) openBtn2.addEventListener('click', openPopup);
+        if (closeBtn) closeBtn.addEventListener('click', closePopup);
+        if (popupBg) popupBg.addEventListener('click', closePopup);
+    });
+</script>
+
+{{--Маска для номера--}}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const popupPhoneInput = document.getElementById('popupPhoneInput');
+
+        popupPhoneInput.addEventListener('input', function () {
+            let x = this.value.replace(/\D/g, '').slice(1);
+            let formatted = '+7';
+
+            if (x.length > 0) formatted += ' (' + x.substring(0, 3);
+            if (x.length >= 4) formatted += ') ' + x.substring(3, 6);
+            if (x.length >= 7) formatted += '-' + x.substring(6, 8);
+            if (x.length >= 9) formatted += '-' + x.substring(8, 10);
+
+            this.value = formatted;
         });
-    }
+    });
 </script>
 
 <script>
