@@ -301,7 +301,7 @@
                                                             </div>
                                                         </div>
                                                     </a>
-                                                    <img sizes="(max-width: 767px) 100vw, 768px" srcset="{{asset('images/image-slider-7-p-500.jpg')}} 500w, {{asset('images/image-slider-7.jpg')}} 768w" alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">
+                                                    <img alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">
                                                 </div>
                                             </div>
                                         </div>
