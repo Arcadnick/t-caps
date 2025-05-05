@@ -1927,7 +1927,7 @@
         fill: #4baeeb;
     }
 
-    .wrapper-image:hover .play-icon svg path {
+    .img-main-head:hover ~ .play-block .play-icon svg path {
         fill: #4baeeb !important;
     }
 
