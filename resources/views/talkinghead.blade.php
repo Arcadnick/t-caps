@@ -23,9 +23,25 @@
         .wrapper-image {
             aspect-ratio: 1 / 1;
             pointer-events: auto;
-            /*clip-path: circle(50%);*/
         }
     </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(101620938, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/101620938" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body class="body">
 <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out" data-easing2="ease-in-out" role="banner" class="navbar w-nav">
@@ -120,11 +136,6 @@
                         <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-{{--                    <img src="{{asset('images/head-1.jpg')}}"
-                             loading="lazy" sizes="(max-width: 997px) 100vw, 997px"
-                             srcset="{{asset('images/head-1-p-500.jpg')}} 500w, {{asset('images/head-1-p-800.jpg')}} 800w, {{asset('images/head-1.jpg')}} 997w"
-                             alt=""
-                             class="img-main-head">--}}
                     <a data-w-id="19d01da6-523f-ee92-5ce5-7592e05ade43" href="#" class="play-block w-inline-block">
                         <div class="elipse-1">
                             <div class="elipse-2">
@@ -285,7 +296,7 @@
                                                             </div>
                                                         </div>
                                                     </a>
-                                                    <img alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">
+                                                    <img alt="" src="{{asset('images/slide-image-25.jpg')}}" loading="lazy" class="image-cases height-auto">
                                                 </div>
                                             </div>
                                         </div>
@@ -343,22 +354,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_174b0a18-fb08-e522-c969-b27a92b783d3-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais3.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Cais3.MOV')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
