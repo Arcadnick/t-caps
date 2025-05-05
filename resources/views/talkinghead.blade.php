@@ -19,6 +19,11 @@
     <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,latin"]  }});</script>
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
     @include('partials.favicons')
+    <style>
+        .wrapper-image {
+            aspect-ratio: 1 / 1;
+        }
+    </style>
 </head>
 <body class="body">
 <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out" data-easing2="ease-in-out" role="banner" class="navbar w-nav">
@@ -107,7 +112,8 @@
                          srcset="{{asset('images/head-1-p-500.jpg')}} 500w, {{asset('images/head-1-p-800.jpg')}} 800w, {{asset('images/head-1.jpg')}} 997w"
                          alt=""
                          class="img-main-head"
-                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;">
+                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;"
+                    >
 
                     <video id="main-video" class="img-main-head" preload="metadata" playsinline>
                         <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">

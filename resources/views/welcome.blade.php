@@ -201,7 +201,6 @@
                             </div>
                             <div class="heading min-h">IT</div>
                         </button>
-
                     </div>
                 </div>
             </div>
