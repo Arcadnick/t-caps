@@ -1535,9 +1535,6 @@
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
                         <a href="#" class="popap-show button-base footer w-button">Заказать внедрение</a>
-                        <button type="button" onclick="document.querySelector('.popup-section').classList.add('popap-show')">
-                            Оставить заявку
-                        </button>
                         <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base footer w-button">Перейти в бота</a>
                     </div>
                 </div>
