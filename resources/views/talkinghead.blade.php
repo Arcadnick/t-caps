@@ -272,22 +272,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_4be13ad2-feba-29fc-5f56-b11546ae1f99-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img sizes="(max-width: 767px) 100vw, 768px" srcset="{{asset('images/image-slider-7-p-500.jpg')}} 500w, {{asset('images/image-slider-7.jpg')}} 768w" alt="" src="{{asset('images/image-slider-7.jpg')}}" loading="lazy" class="image-cases height-auto">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case1.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -446,26 +430,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_75035ea2-6bb8-3314-ee05-1c92d4dd0af8-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais2.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case2.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -537,22 +501,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_26b5f679-c2f1-d9e2-d12c-3bff662de051-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais4.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case4.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -625,22 +573,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-a401a825-7e20-81f6-4737-eed44789e541-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais5.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case5.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -712,22 +644,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_74e42187-d087-8ffe-957a-c0ceb89c9373-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais6.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case6.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -797,22 +713,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_64405fb1-5d08-96e4-b75f-94477ef963e4-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/Cais7.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case7.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -946,89 +846,6 @@
                                                             <div>#Образование</div>
                                                         </div>
                                                         <div class="teg-item">
-                                                            <div>#Объяснение</div>
-                                                        </div>
-                                                        <div class="teg-item">
-                                                            <div>#Мультиязычность</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-vertical gap-32">
-                                                        <div class="flex-vertical gap-12">
-                                                            <h3>AI-спикер: объясняет сложное простыми словами</h3>
-                                                            <div class="size-14 trout-color">Аватар помогает донести даже самые сложные идеи — чётко, просто и на любом языке.</div>
-                                                        </div>
-                                                        <div class="flex-vertical gap-12">
-                                                            <div class="step-item radius-16">
-                                                                <div class="grid-icon-cases">
-                                                                    <div class="wrapper-icon-cases">
-                                                                        <div class="icon-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M19.6686 6.94843L10.2936 1.94843C10.2031 1.90027 10.1023 1.87509 9.9998 1.87509C9.89736 1.87509 9.79648 1.90027 9.70605 1.94843L0.331055 6.94843C0.231058 7.00172 0.14743 7.08119 0.0891172 7.17834C0.0308042 7.2755 0 7.38668 0 7.49999C0 7.6133 0.0308042 7.72448 0.0891172 7.82163C0.14743 7.91879 0.231058 7.99826 0.331055 8.05155L2.4998 9.20858V12.9914C2.49916 13.2984 2.61214 13.5948 2.81699 13.8234C3.84043 14.9633 6.1334 16.875 9.9998 16.875C11.2818 16.8856 12.5542 16.6534 13.7498 16.1906V18.75C13.7498 18.9157 13.8157 19.0747 13.9329 19.1919C14.0501 19.3091 14.209 19.375 14.3748 19.375C14.5406 19.375 14.6995 19.3091 14.8167 19.1919C14.934 19.0747 14.9998 18.9157 14.9998 18.75V15.5867C15.8148 15.1162 16.5513 14.5213 17.1826 13.8234C17.3875 13.5948 17.5005 13.2984 17.4998 12.9914V9.20858L19.6686 8.05155C19.7686 7.99826 19.8522 7.91879 19.9105 7.82163C19.9688 7.72448 19.9996 7.6133 19.9996 7.49999C19.9996 7.38668 19.9688 7.2755 19.9105 7.17834C19.8522 7.08119 19.7686 7.00172 19.6686 6.94843ZM9.9998 15.625C6.61934 15.625 4.63105 13.9734 3.7498 12.9914V9.87499L9.70605 13.0515C9.79648 13.0997 9.89736 13.1249 9.9998 13.1249C10.1023 13.1249 10.2031 13.0997 10.2936 13.0515L13.7498 11.2086V14.8289C12.7654 15.2883 11.5248 15.625 9.9998 15.625ZM16.2498 12.9883C15.8752 13.404 15.456 13.7773 14.9998 14.1016V10.5414L16.2498 9.87499V12.9883ZM14.6873 9.29218L14.6701 9.28202L10.2951 6.94843C10.1491 6.87387 9.97974 6.85964 9.82338 6.90879C9.66702 6.95795 9.53623 7.06656 9.45918 7.21123C9.38213 7.3559 9.365 7.52504 9.41147 7.68222C9.45794 7.8394 9.56429 7.97204 9.70762 8.05155L13.3592 9.99999L9.9998 11.7914L1.95293 7.49999L9.9998 3.20858L18.0467 7.49999L14.6873 9.29218Z" fill="#4BAEEB"></path>
-                                                                            </svg></div>
-                                                                    </div>
-                                                                    <div class="size-14 trout-color">Используйте для курсов, обучения, презентаций или YouTube-контента</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="step-item radius-16">
-                                                                <div class="grid-icon-cases">
-                                                                    <div class="wrapper-icon-cases">
-                                                                        <div class="icon-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M10 13.75C10.9942 13.749 11.9475 13.3535 12.6505 12.6505C13.3535 11.9475 13.749 10.9942 13.75 10V5C13.75 4.00544 13.3549 3.05161 12.6517 2.34835C11.9484 1.64509 10.9946 1.25 10 1.25C9.00544 1.25 8.05161 1.64509 7.34835 2.34835C6.64509 3.05161 6.25 4.00544 6.25 5V10C6.25103 10.9942 6.64645 11.9475 7.34949 12.6505C8.05253 13.3535 9.00576 13.749 10 13.75ZM7.5 5C7.5 4.33696 7.76339 3.70107 8.23223 3.23223C8.70107 2.76339 9.33696 2.5 10 2.5C10.663 2.5 11.2989 2.76339 11.7678 3.23223C12.2366 3.70107 12.5 4.33696 12.5 5V10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10V5ZM10.625 16.2188V18.125C10.625 18.2908 10.5592 18.4497 10.4419 18.5669C10.3247 18.6842 10.1658 18.75 10 18.75C9.83424 18.75 9.67527 18.6842 9.55806 18.5669C9.44085 18.4497 9.375 18.2908 9.375 18.125V16.2188C7.8341 16.062 6.40607 15.3393 5.36707 14.1907C4.32806 13.042 3.7519 11.5489 3.75 10C3.75 9.83424 3.81585 9.67527 3.93306 9.55806C4.05027 9.44085 4.20924 9.375 4.375 9.375C4.54076 9.375 4.69973 9.44085 4.81694 9.55806C4.93415 9.67527 5 9.83424 5 10C5 11.3261 5.52678 12.5979 6.46447 13.5355C7.40215 14.4732 8.67392 15 10 15C11.3261 15 12.5979 14.4732 13.5355 13.5355C14.4732 12.5979 15 11.3261 15 10C15 9.83424 15.0658 9.67527 15.1831 9.55806C15.3003 9.44085 15.4592 9.375 15.625 9.375C15.7908 9.375 15.9497 9.44085 16.0669 9.55806C16.1842 9.67527 16.25 9.83424 16.25 10C16.2481 11.5489 15.6719 13.042 14.6329 14.1907C13.5939 15.3393 12.1659 16.062 10.625 16.2188Z" fill="#4BAEEB"></path>
-                                                                            </svg></div>
-                                                                    </div>
-                                                                    <div class="size-14 trout-color">Переводите и озвучивайте информацию голосом, понятным вашей аудитории</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper-btn left-aling">
-                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
-                                                            <div>Сделать похожее</div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-{{--                                                <div id="w-node-c29c2e7f-43dc-3ea7-7b4f-bde90e2b291d-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
-                                                <div class="content-presentation" data-video-src="{{asset('vid/Case8.mp4')}}">
-                                                    <a href="#" class="pause-block w-inline-block open-video">
-                                                        <div class="elipse-1 white">
-                                                            <div class="elipse-2">
-                                                                <div class="play-icon w-embed">
-                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect fill="none" height="100%" width="100%"></rect>
-                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide w-slide">
-                                        <div class="wrapper-content-cases">
-                                            <div class="grid-cases">
-                                                <div class="inf-presentation-block">
-                                                    <div class="flex-horizontal gap-8">
-                                                        <div class="teg-item">
-                                                            <div>#Образование</div>
-                                                        </div>
-                                                        <div class="teg-item">
                                                             <div>#История</div>
                                                         </div>
                                                         <div class="teg-item">
@@ -1069,22 +886,6 @@
                                                         </a>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_9b85cb0b-0621-7438-2c8a-fd77341a2859-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img sizes="100vw" srcset="{{asset('images/content-img-2-p-500.jpg')}} 500w, {{asset('images/content-img-2.jpg')}} 566w" alt="" src="{{asset('images/content-img-2.jpg')}}" loading="lazy" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case9.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -1099,6 +900,73 @@
                                                         </div>
                                                     </a>
                                                     <img sizes="100vw" srcset="{{asset('images/content-img-2-p-500.jpg')}} 500w, {{asset('images/content-img-2.jpg')}} 566w" alt="" src="{{asset('images/content-img-2.jpg')}}" loading="lazy" class="image-cases">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide w-slide">
+                                        <div class="wrapper-content-cases">
+                                            <div class="grid-cases">
+                                                <div class="inf-presentation-block">
+                                                    <div class="flex-horizontal gap-8">
+                                                        <div class="teg-item">
+                                                            <div>#Образование</div>
+                                                        </div>
+                                                        <div class="teg-item">
+                                                            <div>#Объяснение</div>
+                                                        </div>
+                                                        <div class="teg-item">
+                                                            <div>#Мультиязычность</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-vertical gap-32">
+                                                        <div class="flex-vertical gap-12">
+                                                            <h3>AI-спикер: объясняет сложное простыми словами</h3>
+                                                            <div class="size-14 trout-color">Аватар помогает донести даже самые сложные идеи — чётко, просто и на любом языке.</div>
+                                                        </div>
+                                                        <div class="flex-vertical gap-12">
+                                                            <div class="step-item radius-16">
+                                                                <div class="grid-icon-cases">
+                                                                    <div class="wrapper-icon-cases">
+                                                                        <div class="icon-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M19.6686 6.94843L10.2936 1.94843C10.2031 1.90027 10.1023 1.87509 9.9998 1.87509C9.89736 1.87509 9.79648 1.90027 9.70605 1.94843L0.331055 6.94843C0.231058 7.00172 0.14743 7.08119 0.0891172 7.17834C0.0308042 7.2755 0 7.38668 0 7.49999C0 7.6133 0.0308042 7.72448 0.0891172 7.82163C0.14743 7.91879 0.231058 7.99826 0.331055 8.05155L2.4998 9.20858V12.9914C2.49916 13.2984 2.61214 13.5948 2.81699 13.8234C3.84043 14.9633 6.1334 16.875 9.9998 16.875C11.2818 16.8856 12.5542 16.6534 13.7498 16.1906V18.75C13.7498 18.9157 13.8157 19.0747 13.9329 19.1919C14.0501 19.3091 14.209 19.375 14.3748 19.375C14.5406 19.375 14.6995 19.3091 14.8167 19.1919C14.934 19.0747 14.9998 18.9157 14.9998 18.75V15.5867C15.8148 15.1162 16.5513 14.5213 17.1826 13.8234C17.3875 13.5948 17.5005 13.2984 17.4998 12.9914V9.20858L19.6686 8.05155C19.7686 7.99826 19.8522 7.91879 19.9105 7.82163C19.9688 7.72448 19.9996 7.6133 19.9996 7.49999C19.9996 7.38668 19.9688 7.2755 19.9105 7.17834C19.8522 7.08119 19.7686 7.00172 19.6686 6.94843ZM9.9998 15.625C6.61934 15.625 4.63105 13.9734 3.7498 12.9914V9.87499L9.70605 13.0515C9.79648 13.0997 9.89736 13.1249 9.9998 13.1249C10.1023 13.1249 10.2031 13.0997 10.2936 13.0515L13.7498 11.2086V14.8289C12.7654 15.2883 11.5248 15.625 9.9998 15.625ZM16.2498 12.9883C15.8752 13.404 15.456 13.7773 14.9998 14.1016V10.5414L16.2498 9.87499V12.9883ZM14.6873 9.29218L14.6701 9.28202L10.2951 6.94843C10.1491 6.87387 9.97974 6.85964 9.82338 6.90879C9.66702 6.95795 9.53623 7.06656 9.45918 7.21123C9.38213 7.3559 9.365 7.52504 9.41147 7.68222C9.45794 7.8394 9.56429 7.97204 9.70762 8.05155L13.3592 9.99999L9.9998 11.7914L1.95293 7.49999L9.9998 3.20858L18.0467 7.49999L14.6873 9.29218Z" fill="#4BAEEB"></path>
+                                                                            </svg></div>
+                                                                    </div>
+                                                                    <div class="size-14 trout-color">Используйте для курсов, обучения, презентаций или YouTube-контента</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="step-item radius-16">
+                                                                <div class="grid-icon-cases">
+                                                                    <div class="wrapper-icon-cases">
+                                                                        <div class="icon-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M10 13.75C10.9942 13.749 11.9475 13.3535 12.6505 12.6505C13.3535 11.9475 13.749 10.9942 13.75 10V5C13.75 4.00544 13.3549 3.05161 12.6517 2.34835C11.9484 1.64509 10.9946 1.25 10 1.25C9.00544 1.25 8.05161 1.64509 7.34835 2.34835C6.64509 3.05161 6.25 4.00544 6.25 5V10C6.25103 10.9942 6.64645 11.9475 7.34949 12.6505C8.05253 13.3535 9.00576 13.749 10 13.75ZM7.5 5C7.5 4.33696 7.76339 3.70107 8.23223 3.23223C8.70107 2.76339 9.33696 2.5 10 2.5C10.663 2.5 11.2989 2.76339 11.7678 3.23223C12.2366 3.70107 12.5 4.33696 12.5 5V10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10V5ZM10.625 16.2188V18.125C10.625 18.2908 10.5592 18.4497 10.4419 18.5669C10.3247 18.6842 10.1658 18.75 10 18.75C9.83424 18.75 9.67527 18.6842 9.55806 18.5669C9.44085 18.4497 9.375 18.2908 9.375 18.125V16.2188C7.8341 16.062 6.40607 15.3393 5.36707 14.1907C4.32806 13.042 3.7519 11.5489 3.75 10C3.75 9.83424 3.81585 9.67527 3.93306 9.55806C4.05027 9.44085 4.20924 9.375 4.375 9.375C4.54076 9.375 4.69973 9.44085 4.81694 9.55806C4.93415 9.67527 5 9.83424 5 10C5 11.3261 5.52678 12.5979 6.46447 13.5355C7.40215 14.4732 8.67392 15 10 15C11.3261 15 12.5979 14.4732 13.5355 13.5355C14.4732 12.5979 15 11.3261 15 10C15 9.83424 15.0658 9.67527 15.1831 9.55806C15.3003 9.44085 15.4592 9.375 15.625 9.375C15.7908 9.375 15.9497 9.44085 16.0669 9.55806C16.1842 9.67527 16.25 9.83424 16.25 10C16.2481 11.5489 15.6719 13.042 14.6329 14.1907C13.5939 15.3393 12.1659 16.062 10.625 16.2188Z" fill="#4BAEEB"></path>
+                                                                            </svg></div>
+                                                                    </div>
+                                                                    <div class="size-14 trout-color">Переводите и озвучивайте информацию голосом, понятным вашей аудитории</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper-btn left-aling">
+                                                        <a href="https://t.me/AI_Talking_Head_bot" target='_blank' class="blue-button cases-block w-inline-block">
+                                                            <div>Сделать похожее</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="content-presentation" data-video-src="{{asset('vid/Case8.mp4')}}">
+                                                    <a href="#" class="pause-block w-inline-block open-video">
+                                                        <div class="elipse-1 white">
+                                                            <div class="elipse-2">
+                                                                <div class="play-icon w-embed">
+                                                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                                                        <rect fill="none" height="100%" width="100%"></rect>
+                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <img loading="lazy" src="{{asset('images/content-img-1.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -1152,22 +1020,6 @@
                                                         </a>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-ba88f0f2-a7c3-1031-2e18-66208ea2f3c2-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/image-sllide.png')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case10.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -1181,7 +1033,7 @@
                                                             </div>
                                                         </div>
                                                     </a>
-                                                    <img loading="lazy" src="{{asset('images/image-sllide.png')}}" alt="" class="image-cases">
+                                                    <img loading="lazy" src="{{asset('images/image-sllide.jpg')}}" alt="" class="image-cases">
                                                 </div>
                                             </div>
                                         </div>
@@ -1235,22 +1087,6 @@
                                                         </a>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-fa4ccffe-0242-22ec-e5ab-048c7c12d66e-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-4.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case11.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -1318,22 +1154,6 @@
                                                         </a>
                                                     </div>
                                                 </div>
-{{--                                                <div id="w-node-_4c54d2fd-7b76-8fff-5cee-2ade76acb042-d2a633e0" class="content-presentation">--}}
-{{--                                                    <a href="#" class="pause-block w-inline-block">--}}
-{{--                                                        <div class="elipse-1 white">--}}
-{{--                                                            <div class="elipse-2">--}}
-{{--                                                                <div class="pause-btn w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z" fill="#4BAEEB"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                                <div class="play-icon hover w-embed"><svg viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                                        <rect fill="none" height="100%" width="100%"></rect>--}}
-{{--                                                                        <path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path>--}}
-{{--                                                                    </svg></div>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </a><img loading="lazy" src="{{asset('images/content-img-5.jpg')}}" alt="" class="image-cases">--}}
-{{--                                                </div>--}}
                                                 <div class="content-presentation" data-video-src="{{asset('vid/Case12.mp4')}}">
                                                     <a href="#" class="pause-block w-inline-block open-video">
                                                         <div class="elipse-1 white">
@@ -1825,7 +1645,8 @@
         const popupVideo = document.getElementById('popup-video');
         const closeButton = document.getElementById('video-popup-close');
 
-        document.querySelectorAll('.open-video').forEach(button => {
+        // document.querySelectorAll('.open-video').forEach(button => {
+        document.querySelectorAll('.content-presentation').forEach(button => {
             button.addEventListener('click', function(event) {
                 event.preventDefault();
                 const parent = this.closest('.content-presentation');
@@ -1923,7 +1744,7 @@
         opacity: 1 !important;
     }
 
-    .open-video .play-icon svg:hover path {
+    .content-presentation:hover .play-icon path {
         fill: #4baeeb;
     }
 
@@ -1935,11 +1756,13 @@
         cursor: pointer;
         pointer-events: auto;
     }
-
-
 </style>
 
 <style>
+    .content-presentation{
+        cursor: pointer;
+    }
+
     .video-popup {
         position: fixed;
         top: 0;
@@ -1971,14 +1794,6 @@
         max-width: 90vw;
     }
 
-    /*.video-popup-close {*/
-    /*    background: none;*/
-    /*    border: none;*/
-    /*    font-size: 32px;*/
-    /*    color: white;*/
-    /*    cursor: pointer;*/
-    /*    margin-bottom: 10px; !* Отступ вниз перед видео *!*/
-    /*}*/
     .video-popup-close {
         background: none;
         border: none;
@@ -2003,7 +1818,6 @@
         border-radius: 10px;
     }
 
-    /* Адаптация */
     @media (max-width: 768px) {
         .video-popup-inner {
             width: 95%;
@@ -2014,16 +1828,6 @@
         }
     }
 
-    /*.video-popup-content {*/
-    /*    width: 100%;*/
-    /*    max-width: 100%;*/
-    /*    max-height: 100%;*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    background: transparent;*/
-    /*    overflow: hidden;*/
-    /*}*/
     .video-popup-content {
         background: transparent;
         border-radius: 10px;
