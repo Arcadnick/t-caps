@@ -23,7 +23,7 @@
         .wrapper-image {
             aspect-ratio: 1 / 1;
             pointer-events: auto;
-            clip-path: circle(50%);
+            /*clip-path: circle(50%);*/
         }
     </style>
 </head>
@@ -116,7 +116,7 @@
                          class="img-main-head"
                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;">
 
-                    <video id="main-video" class="img-main-head" preload="metadata" playsinline style="position: relative; z-index: 2">
+                    <video id="main-video" class="img-main-head" preload="metadata" playsinline style="position: relative; z-index: 2; clip-path: circle(50%)">
                         <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
