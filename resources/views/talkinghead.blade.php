@@ -50,44 +50,40 @@
         <div class="nav-container-col">
             <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-menu-block">
-                    <a href="{{ route('landing') }}" class="nav-link-block w-inline-block">
-                        <div>Наши AI-капсулы</div>
+                    <a href="{{ route('talkinghead') }}" class="sales-and-content nav-link-block w-inline-block">
+                        <div>Продажи и контент</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('welcome') }}" class="how-it-works-link nav-link-block w-inline-block">
+                    <a href="{{ route('talkinghead') }}" class="how-it-works-link nav-link-block w-inline-block">
                         <div>Как работает</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
-                    <a href="{{ route('partners') }}" class="nav-link-block w-inline-block">
-                        <div>Разработчикам</div>
+                    <a href="{{ route('talkinghead') }}" class="more-ideas nav-link-block w-inline-block">
+                        <div>Больше идей</div>
                         <div class="icon-nav-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#56A0D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg></div>
                     </a>
                     <div class="button-nav-block">
-                        <a href="{{ route('login') }}" class="button-base navbar-btn blue-color w-inline-block">
-                            <div>Войти</div>
+                        <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base navbar-btn blue-color w-inline-block">
+                            <div>Перейти в бота</div>
                         </a>
-                        <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base navbar-btn w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp">
-                            <div>Связаться в Telegram</div>
-                        </a>
-                        <a href="{{ route('consultation') }}" class="button-base navbar-btn w-inline-block">
-                            <div>Заказать консультацию</div>
+                        <a href="#" class="button-base navbar-btn w-inline-block">
+                            <div>Заказать внедрение</div>
                         </a>
                     </div>
                 </div>
             </nav>
             <div class="nav-right-col">
-                <a href="https://t.me/Time_Capsule_AI" target="_blank" class="button-base w-inline-block"><img src="{{ asset('images/telegram_logo.svg') }}" loading="lazy" alt="" class="icon-whatsapp"></a>
-                <a href="{{ route('consultation') }}" class="button-base w-inline-block">
-                    <div>Заказать консультацию</div>
+                <a href="#" class="button-base w-inline-block">
+                    <div>Заказать внедрение</div>
                 </a>
-                <a href="{{ route('login') }}" class="button-base header-btn w-inline-block">
-                    <div>Войти</div>
+                <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base header-btn w-inline-block">
+                    <div>Перейти в бота</div>
                 </a>
             </div>
             <div class="menu-btn w-nav-button">
@@ -131,7 +127,6 @@
                          alt=""
                          class="img-main-head"
                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;">
-
                     <video id="main-video" class="img-main-head" preload="metadata" playsinline style="position: relative; z-index: 2; clip-path: circle(50%)">
                         <source src="{{asset('vid/Brian.mp4')}}" type="video/mp4">
                         Your browser does not support the video tag.
@@ -162,7 +157,7 @@
         <div class="shape-blur-blue bottom-right"></div>
         <div class="shape-blur-green bottom-position"></div>
     </section>
-    <section class="section">
+    <section class="section" id="howWorkGrid">
         <div class="container">
             <div class="h2-block">
                 <div class="shield-bl">
@@ -204,7 +199,7 @@
         </div>
         <div class="shape-blur-blue bottom-left"></div>
     </section>
-    <section class="section radius">
+    <section class="section radius" id="SalesAndContent">
         <div class="container">
             <div class="h2-block">
                 <h2 class="center-aling">Говорящий аватар — под любую задачу</h2>
@@ -1240,7 +1235,7 @@
             <div class="circle-3 bottom-position"></div>
         </div>
     </section>
-    <section class="section white-bg border-top overflow-vis">
+    <section class="section white-bg border-top overflow-vis" id="MoreIdeas">
         <div class="container">
             <div class="w-layout-grid ideas-grid">
                 <div class="sticky-block">
@@ -1529,24 +1524,21 @@
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Навигация</div>
-                    <a href="{{ route('landing') }}" class="footer-link">Наши AI-капсулы</a>
-                    <a href="{{ route('welcome') }}#howWorkGrid" class="footer-link">Как работает</a>
-                    <a href="{{ route('partners') }}" class="footer-link">Партнерам</a>
+                    <a href="{{ route('talkinghead') }}" class="sales-and-content footer-link">Продажи и контент</a>
+                    <a href="{{ route('talkinghead') }}" class="how-it-works-link footer-link">Как работает</a>
+                    <a href="{{ route('talkinghead') }}" class="more-ideas footer-link">Больше идей</a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Контакты</div>
-                    <a href="tel:+73432435502" class="footer-link">+7 (343) 243-55-02</a>
                     <a href="mailto:hello@timecaps.pro" class="footer-link">hello@timecaps.pro</a>
-                    <div class="footer-text">г. Екатеринбург, ул.<br>Библиотечная 25</div>
-                    <div class="footer-text">ИНН: 6658420044</div>
-                    <a href="https://t.me/Time_Capsule_AI" target="_blank" class="social-block w-inline-block"><img
-                            src="{{ asset('images/telegram-png.png') }}" loading="lazy" alt="" class="social-png"></a>
                 </div>
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
-                        <a href="{{ route('consultation') }}" class="button-base footer w-button">Заказать
-                            консультацию</a>
-                        <a href="{{ route('login') }}" class="button-base footer w-button">Войти</a>
+                        <a href="#" class="popap-show button-base footer w-button">Заказать внедрение</a>
+                        <button type="button" onclick="document.querySelector('.popup-section').classList.add('popap-show')">
+                            Оставить заявку
+                        </button>
+                        <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base footer w-button">Перейти в бота</a>
                     </div>
                 </div>
             </div>
@@ -1567,10 +1559,192 @@
             </div>
         </div>
     </div>
+    <section class="popup-section">
+        <div class="popup-overflow">
+            <div class="popup-bg"></div>
+            <div class="popup-container">
+                <div class="popup-form-grid">
+                    <div class="form-header-block">
+                        <div class="form-heading">Заявка на внедрение</div>
+                        <div class="standart-text center-aling">Заполните свои данные и мы свяжемся с вами по вопросам внедрения данного AI агента в ваш бизнес.</div>
+                    </div>
+                    <div class="popup-form-block w-form">
+                        <form method="POST" action="{{ route('requests.store') }}" class="form-block">
+                            @csrf
+
+                            <input type="hidden" name="request_type" value="разработка">
+{{--                            <input type="hidden" name="capsule_id" value="{{$capsuleId}}">--}}
+
+                            <div class="form-row-grid">
+                                <div class="field-block">
+                                    <div class="input-text">Как к вам обращаться? <span style="color: #d76364">*</span></div>
+                                    <input class="text-field w-input" maxlength="256" name="user_name" placeholder="Введите Ваше имя" type="text" required>
+                                </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Почта <span style="color: #d76364">*</span></div>
+                                    <input class="text-field w-input" maxlength="256" name="email" placeholder="Введите Вашу почту" type="email" required>
+                                </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Номер телефона</div>
+                                    <input class="text-field w-input" maxlength="18" name="phone" placeholder="+7 (___) ___-__-__" type="text" id="popupPhoneInput">
+                                </div>
+
+                                <div class="field-block">
+                                    <div class="input-text">Что бы вы хотели автоматизировать с помощью AI?</div>
+                                    <textarea name="message" placeholder="Описание" maxlength="5000"  class="text-field message-field w-input" style="resize: none; height: auto"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" class="form-button w-button" value="Оставить заявку">
+                        </form>
+                        <div class="success-messagge w-form-done">
+                            <div class="form-header-block" style="width: 100%; grid-row-gap: 24px">
+                                <div class="wrapper-shapes-benefits">
+                                    <img src="{{ asset('images/caps-2_1.png') }}" loading="lazy" alt="" class="img-small-caps">
+                                    <img src="{{ asset('images/success-cap.png') }}" loading="lazy" alt="" class="capsules-page-img">
+                                    <img src="{{ asset('images/caps-3.png') }}" loading="lazy" alt="" class="img-small-caps _3-v">
+                                    <img src="{{ asset('images/caps--4.png') }}" loading="lazy" alt="" class="img-small-caps _2-v">
+                                </div>
+                                <div class="form-heading">Спасибо!</div>
+                                <div class="standart-text center-aling">Ваша заявка отправлена</div>
+                            </div>
+                        </div>
+                        <div class="error-message w-form-fail">
+                            <div>Что-то пошло не так. Попробуйте ещё раз.</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-w-id="4ee6f207-47d2-888e-2b36-068482ba3c34" class="close-popup-btn">
+                    <div class="icon-close w-embed">
+                        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="none" height="100%" width="100%"></rect>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="56" y2="200"></line>
+                            <line fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" x1="200" x2="56" y1="200" y2="56"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     @include('components.cookie-banner')
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640ac50b2e2b1655d9fef5ae" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="{{asset('js/webflow.js')}}" type="text/javascript"></script>
+
+<script>
+    function closePopup() {
+        document.querySelectorAll('.popap-show').forEach(el => {
+            el.classList.remove('popap-show');
+        });
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.form-block').on('submit', function (e) {
+            e.preventDefault();
+
+            let $form = $(this);
+            let formData = $form.serialize();
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: 'POST',
+                data: formData,
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                success: function () {
+                    $form.hide();
+                    $('.w-form-done').fadeIn();
+                },
+                error: function () {
+                    $('.w-form-fail').fadeIn();
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const formBlock = document.querySelector('.popup-form-block form');
+        const formHeader = document.querySelector('.form-header-block');
+        const successMessage = document.querySelector('.success-messagge.w-form-done');
+
+        if (successMessage && successMessage.offsetParent !== null) {
+            formHeader.style.display = 'none';
+        }
+
+        formBlock?.addEventListener('submit', function () {
+            const observer = new MutationObserver(() => {
+                if (successMessage.offsetParent !== null) {
+                    formHeader.style.display = 'none';
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(successMessage, { attributes: true, childList: true, subtree: true });
+        });
+    });
+</script>
+
+{{--Скроллинг--}}
+<script>
+    document.querySelectorAll('.sales-and-content').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var targetId = 'SalesAndContent';
+
+            var targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            var navOverlay = document.querySelector('.w-nav-overlay');
+            if (navOverlay) {
+                navOverlay.style.display = 'none';
+            }
+        });
+    });
+
+    document.querySelectorAll('.how-it-works-link').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var targetId = 'howWorkGrid';
+
+            var targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            var navOverlay = document.querySelector('.w-nav-overlay');
+            if (navOverlay) {
+                navOverlay.style.display = 'none';
+            }
+        });
+    });
+
+    document.querySelectorAll('.more-ideas').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var targetId = 'MoreIdeas';
+
+            var targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            var navOverlay = document.querySelector('.w-nav-overlay');
+            if (navOverlay) {
+                navOverlay.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+{{--Круглое видео--}}
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const video = document.getElementById('main-video');
@@ -1634,13 +1808,13 @@
     });
 </script>
 
+{{-- Открыть видео --}}
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const popup = document.getElementById('video-popup');
         const popupVideo = document.getElementById('popup-video');
         const closeButton = document.getElementById('video-popup-close');
 
-        // document.querySelectorAll('.open-video').forEach(button => {
         document.querySelectorAll('.content-presentation').forEach(button => {
             button.addEventListener('click', function(event) {
                 event.preventDefault();
