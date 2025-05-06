@@ -72,18 +72,12 @@
                         <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base navbar-btn blue-color w-inline-block">
                             <div>Перейти в бота</div>
                         </a>
-                        <a href="#" class="button-base navbar-btn w-inline-block">
-                            <div>Заказать внедрение</div>
-                        </a>
+                        <button type="button" class="show-popup-link button-base w-inline-block" id="custom-popup-open-3">Заказать внедрение</button>
                     </div>
                 </div>
             </nav>
             <div class="nav-right-col">
                 <button type="button" class="show-popup-link button-base w-inline-block" id="custom-popup-open-1">Заказать внедрение</button>
-
-{{--                <a href="#" class="button-base w-inline-block">--}}
-{{--                    <div>Заказать внедрение</div>--}}
-{{--                </a>--}}
                 <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base header-btn w-inline-block">
                     <div>Перейти в бота</div>
                 </a>
@@ -1536,7 +1530,6 @@
                 </div>
                 <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
                     <div class="wrapper-btn left-aling">
-{{--                        <a href="#" class="popap-show button-base footer w-button ">Заказать внедрение</a>--}}
                         <button type="button" class="show-popup-link button-base footer w-button" id="custom-popup-open-2">Заказать внедрение</button>
                         <a href="https://t.me/AI_Talking_Head_bot" target="_blank" class="button-base footer w-button">Перейти в бота</a>
                     </div>
@@ -1573,8 +1566,7 @@
                             @csrf
                             <input type="hidden" name="request_type" value="подключение">
                             @php
-                                use App\Models\Capsule;
-                                $capsule = Capsule::where('is_blocked', false)->where('slug', 'talkinghead')->first();
+                                $capsule = App\Models\Capsule::where('is_blocked', false)->where('landing_url', 'talkinghead')->first();
                                 $capsuleId = $capsule?->id;
                             @endphp
                             <input type="hidden" name="capsule_id" value="{{$capsuleId}}">
@@ -1642,6 +1634,7 @@
         const popupContainer = popup.querySelector('.popup-container');
         const openBtn1 = document.getElementById('custom-popup-open-1');
         const openBtn2 = document.getElementById('custom-popup-open-2');
+        const openBtn3 = document.getElementById('custom-popup-open-3');
         const closeBtn = document.querySelector('.close-popup-btn');
         const popupBg = document.querySelector('.popup-bg');
 
@@ -1665,6 +1658,7 @@
 
         if (openBtn1) openBtn1.addEventListener('click', openPopup);
         if (openBtn2) openBtn2.addEventListener('click', openPopup);
+        if (openBtn3) openBtn3.addEventListener('click', openPopup);
         if (closeBtn) closeBtn.addEventListener('click', closePopup);
         if (popupBg) popupBg.addEventListener('click', closePopup);
     });
