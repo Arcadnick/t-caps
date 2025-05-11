@@ -1016,10 +1016,12 @@
 </body>
 <style>
     @media (max-width: 768px) {
-        .blog-post-grid {
-            display: flex;
-            flex-direction: column;
+        .wrapper-post-card-image {
+            order: -1;
         }
+    }
+
+    @media (max-width: 991px) {
         .wrapper-post-card-image {
             order: -1;
         }
