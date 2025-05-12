@@ -43,25 +43,6 @@ class CapsuleController extends Controller
         $regenerate = $request->get('regenerate');
         $gptService = app(GptCapsuleService::class);
 
-        // Если регенерация запрошена или нет вообще капсул по данной сфере — генерируем
-//        if ($regenerate || !GeneratedCapsule::where('category_id', $category->id)->where('user_input', $industry)->exists()) {
-//            $finalCapsules = $gptService->generateCapsule($category->name, $industry);
-//        } else {
-//            // Просто берём последние 9 подходящих (если они уже есть)
-//            $generatedCapsules = GeneratedCapsule::where('category_id', $category->id)
-//                ->where('user_input', $industry)
-//                ->where('is_blocked', false)
-//                ->latest()
-//                ->take(9)
-//                ->get();
-//
-//            $finalCapsules = $generatedCapsules->map(function ($item) {
-//                $data = json_decode($item->gpt_response_json, true);
-//                $data['title'] = $item->title;
-//                return $data;
-//            })->shuffle()->values()->all();
-//        }
-
         if ($regenerate || !GptCapsuleResponse::where('category_id', $category->id)->where('user_input', $industry)->exists()) {
             $finalCapsules = $gptService->generateCapsule($category->name, $industry);
         } else {

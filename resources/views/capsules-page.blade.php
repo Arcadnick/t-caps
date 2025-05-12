@@ -109,7 +109,8 @@
                     <div class="form-search w-form">
                         <form method="GET" action="{{ route('capsules') }}" class="form" data-wf-page-id="67e1830233faffe1916b83de" data-wf-element-id="4b4bddf6-e556-2086-e2c1-b0b96f37ba9d">
                             <div class="flex-vertical">
-                                <input class="search-item w-input" maxlength="256" name="industry" data-name="Name" placeholder="Ваша сфера деятельности" type="text" id="industry" value="{{ $industry }}">
+                                <input class="search-item w-input" maxlength="256" name="industry" data-name="Name" placeholder="Ваша сфера деятельности"
+                                       type="text" id="industry" value="{{ $industry }}">
                                 <div data-hover="false" data-delay="0" data-w-id="1ee6e070-e726-66b8-b843-f061940eec87" class="dropdown-categories w-dropdown">
                                     <div class="dropdown-toggle w-dropdown-toggle">
                                         <div class="category-item"><img src="{{ asset('images/marketing-img.png') }}" loading="lazy" alt="" class="image-dropdown">

@@ -756,4 +756,17 @@
         100% { transform: rotate(360deg); }
     }
 </style>
+<style>
+    @media (max-width: 768px) {
+        .wrapper-post-card-image {
+            order: -1;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .wrapper-post-card-image {
+            order: -1;
+        }
+    }
+</style>
 </html>
